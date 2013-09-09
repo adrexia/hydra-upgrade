@@ -1,6 +1,8 @@
 <?php
 class Page extends SiteTree {
 
+	static $icon = "mysite/images/sitetree_images/page.png";
+
 	private static $db = array(
 	);
 
@@ -31,6 +33,10 @@ class Page_Controller extends ContentController {
 	public function init() {
 		parent::init();
 
+	}
+
+	function getCurrentSliderItems() {
+		return $this->SliderItems()->filter('Archived', false);
 	}
 
 }

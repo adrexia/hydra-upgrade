@@ -44,6 +44,8 @@
 	<script src="$ThemeDir/js/libs/ui/gumby.fittext.js"></script>
 	<script src="$ThemeDir/js/libs/ui/jquery.validation.js"></script>
 	<script src="$ThemeDir/js/libs/gumby.init.js"></script>
+	<script src="$ThemeDir/js/libs/jquery.flexslider.js"></script>
+	<script src="$ThemeDir/js/general.js"></script>
 	
 		
 </body>
