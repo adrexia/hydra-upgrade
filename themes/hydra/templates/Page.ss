@@ -31,7 +31,7 @@
 	</div>
 	<% include Footer %>
 
-	<script src="$ThemeDir/js/libs/jquery-1.10.1.min.js"></script>
+	<script src="$ThemeDir/js/libs/jquery-1.10.2.min.js"></script>
 	<script src="$ThemeDir/js/libs/gumby.js"></script>
 	<script src="$ThemeDir/js/libs/ui/gumby.retina.js"></script>
 	<script src="$ThemeDir/js/libs/ui/gumby.fixed.js"></script>
