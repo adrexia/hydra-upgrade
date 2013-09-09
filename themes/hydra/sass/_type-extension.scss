@@ -1,0 +1,8 @@
+.captionImage, .media{
+	@extend .image;
+	@extend .photo;
+	.caption{
+		font-style:italic;
+	}
+}
+

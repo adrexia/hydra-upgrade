@@ -161,6 +161,8 @@ abbr { text-transform: none; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
+.captionImage .caption, .media .caption { font-style: italic; }
+
 /*=====================================================
  Navigation (with dropdowns)
  ======================================================*/
@@ -1655,11 +1657,11 @@ form fieldset legend { padding: 5px 10px; }
 .tabs.vertical .tab-nav > li > a { border: 1px solid #e5e5e5; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .tabs.vertical .tab-content { padding: 10px 0 30px 20px; margin-left: -1px; border-left: 1px solid #e5e5e5; }
 
-.image { line-height: 0; margin-bottom: 20px; }
-.image.circle { -webkit-border-radius: 50% !important; -moz-border-radius: 50% !important; -ms-border-radius: 50% !important; -o-border-radius: 50% !important; border-radius: 50% !important; overflow: hidden; width: auto; }
-.image.rounded { overflow: hidden; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
-.image.photo { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px #555555; -moz-box-shadow: 0 0 1px #555555; box-shadow: 0 0 1px #555555; }
-.image.photo.polaroid { padding-bottom: 50px; background: #fff; }
+.image, .captionImage, .media { line-height: 0; margin-bottom: 20px; }
+.image.circle, .circle.captionImage, .circle.media { -webkit-border-radius: 50% !important; -moz-border-radius: 50% !important; -ms-border-radius: 50% !important; -o-border-radius: 50% !important; border-radius: 50% !important; overflow: hidden; width: auto; }
+.image.rounded, .rounded.captionImage, .rounded.media { overflow: hidden; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
+.image.photo, .captionImage, .media { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px #555555; -moz-box-shadow: 0 0 1px #555555; box-shadow: 0 0 1px #555555; }
+.image.photo.polaroid, .polaroid.captionImage, .polaroid.media { padding-bottom: 50px; background: #fff; }
 
 body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%; }
 body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
