@@ -6,11 +6,21 @@ class HomePage extends Page {
 
 	static $has_many = array(
 		'SliderItems' => 'SliderItem',
-		'Quicklinks' => 'Quicklink'
+		'Quicklinks' => 'Quicklink',
+		'NewsItems' => 'NewsItem'
 	);
 
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
+
+
+		$gridField = new GridField(
+			'NewsItems',
+			'NewsItems',
+			$this->NewsItems(),
+			GridFieldConfig_RelationEditor::create());
+		$gridField->setModelClass('NewsItem');
+		$fields->addFieldToTab('Root.News', $gridField);
 
 		// Carousel tab
 		$gridField = new GridField(
@@ -29,12 +39,27 @@ class HomePage extends Page {
 		$gridField->setModelClass('Quicklink');
 		$fields->addFieldToTab('Root.Quicklinks', $gridField);
 
+		
+
 		return $fields;
 	}
 
 }
 
 class HomePage_Controller extends Page_Controller {
+
+
+	public function getNews($pageSize = 20){
+		$items =  $this->NewsItems();
+		// Apply pagination
+		$list = new PaginatedList($items, $this->request);
+		$list->setPageLength($pageSize);
+		return $list;
+	}
+	
+	public function RecentNews($pageSize = 10){
+		return $this->NewsItems()->Limit($pageSize);
+	}
 
 
 }

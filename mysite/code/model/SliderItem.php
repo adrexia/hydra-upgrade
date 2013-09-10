@@ -28,7 +28,7 @@ class SliderItem extends DataObject {
 		$fields->addFieldToTab('Root.Main', new TreeDropdownField('LinkID', 'Link', 'SiteTree'));
 
 		$fields->addFieldToTab('Root.Main', $group = new CompositeField(
-			$label = new LabelField("LabelArchive","Archive this carousel item?"),
+			$label = new LabelField("LabelArchive","Archive this slider item?"),
 			new CheckboxField('Archived', '')
 		));
 
