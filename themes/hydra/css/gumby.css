@@ -660,5 +660,3 @@ form fieldset legend { padding: 5px 10px; }
 .feature-group { border-bottom: 4px solid rgba(255, 255, 255, 0.2); }
 
 .navbar { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
-
-.brand-group { height: 150px; }
