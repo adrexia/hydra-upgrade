@@ -17,30 +17,13 @@
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
-
-html { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: none; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-a img { border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
-
 * html { font-size: 100%; }
 
 html { font-size: 16px; line-height: 1.625em; }
 
 html * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: white; font-family: "Open Sans"; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; }
+body { background: #17171e; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -67,8 +50,8 @@ html, body { height: 100%; }
 /* Fonts */
 @font-face { font-family: "entypo"; font-style: normal; font-weight: 400; src: url(../fonts/icons/entypo.eot); src: url("../fonts/icons/entypo.eot?#iefix") format("ie9-skip-eot"), url("../fonts/icons/entypo.woff") format("woff"), url("../fonts/icons/entypo.ttf") format("truetype"); }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans"; font-weight: 300; color: #444444; text-rendering: optimizeLegibility; padding-top: 0.273em; line-height: 1.15538em; padding-bottom: 0.273em; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #d04526; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans"; font-weight: 300; color: #6a62d6; text-rendering: optimizeLegibility; padding-top: 0.273em; line-height: 1.15538em; padding-bottom: 0.273em; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #6a62d6; }
 
 @media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
 h1 { font-size: 68px; font-size: 4.25rem; }
@@ -95,8 +78,8 @@ p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; font-size: 1rem
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
-a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #c03d20; }
+a { color: #00afdb; text-decoration: none; outline: 0; line-height: inherit; }
+a:hover { color: #009bc2; }
 
 /*=====================================================
  Lists  ======================================================*/
@@ -133,10 +116,10 @@ h1 small, h2 small, h3 small, h4 small, h5 small { color: #777; }
 /*  Blockquotes  */
 blockquote { line-height: 20px; color: #777; margin: 0 0 18px; padding: 9px 20px 0 19px; border-left: 5px solid #cccccc; }
 blockquote p { line-height: 20px; color: #777; }
-blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: #555555; }
+blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: white; }
 blockquote cite:before { content: "\2014 \0020"; }
-blockquote cite a { color: #555555; }
-blockquote cite a:visited { color: #555555; }
+blockquote cite a { color: white; }
+blockquote cite a:visited { color: white; }
 
 hr { border: 1px solid #cccccc; clear: both; margin: 16px 0 18px; height: 0; }
 
@@ -147,8 +130,8 @@ abbr { text-transform: none; }
 /** Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com) */
 @media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
   /* Black prints faster: sanbeiji.com/archives/953 */
-  p a { color: #555555 !important; text-decoration: underline; }
-  p a:visited { color: #555555 !important; text-decoration: underline; }
+  p a { color: white !important; text-decoration: underline; }
+  p a:visited { color: white !important; text-decoration: underline; }
   p a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
   .ir a:after { content: ""; }
@@ -1308,35 +1291,35 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .badge, .label { height: 20px; display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; line-height: 20px; text-align: center; color: #fff; }
 .badge a, .label a { color: #fff; }
 .badge.primary, .label.primary { background: #3085d6; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.secondary, .label.secondary { background: #42a35a; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.default, .label.default { background: #f2f2f2; color: #555555; border: 1px solid #f2f2f2; }
 .badge.default:hover, .label.default:hover { border: 1px solid #e5e5e5; }
 .badge.default a, .label.default a { color: #555555; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.info, .label.info { background: #4a4d50; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.danger, .label.danger { background: #ca3838; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.warning, .label.warning { background: #f6b83f; color: #644405; }
 .badge.warning a, .label.warning a { color: #644405; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 .badge.success, .label.success { background: #58c026; }
-.badge.light, .label.light { background: #fff; color: #555555; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #d04526; }
+.badge.light, .label.light { background: #fff; color: white; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a { color: #00afdb; }
 .badge.dark, .label.dark { background: #212121; }
 
 .badge { padding: 0 10px; font-size: 14px; font-size: 0.875rem; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
@@ -1355,7 +1338,7 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .image, .captionImage, .media { line-height: 0; margin-bottom: 20px; }
 .image.circle, .circle.captionImage, .circle.media { -webkit-border-radius: 50% !important; -moz-border-radius: 50% !important; -ms-border-radius: 50% !important; -o-border-radius: 50% !important; border-radius: 50% !important; overflow: hidden; width: auto; }
 .image.rounded, .rounded.captionImage, .rounded.media { overflow: hidden; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
-.image.photo, .captionImage, .media { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px #555555; -moz-box-shadow: 0 0 1px #555555; box-shadow: 0 0 1px #555555; }
+.image.photo, .captionImage, .media { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px white; -moz-box-shadow: 0 0 1px white; box-shadow: 0 0 1px white; }
 .image.photo.polaroid, .polaroid.captionImage, .polaroid.media { padding-bottom: 50px; background: #fff; }
 
 body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%; }

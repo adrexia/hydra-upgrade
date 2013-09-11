@@ -67,17 +67,17 @@ $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
-$header-font-color: #444444 !default;
-$header-link-color: #d04526 !default;
-$header-link-hover-color: #c03d20 !default;
-$body-font-color: #555555 !default;
-$body-link-color: #d04526 !default;
-$body-link-hover-color: #c03d20 !default;
+$header-font-color: mix(#5a51d2, #fff, 90%) !default;
+$header-link-color: $header-font-color !default;
+$header-link-hover-color: darken($header-font-color,10%) !default;
+$body-font-color: #fff !default;
+$body-link-color: #00afdb !default;
+$body-link-hover-color: darken(#00afdb,5%) !default;
 
 // User Interface Colors
-$global-bg-color: #fff;
-$navbar-color: #333;
-$navbar-link-color: #fff;
+$global-bg-color: lighten(#101015, 3%); //#101015  //1b1b24
+$navbar-color: darken($global-bg-color, 5%);
+$navbar-link-color: $body-link-color;
 
 $primary-color: #3085d6;
 $secondary-color: #42a35a;
@@ -90,7 +90,7 @@ $success-color: #58c026;
 $primary-hover-color: #58b2fa;
 $secondary-hover-color: #6dbb80;
 $default-hover-color: #ffffff;
-$info-hover-color: #868d92;
+$info-hover-color: #000;
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
 $success-hover-color: #66d92f;

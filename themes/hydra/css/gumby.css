@@ -16,13 +16,30 @@
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
 * html { font-size: 100%; }
 
 html { font-size: 16px; line-height: 1.625em; }
 
 html * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: white; font-family: "Open Sans"; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; }
+body { background: #17171e; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -303,7 +320,7 @@ img { -ms-interpolation-mode: bicubic; }
 .pretty .default.btn:active, .pretty .default.skiplink:active, .default.btn.pretty:active, .default.skiplink.pretty:active, .skiplink.pretty.default:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f1f1), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(#f3f1f1, #ffffff); background-image: -moz-linear-gradient(#f3f1f1, #ffffff); background-image: -o-linear-gradient(#f3f1f1, #ffffff); background-image: linear-gradient(#f3f1f1, #ffffff); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; }
 .btn.pretty.default a, .pretty .default.btn a, .pretty .default.skiplink a, .default.skiplink.pretty:hover a, .default.skiplink.pretty:active a, .btn.pretty.default input, .pretty .default.btn input, .pretty .default.skiplink input, .default.skiplink.pretty:hover input, .default.skiplink.pretty:active input, .btn.pretty.default button, .pretty .default.btn button, .pretty .default.skiplink button, .default.skiplink.pretty:hover button, .default.skiplink.pretty:active button, .skiplink.pretty.default a, .skiplink.pretty.default input, .skiplink.pretty.default button { text-shadow: 0 1px 1px white; }
 .btn.pretty.info, .pretty .info.btn, .pretty .Actions .btn, .Actions .pretty .btn, .pretty .info.skiplink, .info.skiplink.pretty:hover, .info.skiplink.pretty:active, .Actions .btn.pretty, .Actions .pretty .skiplink, .pretty .Actions .skiplink, .Actions .skiplink.pretty:hover, .Actions .skiplink.pretty:active, .skiplink.pretty.info, .Actions .skiplink.pretty.btn, .Actions .pretty .skiplink, .pretty .Actions .skiplink, .Actions .skiplink.pretty:hover, .Actions .skiplink.pretty:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7b8085), color-stop(100%, #464d54)); background-image: -webkit-linear-gradient(#7b8085, #464d54); background-image: -moz-linear-gradient(#7b8085, #464d54); background-image: -o-linear-gradient(#7b8085, #464d54); background-image: linear-gradient(#7b8085, #464d54); -webkit-box-shadow: inset 0 0 3px #bdc0c2; -moz-box-shadow: inset 0 0 3px #bdc0c2; box-shadow: inset 0 0 3px #bdc0c2; border: 1px solid #252728; }
-.pretty .info.btn:hover, .pretty .Actions .btn:hover, .Actions .pretty .btn:hover, .pretty .info.skiplink:hover, .info.btn.pretty:hover, .Actions .btn.pretty:hover, .Actions .pretty .skiplink:hover, .pretty .Actions .skiplink:hover, .info.skiplink.pretty:hover, .Actions .skiplink.pretty:hover, .skiplink.pretty.info:hover, .Actions .pretty .skiplink:hover, .pretty .Actions .skiplink:hover, .Actions .skiplink.pretty:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeb3b6), color-stop(100%, #808e98)); background-image: -webkit-linear-gradient(#aeb3b6, #808e98); background-image: -moz-linear-gradient(#aeb3b6, #808e98); background-image: -o-linear-gradient(#aeb3b6, #808e98); background-image: linear-gradient(#aeb3b6, #808e98); -webkit-box-shadow: inset 0 0 3px #f1f2f3; -moz-box-shadow: inset 0 0 3px #f1f2f3; box-shadow: inset 0 0 3px #f1f2f3; border: 1px solid #60676b; }
+.pretty .info.btn:hover, .pretty .Actions .btn:hover, .Actions .pretty .btn:hover, .pretty .info.skiplink:hover, .info.btn.pretty:hover, .Actions .btn.pretty:hover, .Actions .pretty .skiplink:hover, .pretty .Actions .skiplink:hover, .info.skiplink.pretty:hover, .Actions .skiplink.pretty:hover, .skiplink.pretty.info:hover, .Actions .pretty .skiplink:hover, .pretty .Actions .skiplink:hover, .Actions .skiplink.pretty:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262626), color-stop(100%, #000000)); background-image: -webkit-linear-gradient(#262626, #000000); background-image: -moz-linear-gradient(#262626, #000000); background-image: -o-linear-gradient(#262626, #000000); background-image: linear-gradient(#262626, #000000); -webkit-box-shadow: inset 0 0 3px #666666; -moz-box-shadow: inset 0 0 3px #666666; box-shadow: inset 0 0 3px #666666; border: 1px solid black; }
 .pretty .info.btn:active, .pretty .Actions .btn:active, .Actions .pretty .btn:active, .pretty .info.skiplink:active, .info.btn.pretty:active, .Actions .btn.pretty:active, .Actions .pretty .skiplink:active, .pretty .Actions .skiplink:active, .info.skiplink.pretty:active, .Actions .skiplink.pretty:active, .skiplink.pretty.info:active, .Actions .pretty .skiplink:active, .pretty .Actions .skiplink:active, .Actions .skiplink.pretty:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #464d54), color-stop(100%, #7b8085)); background-image: -webkit-linear-gradient(#464d54, #7b8085); background-image: -moz-linear-gradient(#464d54, #7b8085); background-image: -o-linear-gradient(#464d54, #7b8085); background-image: linear-gradient(#464d54, #7b8085); -webkit-box-shadow: inset 0 0 3px #cbcdce; -moz-box-shadow: inset 0 0 3px #cbcdce; box-shadow: inset 0 0 3px #cbcdce; }
 .btn.pretty.info a, .pretty .info.btn a, .pretty .Actions .btn a, .Actions .pretty .btn a, .pretty .info.skiplink a, .info.skiplink.pretty:hover a, .info.skiplink.pretty:active a, .Actions .btn.pretty a, .Actions .pretty .skiplink a, .pretty .Actions .skiplink a, .Actions .skiplink.pretty:hover a, .Actions .skiplink.pretty:active a, .btn.pretty.info input, .pretty .info.btn input, .pretty .Actions .btn input, .Actions .pretty .btn input, .pretty .info.skiplink input, .info.skiplink.pretty:hover input, .info.skiplink.pretty:active input, .Actions .btn.pretty input, .Actions .pretty .skiplink input, .pretty .Actions .skiplink input, .Actions .skiplink.pretty:hover input, .Actions .skiplink.pretty:active input, .btn.pretty.info button, .pretty .info.btn button, .pretty .Actions .btn button, .Actions .pretty .btn button, .pretty .info.skiplink button, .info.skiplink.pretty:hover button, .info.skiplink.pretty:active button, .Actions .btn.pretty button, .Actions .pretty .skiplink button, .pretty .Actions .skiplink button, .Actions .skiplink.pretty:hover button, .Actions .skiplink.pretty:active button, .skiplink.pretty.info a, .Actions .skiplink.pretty.btn a, .Actions .pretty .skiplink a, .pretty .Actions .skiplink a, .Actions .skiplink.pretty:hover a, .Actions .skiplink.pretty:active a, .skiplink.pretty.info input, .Actions .skiplink.pretty.btn input, .Actions .pretty .skiplink input, .pretty .Actions .skiplink input, .Actions .skiplink.pretty:hover input, .Actions .skiplink.pretty:active input, .skiplink.pretty.info button, .Actions .skiplink.pretty.btn button, .Actions .pretty .skiplink button, .pretty .Actions .skiplink button, .Actions .skiplink.pretty:hover button, .Actions .skiplink.pretty:active button { text-shadow: 0 1px 1px #191a1b; }
 .btn.pretty.danger, .pretty .danger.btn, .pretty .danger.skiplink, .danger.skiplink.pretty:hover, .danger.skiplink.pretty:active, .skiplink.pretty.danger { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #df8989), color-stop(100%, #d03232)); background-image: -webkit-linear-gradient(#df8989, #d03232); background-image: -moz-linear-gradient(#df8989, #d03232); background-image: -o-linear-gradient(#df8989, #d03232); background-image: linear-gradient(#df8989, #d03232); -webkit-box-shadow: inset 0 0 3px #faeded; -moz-box-shadow: inset 0 0 3px #faeded; box-shadow: inset 0 0 3px #faeded; border: 1px solid #8f2626; }
@@ -322,14 +339,14 @@ img { -ms-interpolation-mode: bicubic; }
 /*=====================================================
  Navigation (with dropdowns)
  ======================================================*/
-.navbar { width: 100%; min-height: 60px; display: block; margin-bottom: 20px; background: #333333; }
+.navbar { width: 100%; min-height: 60px; display: block; margin-bottom: 20px; background: #0c0c0f; }
 @media only screen and (max-width: 767px) { .navbar { position: relative; border: none; }
   .navbar .column, .navbar .columns { min-height: 0; } }
 .navbar.fixed { top: 0; left: 0; z-index: 99999; }
 .navbar a.toggle { display: none; }
-@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: white; background: #333333; height: 40px; line-height: 38px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-size: 30px; font-size: 1.875rem; }
-  .navbar a.toggle:hover { background: #404040; }
-  .navbar a.toggle:active, .navbar a.toggle.active { background: #262626; } }
+@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #00afdb; background: #0c0c0f; height: 40px; line-height: 38px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-size: 30px; font-size: 1.875rem; }
+  .navbar a.toggle:hover { background: #17171e; }
+  .navbar a.toggle:active, .navbar a.toggle.active { background: #010101; } }
 .navbar .logo { display: inline-block; margin: 0 2.12766% 0 0; padding: 0; height: 60px; line-height: 58px; }
 .navbar .logo a { display: block; padding: 0 0 0 16px; overflow: hidden; height: 60px; line-height: 58px; }
 .navbar .logo a img { max-height: 95%; }
@@ -337,11 +354,11 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar .logo a { padding: 0; }
   .navbar .logo a img { width: auto; height: auto; max-width: 100%; } }
 .navbar ul { display: table; vertical-align: middle; margin: 0; float: none; }
-@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #262626; }
-  .navbar ul.active { height: auto; max-height: 600px; z-index: 999999; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-box-shadow: 0 2px 2px #0d0d0d; -moz-box-shadow: 0 2px 2px #0d0d0d; box-shadow: 0 2px 2px #0d0d0d; } }
+@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #010101; }
+  .navbar ul.active { height: auto; max-height: 600px; z-index: 999999; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-box-shadow: 0 2px 2px black; -moz-box-shadow: 0 2px 2px black; box-shadow: 0 2px 2px black; } }
 .navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 60px; line-height: 58px; }
 @media only screen and (max-width: 767px) { .navbar ul li { display: block; position: relative; min-height: 50px; max-height: 320px; height: auto; width: 100%; border-right: 0 !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; } }
-.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: white; text-shadow: 0 1px 2px black, 0 1px 0 black; height: 60px; line-height: 58px; font-size: 16px; font-size: 1rem; }
+.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: #00afdb; text-shadow: 0 1px 2px black, 0 1px 0 black; height: 60px; line-height: 58px; font-size: 16px; font-size: 1rem; }
 .navbar ul li > a i.icon-popup { position: absolute; }
 .navbar ul li .btn { border-color: black !important; }
 .navbar ul li.field { margin-bottom: 0 !important; margin-right: 0; }
@@ -349,11 +366,11 @@ img { -ms-interpolation-mode: bicubic; }
 .navbar ul li.field input.search { background: black; border: none; color: #f2f2f2; }
 .navbar ul li .dropdown { width: auto; min-width: 0px; max-width: 320px; height: 0; position: absolute; background: #fafafa; overflow: hidden; z-index: 999; }
 @media only screen and (max-width: 767px) { .navbar ul li .dropdown { width: 100%; max-width: 100%; position: relative; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
-  .navbar ul li.active .dropdown { border-bottom: 1px solid #1a1a1a; }
-  .navbar ul li.active .dropdown ul { position: relative; top: 0; background: #1f1f1f; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
-  .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #262626; }
-  .navbar ul li.active .dropdown ul li a { color: white; border-bottom: 1px solid #1a1a1a; }
-  .navbar ul li.active .dropdown ul li a:hover { color: #d04526; } }
+  .navbar ul li.active .dropdown { border-bottom: 1px solid black; }
+  .navbar ul li.active .dropdown ul { position: relative; top: 0; background: black; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
+  .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #010101; }
+  .navbar ul li.active .dropdown ul li a { color: white; border-bottom: 1px solid black; }
+  .navbar ul li.active .dropdown ul li a:hover { color: #00afdb; } }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar > ul > li > .btn a { padding: 0 10px 0 10px !important; }
   .navbar ul > li .dropdown ul li.active .dropdown { left: -320px; } }
 
@@ -368,41 +385,41 @@ img { -ms-interpolation-mode: bicubic; }
 
 .ie7 .navbar > ul > li .field { display: block; padding: 12px 18px 0; width: 80%; }
 
-.pretty.navbar { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #1a1a1a)); background-image: -webkit-linear-gradient(#666666, #1a1a1a); background-image: -moz-linear-gradient(#666666, #1a1a1a); background-image: -o-linear-gradient(#666666, #1a1a1a); background-image: linear-gradient(#666666, #1a1a1a); -webkit-box-shadow: inset 0 1px 1px #666666, 0 1px 2px rgba(0, 0, 0, 0.8) !important; -moz-box-shadow: inset 0 1px 1px #666666, 0 1px 2px rgba(0, 0, 0, 0.8) !important; box-shadow: inset 0 1px 1px #666666, 0 1px 2px rgba(0, 0, 0, 0.8) !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
-@media only screen and (max-width: 767px) { .pretty.navbar a.toggle { border: 1px solid #262626; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #333333)); background-image: -webkit-linear-gradient(#666666, #333333); background-image: -moz-linear-gradient(#666666, #333333); background-image: -o-linear-gradient(#666666, #333333); background-image: linear-gradient(#666666, #333333); -webkit-box-shadow: inset 0 1px 2px #737373, inset 0 -1px 1px #404040, inset 1px 0 1px #404040, inset -1px 0 1px #404040, 0 1px 1px #4d4d4d; -moz-box-shadow: inset 0 1px 2px #737373, inset 0 -1px 1px #404040, inset 1px 0 1px #404040, inset -1px 0 1px #404040, 0 1px 1px #4d4d4d; box-shadow: inset 0 1px 2px #737373, inset 0 -1px 1px #404040, inset 1px 0 1px #404040, inset -1px 0 1px #404040, 0 1px 1px #4d4d4d; }
+.pretty.navbar { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383849), color-stop(100%, #000000)); background-image: -webkit-linear-gradient(#383849, #000000); background-image: -moz-linear-gradient(#383849, #000000); background-image: -o-linear-gradient(#383849, #000000); background-image: linear-gradient(#383849, #000000); -webkit-box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; -moz-box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
+@media only screen and (max-width: 767px) { .pretty.navbar a.toggle { border: 1px solid #010101; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383849), color-stop(100%, #0c0c0f)); background-image: -webkit-linear-gradient(#383849, #0c0c0f); background-image: -moz-linear-gradient(#383849, #0c0c0f); background-image: -o-linear-gradient(#383849, #0c0c0f); background-image: linear-gradient(#383849, #0c0c0f); -webkit-box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; -moz-box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; }
   .pretty.navbar a.toggle i { text-shadow: 0 1px 1px black; }
-  .pretty.navbar a.toggle:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #737373), color-stop(100%, #404040)); background-image: -webkit-linear-gradient(#737373, #404040); background-image: -moz-linear-gradient(#737373, #404040); background-image: -o-linear-gradient(#737373, #404040); background-image: linear-gradient(#737373, #404040); }
-  .pretty.navbar a.toggle:active, .pretty.navbar a.toggle.active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262626), color-stop(100%, #333333)); background-image: -webkit-linear-gradient(#262626, #333333); background-image: -moz-linear-gradient(#262626, #333333); background-image: -o-linear-gradient(#262626, #333333); background-image: linear-gradient(#262626, #333333); -webkit-box-shadow: 0 1px 1px #4d4d4d; -moz-box-shadow: 0 1px 1px #4d4d4d; box-shadow: 0 1px 1px #4d4d4d; } }
+  .pretty.navbar a.toggle:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #434358), color-stop(100%, #17171e)); background-image: -webkit-linear-gradient(#434358, #17171e); background-image: -moz-linear-gradient(#434358, #17171e); background-image: -o-linear-gradient(#434358, #17171e); background-image: linear-gradient(#434358, #17171e); }
+  .pretty.navbar a.toggle:active, .pretty.navbar a.toggle.active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #010101), color-stop(100%, #0c0c0f)); background-image: -webkit-linear-gradient(#010101, #0c0c0f); background-image: -moz-linear-gradient(#010101, #0c0c0f); background-image: -o-linear-gradient(#010101, #0c0c0f); background-image: linear-gradient(#010101, #0c0c0f); -webkit-box-shadow: 0 1px 1px #22222c; -moz-box-shadow: 0 1px 1px #22222c; box-shadow: 0 1px 1px #22222c; } }
 .pretty.navbar.row { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 @media only screen and (max-width: 767px) { .pretty.navbar.row { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; } }
-.pretty.navbar ul li.field input.search { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #383838)); background-image: -webkit-linear-gradient(#000000, #383838); background-image: -moz-linear-gradient(#000000, #383838); background-image: -o-linear-gradient(#000000, #383838); background-image: linear-gradient(#000000, #383838); border: none; -webkit-box-shadow: 0 1px 2px #737373 !important; -moz-box-shadow: 0 1px 2px #737373 !important; box-shadow: 0 1px 2px #737373 !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
+.pretty.navbar ul li.field input.search { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #101015)); background-image: -webkit-linear-gradient(#000000, #101015); background-image: -moz-linear-gradient(#000000, #101015); background-image: -o-linear-gradient(#000000, #101015); background-image: linear-gradient(#000000, #101015); border: none; -webkit-box-shadow: 0 1px 2px #434358 !important; -moz-box-shadow: 0 1px 2px #434358 !important; box-shadow: 0 1px 2px #434358 !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
 .pretty.navbar > ul > li:first-child, .pretty.navbar .pretty.navbar > ul > li:first-child a:hover { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 .navbar li .dropdown ul { margin: 0; display: block; }
 .navbar li .dropdown ul > li { position: relative; display: block; width: 100%; float: left; text-align: left; height: auto; -webkit-border-radius: none; -moz-border-radius: none; -ms-border-radius: none; -o-border-radius: none; border-radius: none; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar li .dropdown ul > li { max-width: 320px; word-wrap: break-word; } }
-.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #d04526; border-bottom: 1px solid #cccccc; text-shadow: none; height: 51px; line-height: 49px; }
+.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #00afdb; border-bottom: 1px solid #cccccc; text-shadow: none; height: 51px; line-height: 49px; }
 @media only screen and (max-width: 767px) { .navbar li .dropdown ul > li a { padding: 0 20px; } }
 .navbar li .dropdown ul > li .dropdown { display: none; background: white; }
 .navbar li .dropdown ul li:first-child a { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 
-.gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a { position: relative; background: #868d92; z-index: 1000; }
+.gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a { position: relative; background: black; z-index: 1000; }
 
-.gumby-no-touch .navbar ul li:hover .dropdown, .gumby-touch .navbar ul li.active .dropdown { min-height: 50px; max-height: 561px; overflow: visible; height: auto; width: 100%; padding: 0; border-top: 1px solid #262626; -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
+.gumby-no-touch .navbar ul li:hover .dropdown, .gumby-touch .navbar ul li.active .dropdown { min-height: 50px; max-height: 561px; overflow: visible; height: auto; width: 100%; padding: 0; border-top: 1px solid #010101; -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
 
 .gumby-no-touch .navbar ul li:hover .dropdown ul { position: relative; top: 0; min-height: 50px; max-height: 250px; height: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
-@media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: #1f1f1f; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #262626; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid #1a1a1a; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #d04526; } }
+@media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: black; }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #010101; }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid black; }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #00afdb; } }
 
 .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 0px; margin-top: 0; }
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { position: relative; left: 0; }
-  .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown ul, .gumby-touch .navbar li .dropdown ul > li.active .dropdown ul { background: #0d0d0d !important; } }
+  .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown ul, .gumby-touch .navbar li .dropdown ul > li.active .dropdown ul { background: black !important; } }
 
 .gumby-no-touch .navbar li .dropdown ul li a:hover { background: #f2f2f2; }
 
-.gumby-touch .navbar a:hover { color: white !important; }
+.gumby-touch .navbar a:hover { color: #00afdb !important; }
 
 .subnav { display: block; width: auto; overflow: hidden; margin: 0 0 18px 0; padding-top: 4px; }
 .subnav li, .subnav dt, .subnav dd { float: left; display: inline; margin-left: 9px; margin-bottom: 4px; }
@@ -456,7 +473,7 @@ html[xmlns] .slides { display: block; }
 .carousel li { margin-right: 5px; }
 
 /* Direction Nav */
-.flex-direction-nav { *height: 0; }
+.flex-direction-nav { *height: 0; margin-top: -10px; }
 .flex-direction-nav a { display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0, 0, 0, 0.8); text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
 .flex-direction-nav .flex-prev { left: -50px; }
 .flex-direction-nav .flex-next { right: -50px; text-align: right; }
@@ -531,7 +548,7 @@ form fieldset legend { padding: 5px 10px; }
 .field.prepend.append input:last-child { margin-left: -1px; -webkit-border-radius: 0px 4px 4px 0; -moz-border-radius: 0px 4px 4px 0; -ms-border-radius: 0px 4px 4px 0; -o-border-radius: 0px 4px 4px 0; border-radius: 0px 4px 4px 0; }
 .field.prepend .adjoined, .field.append .adjoined, .field.prepend .btn, .field.append .btn { position: relative; display: inline-block; margin-bottom: 0; z-index: 99; }
 .field.prepend .btn a, .field.prepend .btn input, .field.prepend .btn button, .field.append .btn a, .field.append .btn input, .field.append .btn button { padding: 0 12px; }
-.field.prepend .adjoined, .field.append .adjoined { padding: 0 10px 0 10px; background: #f2f2f2; border: 1px solid #d8d8d8; font-family: "Open Sans"; font-weight: 600; color: #555555; font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; }
+.field.prepend .adjoined, .field.append .adjoined { padding: 0 10px 0 10px; background: #f2f2f2; border: 1px solid #d8d8d8; font-family: "Open Sans"; font-weight: 600; color: white; font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; }
 .field.prepend *:first-child { -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .field.prepend input:first-child { margin-right: 0; }
 .field.prepend .adjoined, .field.prepend .btn { margin-right: -1px; }
@@ -573,7 +590,7 @@ form fieldset legend { padding: 5px 10px; }
 .field .radio.danger span, .field .checkbox.danger span { border-color: #ca3838; color: #ca3838; background: #f0c5c5; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; }
 .field .radio.warning, .field .checkbox.warning { color: #f6b83f; }
 .field .radio.warning span, .field .checkbox.warning span { border-color: #f6b83f; color: #f6b83f; background: #fef7ea; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; }
-.field .radio.success, .field .checkbox.success { color: #58c026; color: #555555; }
+.field .radio.success, .field .checkbox.success { color: #58c026; color: white; }
 .field .radio.success i, .field .checkbox.success i { color: #58c026; }
 .field .radio.success span, .field .checkbox.success span { border-color: #58c026; color: #58c026; background: #c0eeaa; -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; }
 .field .radio span, .field .checkbox span { display: inline-block; width: 16px; height: 16px; position: relative; top: 2px; border: solid 1px #ccc; background: #fefefe; }
@@ -585,9 +602,9 @@ form fieldset legend { padding: 5px 10px; }
 
 /* Form Picker Element (<select>) */
 .picker { position: relative; width: auto; display: inline-block; margin: 0 0 2px 1.2%; overflow: hidden; border: 1px solid #e5e5e5; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-family: "Open Sans"; font-weight: 600; height: auto; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2)); background-image: -webkit-linear-gradient(#ffffff, #f2f2f2); background-image: -moz-linear-gradient(#ffffff, #f2f2f2); background-image: -o-linear-gradient(#ffffff, #f2f2f2); background-image: linear-gradient(#ffffff, #f2f2f2); }
-.picker:after { content: "\25BE"; z-index: 0; position: absolute; right: 8%; top: 50%; margin-top: -12px; color: #555555; }
+.picker:after { content: "\25BE"; z-index: 0; position: absolute; right: 8%; top: 50%; margin-top: -12px; color: white; }
 .picker:first-child { margin-left: 0; }
-.picker select { position: relative; display: block; min-width: 100%; width: 135%; height: 34px; padding: 6px 45px 6px 15px; color: #555555; border: none; background: transparent; outline: none; -webkit-appearance: none; z-index: 99; cursor: pointer; font-size: 16px; font-size: 1rem; }
+.picker select { position: relative; display: block; min-width: 100%; width: 135%; height: 34px; padding: 6px 45px 6px 15px; color: white; border: none; background: transparent; outline: none; -webkit-appearance: none; z-index: 99; cursor: pointer; font-size: 16px; font-size: 1rem; }
 .picker select::-ms-expand { display: none; }
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0px; }
@@ -596,7 +613,7 @@ form fieldset legend { padding: 5px 10px; }
 .tabs { display: block; }
 .tabs .tab-nav { margin: 0; padding: 0; border-bottom: 1px solid #e5e5e5; }
 .tabs .tab-nav > li { display: inline-block; width: auto; padding: 0; margin: 0 2.12766% 0 0; cursor: default; top: 1px; -webkit-box-shadow: 0 1px 0 white; -moz-box-shadow: 0 1px 0 white; box-shadow: 0 1px 0 white; }
-.tabs .tab-nav > li > a { display: block; width: auto; padding: 0 16px; margin: 0; color: #555555; font-family: "Open Sans"; font-weight: 600; border: 1px solid #e5e5e5; border-width: 1px 1px 0 1px; text-shadow: 0 1px 1px white; background: #f2f2f2; cursor: pointer; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -ms-border-radius: 4px 4px 0 0; -o-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; height: 42px; line-height: 40px; }
+.tabs .tab-nav > li > a { display: block; width: auto; padding: 0 16px; margin: 0; color: white; font-family: "Open Sans"; font-weight: 600; border: 1px solid #e5e5e5; border-width: 1px 1px 0 1px; text-shadow: 0 1px 1px white; background: #f2f2f2; cursor: pointer; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -ms-border-radius: 4px 4px 0 0; -o-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; height: 42px; line-height: 40px; }
 .tabs .tab-nav > li > a:hover { text-decoration: none; background: whitesmoke; }
 .tabs .tab-nav > li > a:active { background: #ededed; }
 .tabs .tab-nav > li.active > a { height: 43px; line-height: 41px; background: white; cursor: default; }
@@ -611,7 +628,7 @@ form fieldset legend { padding: 5px 10px; }
 .tabs.vertical .tab-nav { border: none; }
 .tabs.vertical .tab-nav > li { display: block; margin: 0; margin-bottom: 5px; }
 .tabs.vertical .tab-nav > li.active { position: relative; z-index: 99; }
-.tabs.vertical .tab-nav > li.active > a { border-right: 1px solid white; }
+.tabs.vertical .tab-nav > li.active > a { border-right: 1px solid #17171e; }
 .tabs.vertical .tab-nav > li > a { border: 1px solid #e5e5e5; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .tabs.vertical .tab-content { padding: 10px 0 30px 20px; margin-left: -1px; border-left: 1px solid #e5e5e5; }
 
@@ -627,10 +644,18 @@ form fieldset legend { padding: 5px 10px; }
 .modal.active { z-index: 999999; }
 .modal.active, .modal.active > .content { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
+.header { border-top: 4px solid #00afdb; padding-bottom: 20px; }
+
 .Actions .btn { float: left; }
 
 #ForgotPassword { font-size: 0.8em; padding-top: 10px; padding-left: 20px; float: left; }
 
 .navbar { margin-bottom: 0; }
 
-.shaded { background: rgba(204, 204, 204, 0.5); padding-bottom: 20px; }
+.shaded { background: #101015; padding-bottom: 20px; }
+
+.feature-group { border-bottom: 4px solid rgba(255, 255, 255, 0.2); }
+
+.navbar { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+
+.brand-group { height: 150px; }

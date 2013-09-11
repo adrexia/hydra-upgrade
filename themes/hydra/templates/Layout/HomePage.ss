@@ -1,17 +1,12 @@
 <div class="content-container">
-	<section class="shaded">
-		<div class="typography row">
-			<article class="twelve columns">
-				<h1>$Title</h1>
-				<div class="content">$Content</div>
-			</article>
-		</div>
-	</section>
 	<div class="typography row">
-		<article class="twelve columns">
+		<article class="twelve columns feature-group">
 			<% include Slider %>
+			<div class="content subhead">$Content</div>
 		</article>
 	</div>
+	
+
 	<div class="typography row">
 		<section class="eight columns">
 			<% if News %>
