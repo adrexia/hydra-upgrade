@@ -79,7 +79,7 @@ $global-bg-color: lighten(#101015, 3%); //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
 $navbar-link-color: $body-link-color;
 
-$primary-color: #3085d6;
+$primary-color: $body-link-color;
 $secondary-color: #42a35a;
 $default-color: #f2f2f2;
 $info-color: #4a4d50;

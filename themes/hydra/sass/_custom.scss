@@ -3,6 +3,9 @@
 .header{
 	border-top: 4px solid $navbar-link-color;
 	padding-bottom:20px;
+	.row{ 
+		position:relative;
+	}
 }
 
 
@@ -16,6 +19,12 @@ input.text {
 	}
 }
 
+.btn-login{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
 #ForgotPassword{
 	font-size: 0.8em;
 	padding-top:10px;
@@ -25,6 +34,7 @@ input.text {
 
 .navbar{
 	margin-bottom:0;
+	margin-top:20px;
 }
 
 .shaded{
