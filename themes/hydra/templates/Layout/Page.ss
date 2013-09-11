@@ -3,7 +3,7 @@
 	<% include Sidebar %>
 	<div class="content-container">
 		<article>
-			<h1>$Title</h1>
+			<h2>$Title</h2>
 			<div class="content">$Content</div>
 		</article>
 			$Form
