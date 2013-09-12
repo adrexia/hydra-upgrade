@@ -39,7 +39,7 @@ html { font-size: 16px; line-height: 1.625em; }
 
 html * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #17171e; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
+body { background: #262632; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -339,14 +339,14 @@ img { -ms-interpolation-mode: bicubic; }
 /*=====================================================
  Navigation (with dropdowns)
  ======================================================*/
-.navbar { width: 100%; min-height: 60px; display: block; margin-bottom: 20px; background: #0c0c0f; }
+.navbar { width: 100%; min-height: 60px; display: block; margin-bottom: 20px; background: #1b1b23; }
 @media only screen and (max-width: 767px) { .navbar { position: relative; border: none; }
   .navbar .column, .navbar .columns { min-height: 0; } }
 .navbar.fixed { top: 0; left: 0; z-index: 99999; }
 .navbar a.toggle { display: none; }
-@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #00afdb; background: #0c0c0f; height: 40px; line-height: 38px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-size: 30px; font-size: 1.875rem; }
-  .navbar a.toggle:hover { background: #17171e; }
-  .navbar a.toggle:active, .navbar a.toggle.active { background: #010101; } }
+@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #00afdb; background: #1b1b23; height: 40px; line-height: 38px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-size: 30px; font-size: 1.875rem; }
+  .navbar a.toggle:hover { background: #262632; }
+  .navbar a.toggle:active, .navbar a.toggle.active { background: #101015; } }
 .navbar .logo { display: inline-block; margin: 0 2.12766% 0 0; padding: 0; height: 60px; line-height: 58px; }
 .navbar .logo a { display: block; padding: 0 0 0 16px; overflow: hidden; height: 60px; line-height: 58px; }
 .navbar .logo a img { max-height: 95%; }
@@ -354,7 +354,7 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar .logo a { padding: 0; }
   .navbar .logo a img { width: auto; height: auto; max-width: 100%; } }
 .navbar ul { display: table; vertical-align: middle; margin: 0; float: none; }
-@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #010101; }
+@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #101015; }
   .navbar ul.active { height: auto; max-height: 600px; z-index: 999999; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-box-shadow: 0 2px 2px black; -moz-box-shadow: 0 2px 2px black; box-shadow: 0 2px 2px black; } }
 .navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 60px; line-height: 58px; }
 @media only screen and (max-width: 767px) { .navbar ul li { display: block; position: relative; min-height: 50px; max-height: 320px; height: auto; width: 100%; border-right: 0 !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; } }
@@ -366,10 +366,10 @@ img { -ms-interpolation-mode: bicubic; }
 .navbar ul li.field input.search { background: black; border: none; color: #f2f2f2; }
 .navbar ul li .dropdown { width: auto; min-width: 0px; max-width: 320px; height: 0; position: absolute; background: #fafafa; overflow: hidden; z-index: 999; }
 @media only screen and (max-width: 767px) { .navbar ul li .dropdown { width: 100%; max-width: 100%; position: relative; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
-  .navbar ul li.active .dropdown { border-bottom: 1px solid black; }
-  .navbar ul li.active .dropdown ul { position: relative; top: 0; background: black; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
-  .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #010101; }
-  .navbar ul li.active .dropdown ul li a { color: white; border-bottom: 1px solid black; }
+  .navbar ul li.active .dropdown { border-bottom: 1px solid #050507; }
+  .navbar ul li.active .dropdown ul { position: relative; top: 0; background: #09090c; min-height: 50px; max-height: 250px; height: auto; overflow: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
+  .navbar ul li.active .dropdown ul li { min-height: 50px; border-bottom: #101015; }
+  .navbar ul li.active .dropdown ul li a { color: white; border-bottom: 1px solid #050507; }
   .navbar ul li.active .dropdown ul li a:hover { color: #00afdb; } }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar > ul > li > .btn a { padding: 0 10px 0 10px !important; }
   .navbar ul > li .dropdown ul li.active .dropdown { left: -320px; } }
@@ -385,14 +385,14 @@ img { -ms-interpolation-mode: bicubic; }
 
 .ie7 .navbar > ul > li .field { display: block; padding: 12px 18px 0; width: 80%; }
 
-.pretty.navbar { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383849), color-stop(100%, #000000)); background-image: -webkit-linear-gradient(#383849, #000000); background-image: -moz-linear-gradient(#383849, #000000); background-image: -o-linear-gradient(#383849, #000000); background-image: linear-gradient(#383849, #000000); -webkit-box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; -moz-box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; box-shadow: inset 0 1px 1px #383849, 0 1px 2px rgba(0, 0, 0, 0.8) !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
-@media only screen and (max-width: 767px) { .pretty.navbar a.toggle { border: 1px solid #010101; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383849), color-stop(100%, #0c0c0f)); background-image: -webkit-linear-gradient(#383849, #0c0c0f); background-image: -moz-linear-gradient(#383849, #0c0c0f); background-image: -o-linear-gradient(#383849, #0c0c0f); background-image: linear-gradient(#383849, #0c0c0f); -webkit-box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; -moz-box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; box-shadow: inset 0 1px 2px #434358, inset 0 -1px 1px #17171e, inset 1px 0 1px #17171e, inset -1px 0 1px #17171e, 0 1px 1px #22222c; }
+.pretty.navbar { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #47475d), color-stop(100%, #050507)); background-image: -webkit-linear-gradient(#47475d, #050507); background-image: -moz-linear-gradient(#47475d, #050507); background-image: -o-linear-gradient(#47475d, #050507); background-image: linear-gradient(#47475d, #050507); -webkit-box-shadow: inset 0 1px 1px #47475d, 0 1px 2px rgba(0, 0, 0, 0.8) !important; -moz-box-shadow: inset 0 1px 1px #47475d, 0 1px 2px rgba(0, 0, 0, 0.8) !important; box-shadow: inset 0 1px 1px #47475d, 0 1px 2px rgba(0, 0, 0, 0.8) !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
+@media only screen and (max-width: 767px) { .pretty.navbar a.toggle { border: 1px solid #101015; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #47475d), color-stop(100%, #1b1b23)); background-image: -webkit-linear-gradient(#47475d, #1b1b23); background-image: -moz-linear-gradient(#47475d, #1b1b23); background-image: -o-linear-gradient(#47475d, #1b1b23); background-image: linear-gradient(#47475d, #1b1b23); -webkit-box-shadow: inset 0 1px 2px #52526c, inset 0 -1px 1px #262632, inset 1px 0 1px #262632, inset -1px 0 1px #262632, 0 1px 1px #313140; -moz-box-shadow: inset 0 1px 2px #52526c, inset 0 -1px 1px #262632, inset 1px 0 1px #262632, inset -1px 0 1px #262632, 0 1px 1px #313140; box-shadow: inset 0 1px 2px #52526c, inset 0 -1px 1px #262632, inset 1px 0 1px #262632, inset -1px 0 1px #262632, 0 1px 1px #313140; }
   .pretty.navbar a.toggle i { text-shadow: 0 1px 1px black; }
-  .pretty.navbar a.toggle:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #434358), color-stop(100%, #17171e)); background-image: -webkit-linear-gradient(#434358, #17171e); background-image: -moz-linear-gradient(#434358, #17171e); background-image: -o-linear-gradient(#434358, #17171e); background-image: linear-gradient(#434358, #17171e); }
-  .pretty.navbar a.toggle:active, .pretty.navbar a.toggle.active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #010101), color-stop(100%, #0c0c0f)); background-image: -webkit-linear-gradient(#010101, #0c0c0f); background-image: -moz-linear-gradient(#010101, #0c0c0f); background-image: -o-linear-gradient(#010101, #0c0c0f); background-image: linear-gradient(#010101, #0c0c0f); -webkit-box-shadow: 0 1px 1px #22222c; -moz-box-shadow: 0 1px 1px #22222c; box-shadow: 0 1px 1px #22222c; } }
+  .pretty.navbar a.toggle:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52526c), color-stop(100%, #262632)); background-image: -webkit-linear-gradient(#52526c, #262632); background-image: -moz-linear-gradient(#52526c, #262632); background-image: -o-linear-gradient(#52526c, #262632); background-image: linear-gradient(#52526c, #262632); }
+  .pretty.navbar a.toggle:active, .pretty.navbar a.toggle.active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #101015), color-stop(100%, #1b1b23)); background-image: -webkit-linear-gradient(#101015, #1b1b23); background-image: -moz-linear-gradient(#101015, #1b1b23); background-image: -o-linear-gradient(#101015, #1b1b23); background-image: linear-gradient(#101015, #1b1b23); -webkit-box-shadow: 0 1px 1px #313140; -moz-box-shadow: 0 1px 1px #313140; box-shadow: 0 1px 1px #313140; } }
 .pretty.navbar.row { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 @media only screen and (max-width: 767px) { .pretty.navbar.row { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; } }
-.pretty.navbar ul li.field input.search { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #101015)); background-image: -webkit-linear-gradient(#000000, #101015); background-image: -moz-linear-gradient(#000000, #101015); background-image: -o-linear-gradient(#000000, #101015); background-image: linear-gradient(#000000, #101015); border: none; -webkit-box-shadow: 0 1px 2px #434358 !important; -moz-box-shadow: 0 1px 2px #434358 !important; box-shadow: 0 1px 2px #434358 !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
+.pretty.navbar ul li.field input.search { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #1f1f29)); background-image: -webkit-linear-gradient(#000000, #1f1f29); background-image: -moz-linear-gradient(#000000, #1f1f29); background-image: -o-linear-gradient(#000000, #1f1f29); background-image: linear-gradient(#000000, #1f1f29); border: none; -webkit-box-shadow: 0 1px 2px #52526c !important; -moz-box-shadow: 0 1px 2px #52526c !important; box-shadow: 0 1px 2px #52526c !important; /* Remove this line if you dont want a dropshadow on your navigation*/ }
 .pretty.navbar > ul > li:first-child, .pretty.navbar .pretty.navbar > ul > li:first-child a:hover { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 .navbar li .dropdown ul { margin: 0; display: block; }
@@ -405,12 +405,12 @@ img { -ms-interpolation-mode: bicubic; }
 
 .gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a { position: relative; background: black; z-index: 1000; }
 
-.gumby-no-touch .navbar ul li:hover .dropdown, .gumby-touch .navbar ul li.active .dropdown { min-height: 50px; max-height: 561px; overflow: visible; height: auto; width: 100%; padding: 0; border-top: 1px solid #010101; -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
+.gumby-no-touch .navbar ul li:hover .dropdown, .gumby-touch .navbar ul li.active .dropdown { min-height: 50px; max-height: 561px; overflow: visible; height: auto; width: 100%; padding: 0; border-top: 1px solid #101015; -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
 
 .gumby-no-touch .navbar ul li:hover .dropdown ul { position: relative; top: 0; min-height: 50px; max-height: 250px; height: auto; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
-@media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: black; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #010101; }
-  .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid black; }
+@media only screen and (max-width: 767px) { .gumby-no-touch .navbar ul li:hover .dropdown ul { overflow: auto; background: #09090c; }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li { border-bottom: #101015; }
+  .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid #050507; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #00afdb; } }
 
 .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 0px; margin-top: 0; }
@@ -628,7 +628,7 @@ form fieldset legend { padding: 5px 10px; }
 .tabs.vertical .tab-nav { border: none; }
 .tabs.vertical .tab-nav > li { display: block; margin: 0; margin-bottom: 5px; }
 .tabs.vertical .tab-nav > li.active { position: relative; z-index: 99; }
-.tabs.vertical .tab-nav > li.active > a { border-right: 1px solid #17171e; }
+.tabs.vertical .tab-nav > li.active > a { border-right: 1px solid #262632; }
 .tabs.vertical .tab-nav > li > a { border: 1px solid #e5e5e5; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .tabs.vertical .tab-content { padding: 10px 0 30px 20px; margin-left: -1px; border-left: 1px solid #e5e5e5; }
 
@@ -655,8 +655,15 @@ form fieldset legend { padding: 5px 10px; }
 
 .navbar { margin-bottom: 0; margin-top: 20px; }
 
-.shaded { background: #101015; padding-bottom: 20px; }
+.shaded { background: #1f1f29; padding-bottom: 20px; }
 
-.feature-group { border-bottom: 4px solid rgba(255, 255, 255, 0.2); }
+.feature-group { margin-bottom: 30px; }
+
+.divider { text-align: center; font-size: 2.5em; color: #1f1f29; }
 
 .navbar { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+
+.content.subhead { padding-bottom: 10px; }
+
+.meta-info { padding-top: 20px; }
+.meta-info .label { display: block; }

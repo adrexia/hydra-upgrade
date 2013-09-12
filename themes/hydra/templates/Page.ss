@@ -19,7 +19,6 @@
 	<% require themedCSS('gumby') %>
 	<% require themedCSS('typography') %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
-	<script src="$ThemeDir/js/libs/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
@@ -28,23 +27,5 @@
 			$Layout
 	</div>
 	<% include Footer %>
-
-	<script src="$ThemeDir/js/libs/jquery-1.10.2.min.js"></script>
-	<script src="$ThemeDir/js/libs/gumby.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.retina.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.fixed.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.skiplink.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.toggleswitch.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.checkbox.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.radiobtn.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.tabs.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.navbar.js"></script>
-	<script src="$ThemeDir/js/libs/ui/gumby.fittext.js"></script>
-	<script src="$ThemeDir/js/libs/ui/jquery.validation.js"></script>
-	<script src="$ThemeDir/js/libs/gumby.init.js"></script>
-	<script src="$ThemeDir/js/libs/jquery.flexslider.js"></script>
-	<script src="$ThemeDir/js/general.js"></script>
-	
-		
 </body>
 </html>

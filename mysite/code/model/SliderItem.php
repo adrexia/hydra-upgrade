@@ -1,19 +1,19 @@
 <?php
 
 class SliderItem extends DataObject {
-	static $db = array(
+	private static $db = array(
 		'Title' => 'Varchar(255)',
 		'Caption' => 'Text',
 		'Archived' => 'Boolean' 
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'Parent' => 'Page',
 		'Image' => 'Image',
 		'Link' => 'SiteTree'
 	);
 
-	static $summary_fields = array(
+	private static $summary_fields = array(
 		'ImageThumb' => 'Image',
 		'Title' => 'Title',
 		'Caption' => 'Text',

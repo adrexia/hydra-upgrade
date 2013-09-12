@@ -12,3 +12,6 @@ vendor/
 .htaccess
 
 themes/hydra/.sass-cache/*
+
+cms/*
+framework/*

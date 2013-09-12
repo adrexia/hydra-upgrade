@@ -1,17 +1,17 @@
 <?php
 
 class Quicklink extends DataObject {
-	static $db = array(
+	private static $db = array(
 		'Name' => 'Varchar(255)',
 		'ExternalLink' => 'Varchar(255)'
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'Parent' => 'Page',
 		'InternalLink' => 'SiteTree'
 	);
 
-	static $summary_fields = array(
+	private static $summary_fields = array(
 		'Name' => 'Name',
 		'InternalLink.Title' => 'Internal Link',
 		'ExternalLink' => 'External Link'

@@ -6,3 +6,7 @@
 	}
 }
 
+h2{
+	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
+}
+

@@ -3,35 +3,42 @@
 		<article class="twelve columns feature-group">
 			<% include Slider %>
 			<div class="content subhead">$Content</div>
+			<div class="divider">
+				<i class="icon-infinity"></i>
+			</div>
 		</article>
 	</div>
 	
 
 	<div class="typography row">
-		<section class="eight columns">
+		<section class="nine columns">
 			<% if News %>
 				<div class="resultsHeader">
-					<h2><i class="icon-flag" aria-hidden="true"></i>News</h2>
-					<p class="pull-right"><% with News %>$FirstItem - $LastItem of $count<% end_with %></p>
+					<h2>News</h2>
 				</div>
-			
+				<section class="pagination-content">
 				<% loop News %>
-					<article class="$EvenOdd">
-						<header>
-							<h3 id="ID-{$ID}">$Title</h3>
-						</header>
-						<p class="meta-info">
-							<% if Author %>by $Author<% end_if %>
+					<article class="$EvenOdd row">
+						<p class="meta-info two columns">
+							<span class="label default"><% if Author %>by $Author<% end_if %></span>
+							<em>
+								<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
+							</em>
 						</p>
-						<div class="text">
-							$Content
+						<div class="columns ten">
+							<header>
+								<h3 id="ID-{$ID}">$Title</h3>
+							</header>
+							<div class="text">
+								$Content
+							</div>
 						</div>
-						<span class="label default">
-							<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
-						</span>
+						
 						
 					</article>
 				<% end_loop %>
+				</section>
+				<span> <i class='pagination-indicator icon-arrows-ccw'></i></span>
 
 				<% with News %>
 					<% include Pagination %>
@@ -50,18 +57,7 @@
 			$Form
 			$PageComments
 		</section>
-		<section class="three push_one columns">
-		<% if News %>
-			<div class="link-set">
-					<h2><i class="icon-flag" aria-hidden="true"></i> Latest</h2>
-					<ul>
-						<% loop RecentNews %>
-							<li class="$EvenOdd $FirstLast"><a href="#ID-{$ID}" class="$FirstLast">$Title</a></li>
-						<% end_loop %>
-					</ul>
-				</div>
-		<% end_if %>
-
+		<section class="three columns">
 		 <% if Quicklinks %>
 			<div class="link-set">
 				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>

@@ -1,18 +1,18 @@
 <?php
 
 class NewsItem extends DataObject {
-	static $db = array(
+	private static $db = array(
 		'Title' => 'Varchar(255)',
 		'Author' => 'Varchar(255)',
 		'Content' => 'HTMLText',
 		'Archived' => 'Boolean' 
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'Parent' => 'Page',
 	);
 
-	static $summary_fields = array(
+	private static $summary_fields = array(
 		'Title' => 'Title',
 		'Content' => 'Content',
 		'ArchivedReadable' => 'Current Status' 

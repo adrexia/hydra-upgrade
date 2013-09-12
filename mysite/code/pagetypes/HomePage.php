@@ -4,7 +4,7 @@ class HomePage extends Page {
 	static $icon = "mysite/images/sitetree_images/home.png";
 	public $pageIcon = "mysite/images/sitetree_images/home.png";
 
-	static $has_many = array(
+	private static $has_many = array(
 		'SliderItems' => 'SliderItem',
 		'Quicklinks' => 'Quicklink',
 		'NewsItems' => 'NewsItem'
@@ -49,10 +49,10 @@ class HomePage extends Page {
 class HomePage_Controller extends Page_Controller {
 
 
-	public function getNews($pageSize = 20){
+	public function getNews($pageSize = 2){
 		$items =  $this->NewsItems();
 		// Apply pagination
-		$list = new PaginatedList($items, $this->request);
+		$list = new AjaxPaginatedList($items, $this->request);
 		$list->setPageLength($pageSize);
 		return $list;
 	}

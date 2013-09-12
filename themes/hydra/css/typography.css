@@ -23,7 +23,7 @@ html { font-size: 16px; line-height: 1.625em; }
 
 html * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #17171e; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
+body { background: #262632; font-family: "Open Sans"; font-weight: 400; color: white; position: relative; -webkit-font-smoothing: antialiased; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -145,6 +145,8 @@ abbr { text-transform: none; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
 .captionImage .caption, .media .caption { font-style: italic; }
+
+h2 { border-bottom: 1px solid #2d2d3b; -webkit-box-shadow: 0 1px 0 #1f1f29; -moz-box-shadow: 0 1px 0 #1f1f29; -o-box-shadow: 0 1px 0 #1f1f29; box-shadow: 0 1px 0 #1f1f29; }
 
 /* Icons */
 [class^="icon-"] a:before, [class*=" icon-"] a:before, [class^="icon-"] a:after, [class*=" icon-"] a:after, i[class^="icon-"], i[class*=" icon-"] { font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; }
