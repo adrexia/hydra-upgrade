@@ -2,7 +2,7 @@
 
 class SitemapPage extends Page {
 
-	static $icon = "mysite/images/sitetree_images/leaf.png";
+	private static $icon = "mysite/images/sitetree_images/leaf.png";
 	
 }
 

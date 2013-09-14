@@ -1339,11 +1339,11 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .alert.warning { background: #fceb97; border: 1px solid #f9d834; color: #c1a206; color: #5e4f03; }
 .alert.success { background: #a1f624; border: 1px solid #6aad07; color: #2e4b03; }
 
-.image, .captionImage, .media { line-height: 0; margin-bottom: 20px; }
-.image.circle, .circle.captionImage, .circle.media { -webkit-border-radius: 50% !important; -moz-border-radius: 50% !important; -ms-border-radius: 50% !important; -o-border-radius: 50% !important; border-radius: 50% !important; overflow: hidden; width: auto; }
-.image.rounded, .rounded.captionImage, .rounded.media { overflow: hidden; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
-.image.photo, .captionImage, .media { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px #fcf4e4; -moz-box-shadow: 0 0 1px #fcf4e4; box-shadow: 0 0 1px #fcf4e4; }
-.image.photo.polaroid, .polaroid.captionImage, .polaroid.media { padding-bottom: 50px; background: #fff; }
+.image, .captionImage, .media, img { line-height: 0; margin-bottom: 20px; }
+.image.circle, .circle.captionImage, .circle.media, img.circle { -webkit-border-radius: 50% !important; -moz-border-radius: 50% !important; -ms-border-radius: 50% !important; -o-border-radius: 50% !important; border-radius: 50% !important; overflow: hidden; width: auto; }
+.image.rounded, .rounded.captionImage, .rounded.media, img { overflow: hidden; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
+.image.photo, .captionImage, .media, img { border: 5px solid #fff; -webkit-box-shadow: 0 0 1px #fcf4e4; -moz-box-shadow: 0 0 1px #fcf4e4; box-shadow: 0 0 1px #fcf4e4; }
+.image.photo.polaroid, .polaroid.captionImage, .polaroid.media, img.polaroid { padding-bottom: 50px; background: #fff; }
 
 body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%; }
 body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }

@@ -16,3 +16,8 @@ h2{
 	opacity:0.5;
 }
 
+img{
+	@extend .image;
+	@extend .photo;
+	@extend .rounded;
+}

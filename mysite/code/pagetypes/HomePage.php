@@ -1,7 +1,7 @@
 <?php
 class HomePage extends Page {
 
-	static $icon = "mysite/images/sitetree_images/home.png";
+	private static $icon = "mysite/images/sitetree_images/home.png";
 	public $pageIcon = "mysite/images/sitetree_images/home.png";
 
 	private static $has_many = array(
@@ -29,16 +29,6 @@ class HomePage extends Page {
 			GridFieldConfig_RelationEditor::create());
 		$gridField->setModelClass('SliderItem');
 		$fields->addFieldToTab('Root.Slider', $gridField);
-
-		$gridField = new GridField(
-			'Quicklinks',
-			'Quicklinks',
-			$this->Quicklinks(),
-			GridFieldConfig_RelationEditor::create());
-		$gridField->setModelClass('Quicklink');
-		$fields->addFieldToTab('Root.Quicklinks', $gridField);
-
-		
 
 		return $fields;
 	}
