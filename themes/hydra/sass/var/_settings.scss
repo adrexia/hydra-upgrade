@@ -3,7 +3,7 @@
 
 
 // Grid Settings
-$row-max-width: 940px !default;    				// 940px
+$row-max-width: 960px !default;    				// 940px
 $gutter-in-px: 20px !default;      				// 20px
 $cols: 12 !default;              				// 12 Column Default Grid
 $hybrid: 16 !default;							// 16 Column Default Hybrid Grid
@@ -67,15 +67,15 @@ $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
-$header-font-color: mix(#5a51d2, #fff, 90%) !default;
+$header-font-color: #F9D834 !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
-$body-font-color: #fff !default;
-$body-link-color: #00afdb !default;
-$body-link-hover-color: darken(#00afdb,5%) !default;
+$body-font-color: #FCF4E4 !default;
+$body-link-color: lighten(#3D8EB4,5%) !default; 
+$body-link-hover-color: lighten(#00afdb,5%) !default;
 
 // User Interface Colors
-$global-bg-color: lighten(#101015, 10%); //#101015  //1b1b24
+$global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
 $navbar-link-color: $body-link-color;
 
@@ -83,17 +83,17 @@ $primary-color: $body-link-color;
 $secondary-color: #42a35a;
 $default-color: #f2f2f2;
 $info-color: #4a4d50;
-$danger-color: #ca3838;
-$warning-color: #f6b83f;
-$success-color: #58c026;
+$danger-color: #F15051;
+$warning-color: $header-font-color;
+$success-color: darken(#79c608,5%);
 
-$primary-hover-color: #58b2fa;
-$secondary-hover-color: #6dbb80;
+$primary-hover-color: lighten($primary-color, 5%);
+$secondary-hover-color: lighten($secondary-color, 5%);
 $default-hover-color: #ffffff;
-$info-hover-color: #000;
-$danger-hover-color: #f14f4f;
-$warning-hover-color: #fdd27f;
-$success-hover-color: #66d92f;
+$info-hover-color: darken($info-color, 5%);
+$danger-hover-color: darken($danger-color, 5%);
+$warning-hover-color: darken($header-font-color,5%);
+$success-hover-color: darken($success-color, 5%);
 
 $horizontal-rule-color: #ccc !default;
 

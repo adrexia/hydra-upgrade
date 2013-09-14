@@ -3,27 +3,26 @@
 		<article class="twelve columns feature-group">
 			<% include Slider %>
 			<div class="content subhead">$Content</div>
-			<div class="divider">
-				<i class="icon-infinity"></i>
-			</div>
+			<div class="divider"></div>
 		</article>
 	</div>
 	
 
 	<div class="typography row">
-		<section class="nine columns">
+		<section class="twelve columns">
 			<% if News %>
 				<div class="resultsHeader">
 					<h2>News</h2>
 				</div>
 				<section class="pagination-content">
 				<% loop News %>
-					<article class="$EvenOdd row">
+					<article class="$EvenOdd row $FirstLast">
 						<p class="meta-info two columns">
-							<span class="label default"><% if Author %>by $Author<% end_if %></span>
 							<em>
 								<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
 							</em>
+							<span class="label metro rounded danger"><% if Author %>by $Author.LowerCase<% else %>by admin<% end_if %></span>
+
 						</p>
 						<div class="columns ten">
 							<header>
@@ -57,18 +56,6 @@
 			$Form
 			$PageComments
 		</section>
-		<section class="three columns">
-		 <% if Quicklinks %>
-			<div class="link-set">
-				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
-				<ul>
-					<% loop Quicklinks %>
-						<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
-					<% end_loop %>
-				</ul>
-			</div>
-			<% end_if %>
 
-		</section>
 	</div>
 </div>

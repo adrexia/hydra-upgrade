@@ -1,4 +1,4 @@
-<nav class="navbar" id="nav1">
+<nav class="navbar metro rounded" id="nav1">
 <div class="row">
 	<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><i class="icon-menu"></i></a>
 	<ul class="twelve columns">

@@ -6,7 +6,6 @@ class HomePage extends Page {
 
 	private static $has_many = array(
 		'SliderItems' => 'SliderItem',
-		'Quicklinks' => 'Quicklink',
 		'NewsItems' => 'NewsItem'
 	);
 

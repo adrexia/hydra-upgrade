@@ -1,5 +1,5 @@
 <div class="typography row">
-	<section class="twelve columns">
+	<section class="nine columns">
 	<% include Sidebar %>
 	<div class="content-container">
 		<article>
@@ -10,4 +10,17 @@
 			$PageComments
 	</div>
 	</section>
+			<section class="three columns">
+		 <% if Quicklinks %>
+			<div class="link-set">
+				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
+				<ul>
+					<% loop Quicklinks %>
+						<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
+					<% end_loop %>
+				</ul>
+			</div>
+			<% end_if %>
+
+		</section>
 </div>
