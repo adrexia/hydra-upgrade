@@ -5,10 +5,19 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "self.version",
 		"silverstripe/framework": "self.version",
-		"mateusz/frontend": "dev-master"
+		"mateusz/frontend": "dev-master",
+		"ajshort/silverstripe-memberprofiles": "custom",
+		"ajshort/silverstripe-gridfieldextensions": "dev-master",
+		"unclecheese/betterbuttons": "dev-master"
 	},
 	"config": {
-		"process-timeout": 600	
+		"process-timeout": 600
 	},
+	"repositories": [
+		{
+		"type": "vcs",
+		"url": "https://github.com/adrexia/silverstripe-memberprofiles.git"
+		}
+	],
 	"minimum-stability": "dev"
 }

@@ -18,7 +18,7 @@ $max-device-width: 2880px;						// Max Document Size
 $nav-distance: 0px; 							// Navigation distance from the top of the viewport
 
 // Typography
-$font-family: "Open Sans";
+$font-family: "Open Sans", helvetica, arial, sans-serif;
 $font-style-italic: italic;
 $icons: entypo;
 $font-smoothing: antialiased;
@@ -80,7 +80,7 @@ $navbar-color: darken($global-bg-color, 5%);
 $navbar-link-color: $body-link-color;
 
 $primary-color: $body-link-color;
-$secondary-color: #42a35a;
+$secondary-color: darken(#79c608,20%);
 $default-color: #f2f2f2;
 $info-color: #4a4d50;
 $danger-color: #F15051;

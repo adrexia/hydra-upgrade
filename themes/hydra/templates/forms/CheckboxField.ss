@@ -1,2 +1,5 @@
-<input $AttributesHTML>
-<span></span>
+
+<label class="checkbox" for="$ID">
+	<input $AttributesHTML>
+	<span></span>
+</label>

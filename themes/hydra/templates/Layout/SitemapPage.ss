@@ -1,3 +1,4 @@
+
 <div class="typography row">
 	<section class="nine columns">
 
@@ -5,6 +6,21 @@
 		<article>
 			<h2>$Title</h2>
 			<div class="content">$Content
+				<ul class="sitemap">
+					<% if SelectedPage %>
+						<% loop SelectedPage.Children %>
+						<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
+						<% include SitemapNode %>
+						</li>
+						<% end_loop %>
+					<% else %>
+						<% loop Menu(1) %>
+						<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
+						<% include SitemapNode %>
+						</li>
+						<% end_loop %>
+					<% end_if %>
+				</ul>
 		
 				$Form
 				$PageComments

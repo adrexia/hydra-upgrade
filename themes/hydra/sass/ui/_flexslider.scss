@@ -49,8 +49,10 @@
       -webkit-backface-visibility: hidden;
     }
     img {
+      border: 0;
       width: 100%;
       display: block;
+      @include border-radius(0);
     }
   }
 }
@@ -108,8 +110,7 @@ html[xmlns] .slides {
 }
 
 .flex-viewport {
-  max-height: 2000px;
-  height:300px;
+  max-height: 300px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;

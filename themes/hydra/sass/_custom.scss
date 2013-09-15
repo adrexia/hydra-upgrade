@@ -10,6 +10,130 @@
 	}
 }
 
+#Remember{
+	.checkbox{
+		float:left;
+		margin-right:10px;
+	}
+}
+
+.btn-login{
+	button a{
+		display: inline-block;
+	}
+	.meta-data{
+		color: lighten($global-bg-color, 40%);
+		font-size:0.8em;
+		float:left;
+		padding-right:10px;
+		line-height:30px;
+		text-align:right;
+		@include respond(all-phones) {
+			display:none;
+		}
+	}
+}
+
+
+.icon-check{
+	.alert.primary &{
+		background:rgba(#fff, 0.7);
+		@include border-radius(3px);
+		height:20px;
+		width:20px;
+		border:1px solid rgba(#fff, 0.6);
+		line-height:20px;
+		color: darken($primary-color, 20%);
+		opacity:0.7;
+	}
+}
+label{
+	position:relative;
+	overflow:hidden;
+}
+.req-indicator{
+	position:absolute;
+	top:-100%;
+	&:after{
+		position:absolute;
+		top:100%;
+		left:5px;
+		content:'*';
+		color:$danger-color;
+		height:15px;
+		width:15px;
+	}
+}
+
+.input.text{
+	float:left;
+	width:98%;
+	.checkablevisibility &{
+		float:right;
+		width:90%;
+		margin-right:10px;
+		.checkbox{
+			margin-top:5px;
+		}
+	}
+}
+
+.checkablevisibility{
+	.checkbox{
+		margin-top:12px;
+	}
+}
+
+.field{
+	@include clearfix;
+	clear:both;
+	padding:10px 0;
+	margin:5px 0 5px 0;
+	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
+	.field{
+		border:none;
+		@include box-shadow(none);
+	}
+}
+
+.content .alert{
+	padding:10px;
+	margin-bottom:30px;
+	font-size:15px;
+	&.primary{
+		a{
+			color:darken($body-link-color, 50%);
+		}
+	}
+}
+
+.message{
+	@extend .alert;
+}
+.good{
+	background: mix($success-color, #fff, 50%);
+	border: 1px solid darken($success-color, 20%);
+	color: darken($success-color, 20%);
+}
+.bad{
+	background: lighten($danger-color, 20%);
+	border: 1px solid $danger-color;
+	color: darken($danger-color, 20%);
+}
+
+.showOnClick a{
+	position:relative;
+	padding-left:20px;
+
+	&:before{
+		content: '+';
+		position:absolute;
+		left:0;
+		width:20px;
+		height:20px;
+	}
+}
+
 
 .divider{
 	border-top: 3px solid $navbar-link-color;
@@ -32,10 +156,20 @@ input.text {
 }
 .Actions{
 	.btn{
-		@extend .info;
+		@extend .metro;
+		@extend .pretty;
+		@extend .rounded;
+		@extend .success;
+		@extend .medium;
+		@include text-shadow(0 1px 1px #2e4b03);
+		font-weight:bold;
+		display:block;
+		color:#fff;
 		float:left;
 	}
 }
+
+
 
 .btn-login{
 	position:absolute;

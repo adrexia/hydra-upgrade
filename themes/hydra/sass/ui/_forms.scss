@@ -29,8 +29,8 @@ form {
     list-style-type: none;
   }
   fieldset {
-    @include rhythm-borders(1px,1,$norm,solid);
-    border-color: darken($default-color, 10%);
+   // @include rhythm-borders(1px,1,$norm,solid);
+   // border-color: darken($default-color, 10%);
     margin: 18px 0;
     legend {
       padding: 5px 10px;
@@ -69,10 +69,11 @@ form {
     display: none;
   }
   .input {
+    color: $body-font-color;
     position: relative;
     padding: 0 10px;
-    background: #fff;
-    border: 1px solid darken($default-color, 10%);
+    background: lighten($global-bg-color, 20%);
+    border: 1px solid lighten($global-bg-color, 25%);
     @include line-and-height(height-calc($norm));
     @include font-size($norm);
     @include border-radius(4px);
@@ -80,6 +81,10 @@ form {
       @include line-and-height(height-calc($norm));
       @include border-radius(1000px);
       padding-right: 0;
+    }
+    &:focus, &:active{
+      background: lighten($global-bg-color, 30%);
+      border: 1px solid lighten($global-bg-color, 35%);
     }
   }
   .input.textarea {
@@ -306,12 +311,17 @@ form {
 
   .radio span, & .checkbox span {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    height:20px;
+    width:20px;
+    line-height:20px;
     position: relative;
     top: 2px;
-    border: solid 1px #ccc;
-    background: #fefefe;
+    border: solid 1px lighten($global-bg-color, 25%);
+    background: lighten($global-bg-color, 20%);
+     &:focus, &:active{
+      background: lighten($global-bg-color, 30%);
+      border: 1px solid lighten($global-bg-color, 35%);
+    }
   }
   .radio span {
     @include border-radius(8px);
@@ -322,8 +332,8 @@ form {
   .radio.checked i, .checkbox.checked i {
     position: absolute;
     top: -1px;
-    left: -8px;
-    line-height: 16px;
+    left: -6px;
+    line-height: 20px;
   }
 }
 

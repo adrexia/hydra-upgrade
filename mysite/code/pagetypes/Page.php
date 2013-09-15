@@ -68,8 +68,20 @@ class Page_Controller extends ContentController {
 		);
 	}
 
-	function getCurrentSliderItems() {
+	public function getCurrentSliderItems() {
 		return $this->SliderItems()->filter('Archived', false);
+	}
+
+	public function getMemberProfilePage(){
+		return MemberProfilePage::get()->First();
+	}
+
+	public function LoginLink() {
+		return Controller::join_links(
+			Injector::inst()->get('Security')->Link(),
+			'login',
+			'?BackURL=' . urlencode($this->Link())
+		);
 	}
 
 }
