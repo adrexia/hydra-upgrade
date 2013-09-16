@@ -6,7 +6,7 @@
 		"silverstripe/cms": "self.version",
 		"silverstripe/framework": "self.version",
 		"mateusz/frontend": "dev-master",
-		"ajshort/silverstripe-memberprofiles": "custom",
+		"ajshort/silverstripe-memberprofiles": "dev-update",
 		"ajshort/silverstripe-gridfieldextensions": "dev-master",
 		"unclecheese/betterbuttons": "dev-master"
 	},

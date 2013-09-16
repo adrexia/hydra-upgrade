@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "328e8ecf1a82e4bd3409e63946669374",
+    "hash": "05528ff7dc2273a9fc7a156aa487f08c",
     "packages": [
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
@@ -50,16 +50,16 @@
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
-            "version": "1.1.0",
+            "version": "dev-update",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-memberprofiles.git",
-                "reference": "9c4afbdf48f5cf058316aa9211c5d95a3e669514"
+                "reference": "36a069d80c555ce676af228afd1bb87646a43746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/9c4afbdf48f5cf058316aa9211c5d95a3e669514",
-                "reference": "9c4afbdf48f5cf058316aa9211c5d95a3e669514",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/36a069d80c555ce676af228afd1bb87646a43746",
+                "reference": "36a069d80c555ce676af228afd1bb87646a43746",
                 "shasum": ""
             },
             "require": {
@@ -98,9 +98,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/1.1.0"
+                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/custom"
             },
-            "time": "2013-09-15 04:55:09"
+            "time": "2013-09-15 06:14:01"
         },
         {
             "name": "composer/installers",
@@ -365,12 +365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "62c96e807c08ea316e17546f83fe74cb4b3fed2a"
+                "reference": "628554744a199841946b131db70adfd25a8b49a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/62c96e807c08ea316e17546f83fe74cb4b3fed2a",
-                "reference": "62c96e807c08ea316e17546f83fe74cb4b3fed2a",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/628554744a199841946b131db70adfd25a8b49a4",
+                "reference": "628554744a199841946b131db70adfd25a8b49a4",
                 "shasum": ""
             },
             "require": {
@@ -394,7 +394,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2013-09-08 22:31:37"
+            "time": "2013-09-15 12:06:11"
         }
     ],
     "packages-dev": [
@@ -408,6 +408,7 @@
         "silverstripe/cms": 20,
         "silverstripe/framework": 20,
         "mateusz/frontend": 20,
+        "ajshort/silverstripe-memberprofiles": 20,
         "ajshort/silverstripe-gridfieldextensions": 20,
         "unclecheese/betterbuttons": 20
     },
