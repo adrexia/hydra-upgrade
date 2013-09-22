@@ -6,10 +6,11 @@
 		"silverstripe/cms": "self.version",
 		"silverstripe/framework": "self.version",
 		"mateusz/frontend": "dev-master",
-		"ajshort/silverstripe-memberprofiles": "dev-3.1",
+		"ajshort/silverstripe-memberprofiles": "0.4",
 		"ajshort/silverstripe-gridfieldextensions": "dev-master",
 		"unclecheese/betterbuttons": "dev-master",
-		"silverstripe/dashboard": "dev-master"
+		"silverstripe/dashboard": "dev-master",
+		"adrexia/gamesevent": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600

@@ -3,8 +3,45 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "05528ff7dc2273a9fc7a156aa487f08c",
+    "hash": "85d0f69a84d4546ae4d93c8a197a647a",
     "packages": [
+        {
+            "name": "adrexia/gamesevent",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
+                "reference": "9eb98158374df0aea8fb9b6cf2fe599a3c9645ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/9eb98158374df0aea8fb9b6cf2fe599a3c9645ad",
+                "reference": "9eb98158374df0aea8fb9b6cf2fe599a3c9645ad",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Naomi Guyer",
+                    "email": "naomi@silverstripe.com",
+                    "homepage": "http://www.silverstripe.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides management interfaces for gaming events",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2013-09-22 10:04:52"
+        },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
             "version": "dev-master",
@@ -50,16 +87,16 @@
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
-            "version": "dev-update",
+            "version": "0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-memberprofiles.git",
-                "reference": "36a069d80c555ce676af228afd1bb87646a43746"
+                "reference": "6c6fd8d36438116a826d9ac487ee9c2c1f1e193d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/36a069d80c555ce676af228afd1bb87646a43746",
-                "reference": "36a069d80c555ce676af228afd1bb87646a43746",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/6c6fd8d36438116a826d9ac487ee9c2c1f1e193d",
+                "reference": "6c6fd8d36438116a826d9ac487ee9c2c1f1e193d",
                 "shasum": ""
             },
             "require": {
@@ -98,9 +135,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/custom"
+                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/3.1"
             },
-            "time": "2013-09-15 06:14:01"
+            "time": "2013-09-15 12:31:44"
         },
         {
             "name": "composer/installers",
@@ -268,6 +305,51 @@
             "time": "2013-08-28 09:10:32"
         },
         {
+            "name": "silverstripe/dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
+                "reference": "02109cdb5f18ed9432a1f628ef71f3be31746437"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/02109cdb5f18ed9432a1f628ef71f3be31746437",
+                "reference": "02109cdb5f18ed9432a1f628ef71f3be31746437",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "silverstripe/dashboard": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "dashboard"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com",
+                    "homepage": "http://leftandmain.com"
+                }
+            ],
+            "description": "Adds a dashboard to the SilverStripe CMS",
+            "keywords": [
+                "cms",
+                "dashboard",
+                "module",
+                "silverstripe"
+            ],
+            "time": "2013-09-10 04:52:07"
+        },
+        {
             "name": "silverstripe/framework",
             "version": "dev-master",
             "source": {
@@ -408,9 +490,10 @@
         "silverstripe/cms": 20,
         "silverstripe/framework": 20,
         "mateusz/frontend": 20,
-        "ajshort/silverstripe-memberprofiles": 20,
         "ajshort/silverstripe-gridfieldextensions": 20,
-        "unclecheese/betterbuttons": 20
+        "unclecheese/betterbuttons": 20,
+        "silverstripe/dashboard": 20,
+        "adrexia/gamesevent": 20
     },
     "platform": {
         "php": ">=5.3.2"
