@@ -1,4 +1,3 @@
-<div class="content-container">
 	<div class="typography row">
 		<article class="twelve columns feature-group">
 			<% include Slider %>
@@ -8,7 +7,7 @@
 	</div>
 	
 
-	<div class="typography row">
+	<div class="typography row content">
 		<section class="twelve columns">
 			<% if News %>
 				<div class="resultsHeader">
@@ -58,4 +57,3 @@
 		</section>
 
 	</div>
-</div>

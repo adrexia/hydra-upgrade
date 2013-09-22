@@ -4,17 +4,15 @@
  */
 
 class CustomSiteConfig extends DataExtension {
-	static $db = array(
+	private static $db = array(
 		'GACode' => 'Varchar(16)',
 		'FacebookURL' => 'Varchar(256)', // multitude of ways to link to Facebook accounts, best to leave it open.
 		'TwitterUsername' => 'Varchar(16)', // max length of Twitter username 15
-		'FooterLogoLink' => 'Varchar(255)',
-		'FooterLogoDescription' => 'Varchar(255)'
+		'LogoText' => 'Varchar(16)'
 	);
 
-	static $has_one = array(
-		'Logo' => 'Image',
-		'FooterLogo' => 'Image'
+	private static $has_one = array(
+		'Logo' => 'Image'
 	);
 
 	function updateCMSFields(FieldList $fields) {
@@ -27,20 +25,11 @@ class CustomSiteConfig extends DataExtension {
 		$fields->addFieldToTab('Root.SocialMedia', $twitterUsername = new TextField('TwitterUsername', 'Twitter username'));
 		$twitterUsername->setRightTitle('Twitter username (eg, http://twitter.com/<strong>username</strong>)');
 
-		$fields->addFieldToTab('Root.SocialMedia', $addThisID = new TextField('AddThisProfileID', 'AddThis Profile ID'));
-		$addThisID->setRightTitle('Profile ID to be used all across the site (in the format <strong>ra-XXXXXXXXXXXXXXXX</strong>)');
-
 		$fields->addFieldToTab('Root.Logos', $logoField = new UploadField('Logo', 'Logo, to appear in the top left.'));
 		$logoField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 		$logoField->setConfig('allowedMaxFileNumber', 1);
 
-		$fields->addFieldToTab('Root.Logos', $footerLogoField = new UploadField('FooterLogo', 'Footer logo, to appear in the bottom right.'));
-		$footerLogoField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
-		$footerLogoField->setConfig('allowedMaxFileNumber', 1);
+		$fields->addFieldToTab('Root.Logos', new TextField('LogoText', 'Logo Text'));
 
-		$fields->addFieldToTab('Root.Logos', $footerLink = new TextField('FooterLogoLink', 'Footer Logo link'));
-		$footerLink->setRightTitle('Please include the protocol (ie, http:// or https://) unless it is an internal link.');
-
-		$fields->addFieldToTab('Root.Logos', new TextField('FooterLogoDescription', 'Footer Logo description'));
 	}
 }

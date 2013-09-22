@@ -21,3 +21,33 @@ img{
 	@extend .photo;
 	@extend .rounded;
 }
+
+h1{
+	font-family: 'cocaine_sansregular', sans-serif;
+	padding-top:25px;
+	&.image{
+		//padding-top:0;
+		margin-bottom:0;
+		padding-bottom:0;
+		max-height:290px;
+		overflow:hidden;
+	}
+	a{
+		color:lighten($global-bg-color,40%);
+		font-size:173px;
+		&:hover{
+			color:lighten($global-bg-color,60%);
+		}
+		@include respond(tablets) {
+			font-size:140px;
+		}
+		@include respond(all-phones) {
+			font-size:90px;
+		}
+		img{
+			@include box-shadow(none);
+			margin-bottom:0;
+			padding: 0;
+		}
+	}
+}

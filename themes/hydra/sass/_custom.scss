@@ -17,6 +17,7 @@
 	}
 }
 
+
 .btn-login{
 	button a{
 		display: inline-block;
@@ -148,7 +149,11 @@ label{
 	.row{ 
 		position:relative;
 	}
+	.navbar{
+		margin-top:0;
+	}
 }
+
 
 
 input.text {
@@ -169,12 +174,18 @@ input.text {
 	}
 }
 
+.main{
+	//background: url(../images/hydra.png) bottom right no-repeat;
+}
 
 
 .btn-login{
-	position:absolute;
-	top:20px;
-	right:0;
+	float:right;
+	margin-top:50px;
+	@include respond(all-phones) {
+		margin-top:0px;
+		margin-bottom:20px;
+	}
 }
 
 #ForgotPassword{

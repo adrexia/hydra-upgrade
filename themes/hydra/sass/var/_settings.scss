@@ -71,13 +71,13 @@ $header-font-color: #F9D834 !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #FCF4E4 !default;
-$body-link-color: lighten(#3D8EB4,5%) !default; 
+$body-link-color: lighten(#3D8EB4,7%) !default; 
 $body-link-hover-color: lighten(#00afdb,5%) !default;
 
 // User Interface Colors
 $global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
-$navbar-link-color: $body-link-color;
+$navbar-link-color: $header-font-color;
 
 $primary-color: $body-link-color;
 $secondary-color: darken(#79c608,20%);

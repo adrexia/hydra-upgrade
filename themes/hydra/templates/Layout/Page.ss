@@ -1,7 +1,6 @@
-<div class="typography row">
+<div class="typography row content">
 	<section class="nine columns">
 
-	<div class="content-container">
 		<article>
 			<h2>$Title</h2>
 			<div class="content">$Content
@@ -10,7 +9,7 @@
 				$PageComments
 			</div>
 		</article>
-	</div>
+
 	</section>
 			<section class="three columns">
 				<% include Sidebar %>

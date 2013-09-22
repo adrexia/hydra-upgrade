@@ -26,3 +26,15 @@
 //       url('../fonts/icons/#{$some-font-variable}.woff') format('woff'),
 //       url('../fonts/icons/#{$some-font-variable}.ttf')  format('truetype');
 //}
+
+@font-face {
+	font-family: 'cocaine_sansregular';
+	src: url('../fonts/cocainesans-webfont.eot');
+	src: url('../fonts/cocainesans-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/cocainesans-webfont.woff') format('woff'),
+		 url('../fonts/cocainesans-webfont.ttf') format('truetype'),
+		 url('../fonts/cocainesans-webfont.svg#cocaine_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
