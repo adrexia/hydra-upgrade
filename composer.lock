@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "9eb98158374df0aea8fb9b6cf2fe599a3c9645ad"
+                "reference": "adaac9d64e9965c7bf0ab21b39ead441fc8c1cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/9eb98158374df0aea8fb9b6cf2fe599a3c9645ad",
-                "reference": "9eb98158374df0aea8fb9b6cf2fe599a3c9645ad",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/adaac9d64e9965c7bf0ab21b39ead441fc8c1cc8",
+                "reference": "adaac9d64e9965c7bf0ab21b39ead441fc8c1cc8",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2013-09-22 10:04:52"
+            "time": "2013-09-22 10:26:55"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
@@ -257,12 +257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "ef2190606304b9dbfde72def5ed88612dea82564"
+                "reference": "1a40994527b3a446e6d696968183a4023c56d261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/ef2190606304b9dbfde72def5ed88612dea82564",
-                "reference": "ef2190606304b9dbfde72def5ed88612dea82564",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/1a40994527b3a446e6d696968183a4023c56d261",
+                "reference": "1a40994527b3a446e6d696968183a4023c56d261",
                 "shasum": ""
             },
             "require": {
@@ -302,7 +302,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2013-08-28 09:10:32"
+            "time": "2013-10-06 17:07:52"
         },
         {
             "name": "silverstripe/dashboard",
@@ -355,12 +355,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "5d33f187c7f78e5560fc97a90a07211e7a76dab8"
+                "reference": "60fc7e5346c0498f3c0e033c7d5529818f986b32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/5d33f187c7f78e5560fc97a90a07211e7a76dab8",
-                "reference": "5d33f187c7f78e5560fc97a90a07211e7a76dab8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/60fc7e5346c0498f3c0e033c7d5529818f986b32",
+                "reference": "60fc7e5346c0498f3c0e033c7d5529818f986b32",
                 "shasum": ""
             },
             "require": {
@@ -398,7 +398,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-08-28 09:10:03"
+            "time": "2013-10-06 17:07:39"
         },
         {
             "name": "silverstripe/reports",
@@ -447,12 +447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "628554744a199841946b131db70adfd25a8b49a4"
+                "reference": "807ca2fa5292406003becf93ff96cd2eb0168ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/628554744a199841946b131db70adfd25a8b49a4",
-                "reference": "628554744a199841946b131db70adfd25a8b49a4",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/807ca2fa5292406003becf93ff96cd2eb0168ae3",
+                "reference": "807ca2fa5292406003becf93ff96cd2eb0168ae3",
                 "shasum": ""
             },
             "require": {
@@ -476,7 +476,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2013-09-15 12:06:11"
+            "time": "2013-09-29 22:25:56"
         }
     ],
     "packages-dev": [
