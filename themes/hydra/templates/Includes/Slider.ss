@@ -5,7 +5,7 @@
 			<% loop CurrentSliderItems %>
 				<li class="<% if First %>flex-active-slide <% end_if %>item">
 					<% if Link %><a href="$Link.Link"><% end_if %>
-						$Image
+						<img src="$Image.URL" alt="$Title" />
 					<% if Link %>	</a><% end_if %>
 					<% if Caption %>
 						<div class="caption">
