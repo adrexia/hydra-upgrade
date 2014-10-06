@@ -208,6 +208,8 @@ class RegistrationPage_Controller extends MemberProfilePage_Controller {
 		}
 
 		$this->extend('updateRegisterForm', $form);
+
+	//	$form->setAttribute('data-parsley-validate', 'data-parsley-validate');
 		return $form;
 	}
 

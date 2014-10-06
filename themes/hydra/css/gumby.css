@@ -666,6 +666,8 @@ form fieldset legend { padding: 5px 10px; }
 
 .success.btn a:hover, .pagination-wrap.ssendless .ss-pagination a a:hover, .Actions .btn a:hover { color: #fff; }
 
+.alert, .message { max-width: 98%; }
+
 #Remember .checkbox { float: left; margin-right: 10px; }
 
 .nonvisual-indicator { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }

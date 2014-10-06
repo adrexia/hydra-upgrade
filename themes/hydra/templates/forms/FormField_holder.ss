@@ -4,5 +4,5 @@
 
 	$Field
 
-	<% if Message %><span class="message $MessageType">$Message</span><% end_if %>
+	<% if Message %><div class="message alert $MessageType <% if $MessageType==validation %>danger<% end_if %>">$Message</div><% end_if %>
 </div>

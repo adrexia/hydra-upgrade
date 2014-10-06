@@ -64,6 +64,7 @@ class Page_Controller extends ContentController {
 			"$ThemeDir/js/libs/ui/jquery.validation.js",
 			"$ThemeDir/js/libs/gumby.init.js",
 			"$ThemeDir/js/libs/jquery.flexslider.js",
+			"$ThemeDir/js/libs/parsleyjs/dist/parsley.js",
 			"$ThemeDir/js/general.js"
 		);
 	}
