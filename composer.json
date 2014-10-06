@@ -10,7 +10,19 @@
 		"ajshort/silverstripe-gridfieldextensions": "dev-master",
 		"unclecheese/betterbuttons": "dev-master",
 		"silverstripe/dashboard": "dev-master",
-		"adrexia/gamesevent": "dev-master"
+		"adrexia/gamesevent": "dev-master",
+		"silverstripe/userforms": "dev-master",
+		"silverstripe/html5": "1.0.2",
+		"silverstripe/iframe": "1.0.4",
+		"silverstripe/mimevalidator": "1.0.0",
+		"silverstripe/multivaluefield": "2.0.3",
+		"silverstripe/queuedjobs": "2.2.1",
+		"silverstripe/restfulserver": "1.0.2",
+		"silverstripe/securityreport": "1.0.1",
+		"silverstripe/selectupload": "1.0.1",
+		"silverstripe/spellcheck": "1.0.0",
+		"silverstripe/userforms": "2.0.5",
+		"silverstripe/standardsediting": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600
