@@ -41,18 +41,5 @@
 	</section>
 	<section class="three columns">
 		<% include Sidebar %>
-		<aside class="ptxl">
-			<h4 class="pvm">Roster of Games</h4>
-			<% loop $GroupedGames.GroupedBy(getRoundTitle) %>
-				<div class="pvs">
-					<h5>$getRoundTitle()</h5>
-					<ul class="unstyled">
-						<% loop $Children %>
-							<li><a href="$Top.GameListingPage.Link{$Link}">$Title</a></li>
-						<% end_loop %>
-					</ul>
-				</div>
-			<% end_loop %>
-		</aside>
 	</section>
 </div>
