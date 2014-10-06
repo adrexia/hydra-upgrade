@@ -439,9 +439,10 @@ img { -ms-interpolation-mode: bicubic; }
 @font-face { font-family: 'flexslider-icon'; src: url("../fonts/flexslider-icon.eot"); src: url("../fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("../fonts/flexslider-icon.woff") format("woff"), url("../fonts/flexslider-icon.ttf") format("truetype"), url("../fonts/flexslider-icon.svg#flexslider-icon") format("svg"); font-weight: normal; font-style: normal; }
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider { margin: 0; padding: 0; }
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-.flexslider .slides img { border: 0; width: 100%; display: block; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.flexslider.flexslider { margin: 0; margin-bottom: 60px; padding: 0; padding-bottom: 2px; }
+.flexslider.flexslider ul { list-style: none; margin: none; }
+.flexslider.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider.flexslider .slides img { border: 0; width: 100%; display: block; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flex-pauseplay span { text-transform: capitalize; }
