@@ -1,7 +1,7 @@
 <% if CurrentSliderItems %>
 	<div class="flexslider">
 		<!-- Carousel items -->
-		<ul class="slides">
+		<ul class="slides unstyled">
 			<% loop CurrentSliderItems %>
 				<li class="<% if First %>flex-active-slide <% end_if %>item">
 					<% if Link %><a href="$Link.Link"><% end_if %>
