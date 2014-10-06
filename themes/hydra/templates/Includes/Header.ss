@@ -8,7 +8,6 @@
 							<h1 class="twelve columns image">
 								<a href="$BaseHref" class="logo" rel="home" alt="$SiteConfig.LogoText">
 									$SiteConfig.Logo
-
 								</a>
 							</h1>
 						<% else %>

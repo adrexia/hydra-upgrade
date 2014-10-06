@@ -9,7 +9,7 @@ class HomePage extends Page {
 		'NewsItems' => 'NewsItem'
 	);
 
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
 

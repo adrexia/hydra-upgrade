@@ -7,9 +7,6 @@ h1,h2,h3,h4,h5,h6 {
   @include padding-leader($rhythm-spacing);
   @include adjust-leading-to($rhythm-height);
   @include padding-trailer($rhythm-spacing);
-  a {
-    color: $header-link-color;
-  }
 }
 
 @include respond(all-phones) {
@@ -81,6 +78,18 @@ a {
   }
 }
 
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+  &[class^='icon'],
+  &[class*=' icon']{
+    font-style: normal;
+  }
+}
+
 /*=====================================================
 
   Lists
@@ -98,6 +107,14 @@ ul {
 ol {
   list-style: decimal;
   margin-left: 30px;
+}
+
+.typography ul {
+  @extend .disc;
+  &.unstyled {
+    list-style: none;
+    margin-left: 0;
+  }
 }
 
 ul {

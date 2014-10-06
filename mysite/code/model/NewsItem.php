@@ -18,7 +18,7 @@ class NewsItem extends DataObject {
 		'ArchivedReadable' => 'Current Status' 
 	);
 
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('Archived');
 
@@ -35,7 +35,7 @@ class NewsItem extends DataObject {
 		return $fields;
 	}
 
-	function ArchivedReadable(){
+	public function ArchivedReadable(){
 		if($this->Archived == 1) return _t('GridField.Archived', 'Archived');
 		return _t('GridField.Live', 'Live');
 	}

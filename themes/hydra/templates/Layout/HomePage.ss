@@ -36,8 +36,7 @@
 					</article>
 				<% end_loop %>
 				</section>
-				<span> <i class='pagination-indicator icon-arrows-ccw'></i></span>
-
+				
 				<% with News %>
 					<% include Pagination %>
 				<% end_with %>

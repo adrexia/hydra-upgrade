@@ -68,12 +68,28 @@ class Page_Controller extends ContentController {
 		);
 	}
 
+	public function getGameListingPage(){
+		return GameListingPage::get()->First();
+	}
+
 	public function getCurrentSliderItems() {
 		return $this->SliderItems()->filter('Archived', false);
 	}
 
 	public function getMemberProfilePage(){
 		return MemberProfilePage::get()->First();
+	}
+
+	public function getCurrentEvent(){
+		return SiteConfig::current_site_config()->CurrentEvent();
+	}
+
+
+	public function getGroupedGames(){
+		return GroupedList::create(Game::get()->filter(array(
+			'ParentID' => $this->getCurrentEvent()->ID,
+			'Status'=> true
+			))->sort('Session'));
 	}
 
 	public function LoginLink() {

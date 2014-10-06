@@ -1,30 +1,31 @@
 <% if MoreThanOnePage %>
-<div id="" class="pagination pagination-centered clear" $PaginationMetadata(2)>
-	<h3 class="nonvisual-indicator">Pages</h3>
-	<ul id="PageNumbers">
-	<% if NotFirstPage %>
-		<li class="prev"><a title="View previous page of results" class="prev paginate-left" href="$PrevLink">&laquo; Prev</a></li>
-	<% else %>	
-		<li class="prev disabled"><a title="View previous page of results" class="prev paginate-left disabled">&laquo; Prev</a></li>
+	<div class="pagination-wrap endless-scroll clear">
+			
+	<ul id="PageNumbers" class="pagination endless pagination-nav" $PaginationMetadata(2)>
+	<% if FirstPage %>
+		<li class="prev disabled"><a class="prev paginate-left disabled">&laquo;</a></li>
+	<% else %>
+		<li class="prev"><a class="prev paginate-left" href="$PrevLink">&laquo;</a></li>
 	<% end_if %>
 	
-	<% loop PaginationSummary(4) %>
+	<% loop Pages %>
 		<% if CurrentBool %>
-			<li class="active"><a title="Viewing page $PageNum of results" class="disabled">$PageNum</a></li>
+			<li class="active">
+				<a href="$Link" class="disabled">$PageNum</a>
+			</li>
 		<% else %>
-			<% if Link %>
-				<li><a title="View page $PageNum of results" class="<% if BeforeCurrent %>paginate-left<% else %>paginate-right<% end_if %>" href="$Link">$PageNum</a></li>
+			<% if $Link %>
+				<li><a class="<% if BeforeCurrent %>paginate-left<% else %>paginate-right<% end_if %>" href="$Link">$PageNum</a></li>
 			<% else %>
 				<li class="disabled"><a class="disabled">...</a></li>
 			<% end_if %>
 		<% end_if %>
 	<% end_loop %>
-	<% if NotLastPage %>
-		<li class="next"><a title="View next page of results" class="next paginate-right" href="$NextLink">Next &raquo;</a></li>
+	<% if LastPage %>
+		<li class="next disabled"><a class="next paginate-right disabled">&raquo;</a></li>
 	<% else %>
-		<li class="next disabled"><a title="View next page of results" class="next paginate-right disabled">Next &raquo;</a></li>
-	
+		<li class="next"><a class="next paginate-right" href="$NextLink">&raquo;</a></li>	
 	<% end_if %>
 	</ul>
-</div>
+	</div>
 <% end_if %>

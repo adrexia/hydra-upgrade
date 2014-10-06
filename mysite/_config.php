@@ -4,7 +4,13 @@ global $project;
 $project = 'mysite';
 
 global $database;
-$database = 'SS_hydracms';
+
+// find the database name from the environment file
+if(defined('SS_DATABASE_NAME') && SS_DATABASE_NAME) {
+	$database = SS_DATABASE_NAME;
+} else {
+	$database = 'SS_hydracms';
+}
 
 require_once('conf/ConfigureFromEnv.php');
 
@@ -12,3 +18,5 @@ require_once('conf/ConfigureFromEnv.php');
 i18n::set_locale('en_US');
 
 SiteConfig::add_extension('CustomSiteConfig');
+
+

@@ -3,12 +3,13 @@
 class Quicklink extends DataObject {
 	private static $db = array(
 		'Name' => 'Varchar(255)',
-		'ExternalLink' => 'Varchar(255)'
+		'ExternalLink' => 'Varchar(255)',
+		'Order'=>'Int'
 	);
 
 	private static $has_one = array(
-		'Parent' => 'Page',
-		'InternalLink' => 'SiteTree'
+		'InternalLink' => 'SiteTree',
+		'Parent' => 'SiteConfig',
 	);
 
 	private static $summary_fields = array(
@@ -17,7 +18,9 @@ class Quicklink extends DataObject {
 		'ExternalLink' => 'External Link'
 	);
 
-	function getLink() {
+	public static $default_sort = 'Order';
+
+	public function getLink() {
 		if ($this->ExternalLink) {
 			return $this->ExternalLink;
 		} elseif ($this->InternalLinkID) {
@@ -25,10 +28,12 @@ class Quicklink extends DataObject {
 		}
 	}
 
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName('ParentID');
+		$fields->removeByName('Order');
+
 
 		$externalLinkField = $fields->fieldByName('Root.Main.ExternalLink');
 

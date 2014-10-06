@@ -5,6 +5,7 @@
 extensions_dir = "sass/extensions"
 
 Compass::Frameworks.register('modular-scale', :path => File.expand_path("#{extensions_dir}/modular-scale"))
+Compass::Frameworks.register('sassy-math', :path => File.expand_path("#{extensions_dir}/sassy-math"))
 
 # Uncomment these to use regular Ruby gems.
 # require 'modular-scale'

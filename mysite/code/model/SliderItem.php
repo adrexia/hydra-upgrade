@@ -18,11 +18,11 @@ class SliderItem extends DataObject {
 		'Title' => 'Title',
 		'Caption' => 'Text',
 		'Link.Title' => 'Link',
-		'ArchivedReadable' => 'Current Status' 		
+		'ArchivedReadable' => 'Current Status'
 	);
 
-	function getCMSFields() {
-		$fields = parent::getCMSFields();	
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
 		$fields->removeByName('Archived');
 
 		$fields->addFieldToTab('Root.Main', new TreeDropdownField('LinkID', 'Link', 'SiteTree'));
@@ -49,11 +49,11 @@ class SliderItem extends DataObject {
 		return $fields;
 	}
 
-	function ImageThumb(){ 
-	   return $this->Image()->SetWidth(50); 
+	public function ImageThumb(){ 
+		return $this->Image()->SetWidth(50); 
 	}
 
-	function ArchivedReadable(){
+	public function ArchivedReadable(){
 		if($this->Archived == 1) return _t('GridField.Archived', 'Archived');
 		return _t('GridField.Live', 'Live');
 	}

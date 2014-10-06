@@ -1,22 +1,37 @@
 <?php
 /**
- * Adds new global settings.
+ *Adds new global settings.
  */
 
 class CustomSiteConfig extends DataExtension {
 	private static $db = array(
 		'GACode' => 'Varchar(16)',
-		'FacebookURL' => 'Varchar(256)', // multitude of ways to link to Facebook accounts, best to leave it open.
-		'TwitterUsername' => 'Varchar(16)', // max length of Twitter username 15
+		'FacebookURL' => 'Varchar(256)',
+		'TwitterUsername' => 'Varchar(256)',
 		'LogoText' => 'Varchar(16)'
+	);
+
+	private static $has_many = array(
+		'FooterLinks' => 'Quicklink'
 	);
 
 	private static $has_one = array(
 		'Logo' => 'Image'
 	);
 
-	function updateCMSFields(FieldList $fields) {
-		$fields->addFieldToTab('Root.Main', $gaCode = new TextField('GACode', 'Google Analytics account'));
+	public function updateCMSFields(FieldList $fields) {
+		$footerLinks = new GridField(
+			'FooterLinks',
+			'FooterLinks',
+			$this->owner->FooterLinks(),
+			$conf = GridFieldConfig_RelationEditor::create());
+		$conf->addComponent(new GridFieldOrderableRows('Order'));
+		$footerLinks->getConfig()->getComponentByType('GridFieldAddNewButton')->setButtonName('Add Link to Footer');
+
+		$fields->addFieldToTab('Root.Footer', $footerLinks);
+
+		$fields->addFieldToTab('Root.Main',
+			$gaCode = new TextField('GACode', 'Google Analytics account'));
 		$gaCode->setRightTitle('Account number to be used all across the site (in the format <strong>UA-XXXXX-X</strong>)');
 
 		$fields->addFieldToTab('Root.SocialMedia', $facebookURL = new TextField('FacebookURL', 'Facebook UID or username'));
@@ -28,8 +43,6 @@ class CustomSiteConfig extends DataExtension {
 		$fields->addFieldToTab('Root.Logos', $logoField = new UploadField('Logo', 'Logo, to appear in the top left.'));
 		$logoField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 		$logoField->setConfig('allowedMaxFileNumber', 1);
-
 		$fields->addFieldToTab('Root.Logos', new TextField('LogoText', 'Logo Text'));
-
 	}
 }

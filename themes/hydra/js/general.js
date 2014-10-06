@@ -18,20 +18,28 @@ $(function() {
 
 	if($('.pagination').length > 0){
 
-		$('.pagination').ssendless({
-			indicatorElement: $('.pagination-indicator'),
-			contentSelector: '.pagination-content'
+			// Pagination - endless
+		$('.pagination.endless').ssendless({
+			contentSelector: '.pagination-content',
+			templates: {
+				main:
+					'<div class="ss-pagination">'+
+						'<a href="#" data-page-number="<%= nextPage %>"><span class="text">Show More</span> <span class="loading-icon"><i class="icon-blank">&nbsp;</i></span></a>'+
+					'</div>'
+			}
 		});
-	}
 
-	// $('div.pagination').sspagination({
-	// 	templates: {
-	// 		main:
-	// 			'<div class="ss-pagination btn primary large">'+
-	// 				'<a href="#" data-page-number="<%= nextPage %>">More</a>'+
-	// 			'</div>'
-	// 	}
-	// });
+		$('.pagination-wrap.endless-scroll').addClass('ssendless');
+
+		$('.pagination.endless').on('ssendlessbeforepagefetch', function(event){
+			$(this).siblings('.ss-pagination').addClass('loading').find('a').html('<span class="text">Loading</span> <span class="loading-icon"><i class="icon-cw icon-spin"></i></span>');
+		});
+
+		$('.pagination.endless').on('ssendlessafterpagefetch', function(event){
+			$(this).siblings('.ss-pagination').removeClass('loading').find('a').html('<span class="text">Show More</span> <span class="loading-icon"><i class="icon-blank"></i></span>');
+		});
+
+	}
 
 });
 

@@ -3,7 +3,13 @@
 	<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><i class="icon-menu"></i></a>
 	<ul class="twelve columns">
 		<% loop $Menu(1) %>
-			<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+			<% if $ClassName==RegistrationPage %>
+				<% if not $CurrentMember %>
+					<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+				<% end_if %>
+			<% else %>
+				<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+			<% end_if %>
 		<% end_loop %>
 	</ul>
 	</div>
