@@ -14,6 +14,10 @@
 	max-width: 98%;
 }
 
+.pull-right{
+	float:right;
+}
+
 #Remember{
 	.checkbox{
 		float:left;
@@ -233,6 +237,7 @@ input.text {
 		padding: 0 20px;
 		margin-bottom:30px;
 		ul {
+			float:left;
 			margin-left:-15px;
 			a {
 				color: $body-link-color;
@@ -279,6 +284,9 @@ input.text {
 	}
 }
 
+.pts {
+	padding-top:15px;
+}
 .ptm {
 	padding-top:20px;
 }

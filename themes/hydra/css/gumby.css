@@ -669,6 +669,8 @@ form fieldset legend { padding: 5px 10px; }
 
 .alert, .message { max-width: 98%; }
 
+.pull-right { float: right; }
+
 #Remember .checkbox { float: left; margin-right: 10px; }
 
 .nonvisual-indicator { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
@@ -727,7 +729,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .main { padding-bottom: 40px; }
 
 .footer .navbar { padding: 0 20px; margin-bottom: 30px; }
-.footer .navbar ul { margin-left: -15px; }
+.footer .navbar ul { float: left; margin-left: -15px; }
 .footer .navbar ul a { color: #519fc4; font-size: 0.9em; }
 
 .feature-group { margin-bottom: 30px; }
@@ -741,6 +743,8 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 
 .pagination-content article { margin-bottom: 10px; }
 .pagination-content article:not(:first-child) { border-top: 1px solid #2b2524; -webkit-box-shadow: 0 -1px 0 #1b1716; -moz-box-shadow: 0 -1px 0 #1b1716; -o-box-shadow: 0 -1px 0 #1b1716; box-shadow: 0 -1px 0 #1b1716; padding-top: 20px; }
+
+.pts { padding-top: 15px; }
 
 .ptm { padding-top: 20px; }
 
