@@ -1,7 +1,7 @@
 <?php
 class GameListingPage extends Page {
 
-	private static $icon = "gamesevent/images/pacman.png";
+	private static $icon = "mysite/images/sitetree_images/dice.png";
 
 	/**
 	 * Modified version of Breadcrumbs, to cater for viewing items.

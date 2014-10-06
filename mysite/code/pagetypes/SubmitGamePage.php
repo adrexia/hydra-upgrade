@@ -6,10 +6,10 @@ class SubmitGamePage extends Page {
 
 	private static $hide_ancestor = "MemberProfilePage";
 
-	private static $icon = "gamesevent/images/pacman.png";
+	private static $icon = "mysite/images/sitetree_images/spaceinvaders.png";
 
 	private static $db = array(
-		'LoggedOutMessage'=>'HTMLText',
+		'LoggedOutMessage'=>'HTMLText', 
 		'AfterSubmissionContent'=>'HTMLText'
 	);
 	private static $has_one = array(

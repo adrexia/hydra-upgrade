@@ -7,3 +7,15 @@ After: 'framework/*','cms/*'
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'hydra'
+
+SiteConfig:
+  extensions:
+   - CustomSiteConfig
+ErrorPage:
+  extensions:
+   - ErrorPageIcon
+UserDefinedForm:
+  extensions:
+   - UserFormsIcon
+
+
