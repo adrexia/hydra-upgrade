@@ -214,13 +214,13 @@ class RegistrationPage_Controller extends MemberProfilePage_Controller {
 	}
 
 	public function RegistrationFields($fields){
-		$fields->push(new CheckboxField('AttendingWholeEvent'));
-		$fields->push(new TextField('AttendingTheseSessions'));
-		$fields->push(new TextField('PlayWith'));
-		$fields->push(new TextField('NotPlayWith'));
-		$fields->push(new CheckboxField('Meals', 'Do you want meals provided?'));
+		$fields->push(new CheckboxField('AttendingWholeEvent', 'Attending whole event'));
+		$fields->push(new TextField('AttendingTheseSessions', '...or Attending these rounds'));
+		$fields->push(new TextField('PlayWith', "I want to play with"));
+		$fields->push(new TextField('NotPlayWith', "I'd rather not play with"));
+		$fields->push(new CheckboxField('Meals', 'I want meals provided'));
 		$fields->push(new TextField('SpecialDietryInfo'));
-		$fields->push(new CheckboxField('Accommodation'));
+		$fields->push(new CheckboxField('Accommodation', 'I want to stay at the campsite'));
 		$fields->push(new TextareaField('ExtraDetail', 'Comments'));
 		return $fields;
 	}
