@@ -44,5 +44,62 @@ $(function() {
 
 	}
 
+	// SITEMAP
+	$('.sitemap').on('click', '.button', function() {
+		var self = $(this),
+			target = $(self.attr('data-target'));
+
+		// only do an ajax request if the content isn't loaded
+		if(target.html().length === 0) {
+			self.addClass('loading');
+
+			$.ajax({
+				url: self.attr('href'),
+				data: { ajax: true }
+			}).done(function(data) {
+				target.html(data);
+				self.removeClass('loading');
+			});
+		}
+
+		self.toggleClass('open');
+
+		if(self.hasClass('open')) {
+			target.removeClass('collapse').addClass('collapsed');
+			$(this).attr('aria-expanded', 'true');
+			$(this).children('.linkText').replaceWith('<span class="linkText  nonvisual-indicator">Collapse section</span>');
+		} else {
+			target.removeClass('collapsed').addClass('collapse');
+			$(this).attr('aria-expanded', 'false');
+			$(this).children('.linkText').replaceWith('<span class="linkText nonvisual-indicator">Expand section</span>');
+		}
+
+		return false;
+	});
+
+	// Customize validation for user forms. Accessibility fixes
+	var siteForm = $('.UserDefinedForm #Form_Form');
+	if (siteForm.length > 0) {
+		
+		// Set up validation.
+		siteForm.validate({
+			errorPlacement: function(error, element) {
+				var errorId = element.attr('id') + '_message';
+				//prevent duplicate labels
+				element.closest('div.field').find('label .error').remove();
+				error.appendTo(element.closest('div.field'));
+				//Make valid html and adjust attributes
+				error.removeAttr('for').addClass('message').attr('id', errorId);
+				//Link error to input
+				element.attr('aria-describedby', errorId);
+			},
+			errorElement: 'span'
+		});
+
+		if(siteForm.find('.requiredField').length > 0){
+			siteForm.prepend('<p class="req-indicator-message">Required fields are marked</p>');
+		}
+	}
+
 });
 

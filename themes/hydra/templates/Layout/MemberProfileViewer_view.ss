@@ -1,6 +1,6 @@
 <% require css(memberprofiles/css/MemberProfileViewer.css) %>
 
-<div class="typography row">
+<div class="typography row content">
 	<section class="nine columns">
 	<div class="content-container">
 		<article>

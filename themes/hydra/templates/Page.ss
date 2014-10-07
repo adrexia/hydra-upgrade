@@ -17,7 +17,6 @@
 	<![endif]-->
 	
 	<% require themedCSS('gumby') %>
-	<% require themedCSS('typography') %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	<link rel="stylesheet" href="$ThemeDir/js/libs/medium-editor/dist/css/medium-editor.css"> <!-- Core -->
 	<link rel="stylesheet" href="$ThemeDir/js/libs/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
