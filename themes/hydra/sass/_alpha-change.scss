@@ -1,0 +1,27 @@
+// cycle through $secondary-brand-list: $water, $air, $earth, $passion, $people;
+
+.alpha-change {
+	background-color: $passion;
+
+}
+
+.f,.g,.h,.i,.v {
+	&.alpha-change {
+		background-color: $water;
+	}
+}
+.j,.k,.l,.m,.w {
+	&.alpha-change {
+		background-color: darken($air, 25%);
+	}
+}
+.n,.o,.p,.q,.x {
+	&.alpha-change {
+		background-color: $earth;
+	}
+}
+.r,.s,.t,.u, .y {
+	&.alpha-change {
+		background-color: darken($people, 15%);
+	}
+}

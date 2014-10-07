@@ -2050,6 +2050,16 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 
 .medium-editor-placeholder:after { top: 10px; left: 10px; }
 
+.alpha-change { background-color: #f15051; }
+
+.f.alpha-change, .g.alpha-change, .h.alpha-change, .i.alpha-change, .v.alpha-change { background-color: #519fc4; }
+
+.j.alpha-change, .k.alpha-change, .l.alpha-change, .m.alpha-change, .w.alpha-change { background-color: #9c8d70; }
+
+.n.alpha-change, .o.alpha-change, .p.alpha-change, .q.alpha-change, .x.alpha-change { background-color: #6aad07; }
+
+.r.alpha-change, .s.alpha-change, .t.alpha-change, .u.alpha-change, .y.alpha-change { background-color: #df6c0c; }
+
 .success.btn:hover, .pagination-wrap.ssendless .ss-pagination a:hover, .Actions .btn:hover { color: #fff; }
 .success.btn:hover a, .pagination-wrap.ssendless .ss-pagination a:hover a, .Actions .btn:hover a { color: #fff; }
 
