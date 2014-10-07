@@ -20,7 +20,7 @@
 							<em>
 								<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
 							</em>
-							<span class="label metro rounded alpha-change $Author.LimitCharacters(1,'')">
+							<span class="label metro rounded alpha-change $Author.LimitCharacters(1,'').LowerCase">
 							<% if Author %>by $Author.LowerCase<% else %>by admin<% end_if %>
 							</span>
 
