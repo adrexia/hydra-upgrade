@@ -8,6 +8,7 @@ $(function() {
 
 		$('.flexslider').flexslider({
 			pauseOnAction: false,
+			directionNav: false,
 			animation: "slide",
 			slideshowSpeed:10000,
 			pausePlay: true,

@@ -1,6 +1,15 @@
 // Welcome to Gumby 2.0 Settings.
 // Happy Tinkering!
 
+$sunlight: #F9D834;
+$water: lighten(#3D8EB4,7%);
+$air: #D0C9BB;
+$earth: darken(#79c608,5%);
+$passion: #F15051;
+$people: mix($sunlight, $passion, 50%);
+
+$brand-list: $sunlight, $water, $air, $earth, $passion, $people;
+$secondary-brand-list: $water, $air, $earth, $passion, $people;
 
 // Grid Settings
 $row-max-width: 960px !default;    				// 940px

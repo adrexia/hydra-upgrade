@@ -3,14 +3,19 @@
 		<!-- Carousel items -->
 		<ul class="slides unstyled">
 			<% loop CurrentSliderItems %>
-				<li class="<% if First %>flex-active-slide <% end_if %>item">
+				<li class="<% if First %>flex-active-slide <% end_if %>item item-{$Modulus(5)}">
 					<% if Link %><a href="$Link.Link"><% end_if %>
-						<img src="$Image.URL" alt="$Title" />
+						<div class="image-wrap">
+							<img src="$Image.URL" alt="$Title" />
+						</div>
 					<% if Link %>	</a><% end_if %>
 					<% if Caption %>
 						<div class="caption">
 							<% if Title %>
-								<h4>$Title</h4>
+								<h4>
+								<% if Link %><a href="$Link.Link"><% end_if %>
+								$Title</h4>
+								<% if Link %>	</a><% end_if %>
 							<% end_if %>
 							<p>$Caption</p>
 						</div>

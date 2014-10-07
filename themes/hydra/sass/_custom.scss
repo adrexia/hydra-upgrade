@@ -163,9 +163,6 @@ label{
 	@include border-image(url('../images/border-small.png') 30 0 stretch);
 }
 .header{
-	//border-top: 3px solid $navbar-link-color;
-	//@include border-image(url('../images/border-small.png') 30 0 stretch);
-	padding-bottom:20px;
 	.row{ 
 		position:relative;
 	}

@@ -12,7 +12,11 @@ h2{
 }
 
 .subhead{
+	margin-top:40px;
 	color:$body-font-color;
+	p {
+		@extend .lead;
+	}
 }
 
 img{

@@ -78,7 +78,7 @@ h6 { font-size: 16px; font-size: 1rem; }
 
 /*=====================================================  Links & Paragraph styles  ======================================================*/
 p { font-family: "Open Sans", helvetica, arial, sans-serif; font-weight: 400; font-size: 16px; font-size: 1rem; margin-bottom: 13px; line-height: 1.625em; }
-p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18.4133px; }
+p.lead, .subhead p { font-size: 20px; font-size: 1.25rem; margin-bottom: 18.4133px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #519fc4; text-decoration: none; outline: 0; line-height: inherit; }
@@ -158,7 +158,7 @@ abbr { text-transform: none; }
 
 h2 { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz-box-shadow: 0 1px 0 #1b1716; -o-box-shadow: 0 1px 0 #1b1716; box-shadow: 0 1px 0 #1b1716; margin-bottom: 20px; }
 
-.subhead { color: #d0c9bb; }
+.subhead { margin-top: 40px; color: #d0c9bb; }
 
 h1 { font-family: 'cocaine_sansregular', sans-serif; padding-top: 25px; }
 h1.image, h1.captionImage, h1.media { margin-bottom: 0; padding-bottom: 0; max-height: 290px; overflow: hidden; }
