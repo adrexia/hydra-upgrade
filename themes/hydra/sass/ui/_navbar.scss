@@ -39,7 +39,8 @@
       background: $navbar-color;
       @include line-and-height(40px);
       @include border-radius($button-radius);
-      @include font-size($larger);
+      @include font-size($xlarge);
+      line-height:55px;
       &:hover {
         background: lighten($navbar-color, 5%);
       }

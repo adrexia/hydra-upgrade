@@ -13,7 +13,8 @@ $(function() {
 			slideshowSpeed:10000,
 			pausePlay: true,
 			pauseText: " ",
-			playText: " "
+			playText: " ",
+			smoothHeight: true
 		});
 	}
 

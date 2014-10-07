@@ -342,7 +342,7 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar .column, .navbar .columns { min-height: 0; } }
 .navbar.fixed { top: 0; left: 0; z-index: 99999; }
 .navbar a.toggle { display: none; }
-@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #f9d834; background: #151211; height: 40px; line-height: 38px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 29.79335px; font-size: 1.86208rem; }
+@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #f9d834; background: #151211; height: 40px; line-height: 38px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 41.88854px; font-size: 2.61803rem; line-height: 55px; }
   .navbar a.toggle:hover { background: #231e1d; }
   .navbar a.toggle:active, .navbar a.toggle.active { background: #070606; } }
 .navbar .logo { display: inline-block; margin: 0 2.08333% 0 0; padding: 0; height: 59.36817px; line-height: 57.36817px; }
@@ -441,13 +441,14 @@ img { -ms-interpolation-mode: bicubic; }
 *********************************/
 .flexslider.flexslider { margin: 0; margin-bottom: 60px; padding: 0; padding-bottom: 2px; }
 .flexslider.flexslider .caption { z-index: 8; position: absolute; right: 2%; min-width: 150px; bottom: 0; max-width: 300px; max-height: 90%; padding: 20px; background-color: rgba(21, 18, 17, 0.9); overflow: hidden; }
+@media only screen and (max-width: 767px) { .flexslider.flexslider .caption { width: 100%; max-width: none; left: 0%; right: 0; position: relative; } }
 .flexslider.flexslider .attribution { text-align: right; margin-top: -10px; display: block; }
 .flexslider.flexslider .image-wrap { max-height: 280px; width: 100%; }
-@media only screen and (max-width: 767px) { .flexslider.flexslider .image-wrap { max-height: 200px; } }
 .flexslider.flexslider ul { list-style: none; }
 .flexslider.flexslider ul li { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; height: 100%; position: relative; }
 .flexslider.flexslider .slides > li { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; display: none; -webkit-backface-visibility: hidden; }
-.flexslider.flexslider .slides img { min-height: 100%; border: 0; width: 100%; display: block; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+.flexslider.flexslider .slides img { min-height: 100%; border: 0; width: 100%; display: block; margin-bottom: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+@media only screen and (max-width: 767px) { .flexslider.flexslider .slides img { min-height: 0; } }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flex-pauseplay span { text-transform: capitalize; }
@@ -468,6 +469,7 @@ html[xmlns] .slides { display: block; }
 .flexslider { margin: 0 0 60px; position: relative; zoom: 1; }
 
 .flex-viewport { max-height: 300px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+@media only screen and (max-width: 767px) { .flex-viewport { max-height: none; } }
 
 .loading .flex-viewport { max-height: 300px; }
 
@@ -680,6 +682,8 @@ form fieldset legend { padding: 5px 10px; }
 
 .nonvisual-indicator { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
 
+.btn-login { float: right; margin-top: 50px; }
+@media only screen and (max-width: 767px) { .btn-login { margin-top: -36px; margin-bottom: 60px; } }
 .btn-login button a { display: inline-block; }
 .btn-login .meta-data { color: #917e7b; font-size: 0.8em; float: left; padding-right: 10px; line-height: 30px; text-align: right; }
 @media only screen and (max-width: 767px) { .btn-login .meta-data { display: none; } }
@@ -719,9 +723,6 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .header .navbar { margin-top: 0; }
 
 .Actions .btn, .Actions .pagination-wrap.ssendless .ss-pagination a, .pagination-wrap.ssendless .ss-pagination .Actions a { text-shadow: 0 1px 1px #2e4b03; font-weight: bold; display: block; color: #fff; float: left; }
-
-.btn-login { float: right; margin-top: 50px; }
-@media only screen and (max-width: 767px) { .btn-login { margin-top: 0px; margin-bottom: 20px; } }
 
 #ForgotPassword { font-size: 0.8em; padding-top: 10px; padding-left: 20px; float: left; }
 

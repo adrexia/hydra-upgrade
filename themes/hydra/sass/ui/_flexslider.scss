@@ -56,6 +56,13 @@
     padding:20px;
     background-color: rgba(darken($global-bg-color, 5%), 0.9);
     overflow:hidden;
+    @include respond(all-phones){
+      width:100%;
+      max-width:none;
+      left:0%;
+      right:0;
+      position:relative;
+    }
   }
   .attribution {
     text-align:right;
@@ -65,9 +72,7 @@
   .image-wrap {
     max-height: 280px;
     width:100%;
-    @include respond(all-phones){
-      max-height: 200px;
-   }
+
   }
 
   ul {
@@ -91,7 +96,11 @@
       border: 0;
       width: 100%;
       display: block;
+      margin-bottom:0;
       @include border-radius(0);
+      @include respond(all-phones){
+        min-height: 0;
+      }
     }
   }
 }
@@ -144,6 +153,9 @@ html[xmlns] .slides {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  @include respond(all-phones){
+    max-height:none;
+  }
 }
 
 .loading .flex-viewport {
