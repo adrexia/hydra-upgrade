@@ -1357,11 +1357,11 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .alert.warning, .message.warning { background: #fceb97; border: 1px solid #f9d834; color: #c1a206; color: #5e4f03; }
 .alert.success, .message.success { background: #a1f624; border: 1px solid #6aad07; color: #2e4b03; }
 
-.image, .captionImage, .media, img { line-height: 0; margin-bottom: 20px; }
-.image.circle, .circle.captionImage, .circle.media, img.circle { -moz-border-radius: 50% !important; -webkit-border-radius: 50%; border-radius: 50% !important; overflow: hidden; width: auto; }
-.image.rounded, .rounded.captionImage, img.captionImage, .rounded.media, img.media, img { overflow: hidden; -moz-border-radius: 4px 4px; -webkit-border-radius: 4px; border-radius: 4px 4px; }
-.image.photo, .captionImage, .media, img { border: 5px solid #fff; -moz-box-shadow: 0 0 1px #d0c9bb; -webkit-box-shadow: 0 0 1px #d0c9bb; box-shadow: 0 0 1px #d0c9bb; }
-.image.photo.polaroid, .polaroid.captionImage, .polaroid.media, img.polaroid { padding-bottom: 50px; background: #fff; }
+.image, .captionImage, .media, .content img { line-height: 0; margin-bottom: 20px; }
+.image.circle, .circle.captionImage, .circle.media, .content img.circle { -moz-border-radius: 50% !important; -webkit-border-radius: 50%; border-radius: 50% !important; overflow: hidden; width: auto; }
+.image.rounded, .rounded.captionImage, .rounded.media, .content img { overflow: hidden; -moz-border-radius: 4px 4px; -webkit-border-radius: 4px; border-radius: 4px 4px; }
+.image.photo, .captionImage, .media, .content img { border: 5px solid #fff; -moz-box-shadow: 0 0 1px #d0c9bb; -webkit-box-shadow: 0 0 1px #d0c9bb; box-shadow: 0 0 1px #d0c9bb; }
+.image.photo.polaroid, .polaroid.captionImage, .polaroid.media, .content img.polaroid { padding-bottom: 50px; background: #fff; }
 
 body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%; }
 body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
