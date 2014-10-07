@@ -731,7 +731,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 
 .shaded { background: #1b1716; padding-bottom: 20px; }
 
-.main { padding-bottom: 40px; }
+.row.content { padding: 40px 0; }
 
 .footer .navbar { padding: 0 20px; margin-bottom: 30px; }
 .footer .navbar ul { float: left; margin-left: -15px; }
