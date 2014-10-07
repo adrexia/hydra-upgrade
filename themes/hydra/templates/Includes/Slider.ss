@@ -9,13 +9,18 @@
 							<img src="$Image.URL" alt="$Title" />
 						</div>
 					<% if Link %>	</a><% end_if %>
-					<% if Caption %>
+					<% if $Caption || $Attribution %>
 						<div class="caption">
+							<% if $Attribution %>
+								<small class="attribution"><em>Photo credit: $Attribution</em></small>
+							<% end_if %>
+
 							<% if Title %>
 								<h4>
 								<% if Link %><a href="$Link.Link"><% end_if %>
 								$Title</h4>
 								<% if Link %>	</a><% end_if %>
+
 							<% end_if %>
 							<p>$Caption</p>
 						</div>

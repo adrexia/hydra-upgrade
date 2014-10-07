@@ -3,8 +3,9 @@
 class SliderItem extends DataObject {
 	private static $db = array(
 		'Title' => 'Varchar(255)',
+		'Attribution'=>'Varchar(255)',
 		'Caption' => 'Text',
-		'Archived' => 'Boolean' 
+		'Archived' => 'Boolean'
 	);
 
 	private static $has_one = array(

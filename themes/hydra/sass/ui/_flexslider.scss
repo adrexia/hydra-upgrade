@@ -57,6 +57,11 @@
     background-color: rgba(darken($global-bg-color, 5%), 0.9);
     overflow:hidden;
   }
+  .attribution {
+    text-align:right;
+    margin-top:-10px;
+    display:block;
+  }
   .image-wrap {
     max-height: 280px;
     width:100%;
