@@ -12,6 +12,14 @@
 							</li>
 							<% end_loop %>
 						<% else %>
+							<% if not HomePage.ShowInMenus %>
+								<% with HomePage %>
+									<li data-pagetype="$ClassName" class="initial class-$ClassName">
+									<% include SitemapNode %>
+									</li>
+								<% end_with %>
+							<% end_if %>
+
 							<% loop Menu(1) %>
 							<li data-pagetype="$ClassName" class="$FirstLast initial class-$ClassName">
 							<% include SitemapNode %>

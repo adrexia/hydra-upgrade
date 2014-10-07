@@ -85,6 +85,9 @@ class Page_Controller extends ContentController {
 		return SiteConfig::current_site_config()->CurrentEvent();
 	}
 
+	public function HomePage() {
+		return HomePage::get_one('HomePage');
+	}
 
 	public function getGroupedGames(){
 		return GroupedList::create(Game::get()->filter(array(
