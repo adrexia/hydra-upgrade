@@ -29,8 +29,8 @@
 	},
 	"repositories": [
 		{
-		"type": "vcs",
-		"url": "https://github.com/adrexia/silverstripe-memberprofiles.git"
+			"type": "vcs",
+			"url": "https://github.com/adrexia/silverstripe-memberprofiles.git"
 		}
 	],
 	"minimum-stability": "dev"

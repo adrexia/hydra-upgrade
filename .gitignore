@@ -1,4 +1,4 @@
-assets/*
+assets/
 _ss_environment.php
 tools/phing-metadata
 silverstripe-cache
@@ -9,7 +9,7 @@ silverstripe-cache
 .DS_Store
 vendor/
 .htaccess
-themes/hydra/.sass-cache/*
+.sass-cache/
 cms/*
 framework/*
 betterbuttons/
@@ -34,3 +34,5 @@ selectupload/
 userforms/
 spellcheck/
 standardsediting/
+
+*.scssc

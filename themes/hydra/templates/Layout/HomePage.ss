@@ -1,60 +1,60 @@
-	<div class="typography row">
-		<article class="twelve columns feature-group">
-			<% include Slider %>
-			<div class="content subhead">$Content</div>
-			<div class="divider"></div>
-		</article>
-	</div>
-	
+<div class="typography row">
+	<article class="twelve columns feature-group">
+		<% include Slider %>
+		<div class="content subhead">$Content</div>
+		<div class="divider"></div>
+	</article>
+</div>
 
-	<div class="typography row content">
-		<section class="twelve columns">
-			<% if News %>
-				<div class="resultsHeader">
-					<h2>News</h2>
-				</div>
-				<section class="pagination-content">
-				<% loop News %>
-					<article class="$EvenOdd row $FirstLast">
-						<p class="meta-info two columns">
-							<em>
-								<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
-							</em>
-							<span class="label metro rounded alpha-change $Author.LimitCharacters(1,'').LowerCase">
-							<% if Author %>by $Author.LowerCase<% else %>by admin<% end_if %>
-							</span>
 
-						</p>
-						<div class="columns ten">
-							<header>
-								<h3 id="ID-{$ID}">$Title</h3>
-							</header>
-							<div class="text">
-								$Content
-							</div>
+<div class="typography row content">
+	<section class="twelve columns">
+		<% if News %>
+			<div class="resultsHeader">
+				<h2>News</h2>
+			</div>
+			<section class="pagination-content">
+			<% loop News %>
+				<article class="$EvenOdd row $FirstLast">
+					<p class="meta-info two columns">
+						<em>
+							<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
+						</em>
+						<span class="label metro rounded alpha-change $Author.LimitCharacters(1,'').LowerCase">
+						<% if Author %>by $Author.LowerCase<% else %>by admin<% end_if %>
+						</span>
+
+					</p>
+					<div class="columns ten">
+						<header>
+							<h3 id="ID-{$ID}">$Title</h3>
+						</header>
+						<div class="text">
+							$Content
 						</div>
-						
-						
-					</article>
-				<% end_loop %>
-				</section>
-				
-				<% with News %>
-					<% include Pagination %>
-				<% end_with %>
-			<% else %>
-				<div class="resultsHeader">
-					<h2 class="pull-left">News</h2>
-					<p class="pull-right">None</p>
-				</div>
-
-				<article class="">
-					<p>No news</p>
+					</div>
+					
+					
 				</article>
-			<% end_if %>
+			<% end_loop %>
+			</section>
+			
+			<% with News %>
+				<% include Pagination %>
+			<% end_with %>
+		<% else %>
+			<div class="resultsHeader">
+				<h2 class="pull-left">News</h2>
+				<p class="pull-right">None</p>
+			</div>
 
-			$Form
-			$PageComments
-		</section>
+			<article class="">
+				<p>No news</p>
+			</article>
+		<% end_if %>
 
-	</div>
+		$Form
+		$PageComments
+	</section>
+
+</div>

@@ -33,41 +33,9 @@ class Page_Controller extends ContentController {
 	public function init() {
 		parent::init();
 
-		// Include base scripts that are needed on all pages
-		Requirements::combine_files('scripts.js', $this->getScripts());
-
-		// Extra folder to keep the relative paths consistent when combining.
-		Requirements::set_combined_files_folder(ASSETS_DIR . '/_combinedfiles/' . SSViewer::get_theme_folder());
 	}
 
-	public function getScripts(){
-		$ThemeDir = SSViewer::get_theme_folder();
 
-		return array(
-			"$ThemeDir/js/libs/modernizr-2.6.2.min.js",
-			"$ThemeDir/js/libs/jquery-1.10.2.min.js",
-			"$ThemeDir/js/libs/jquery-ui-1.10.3.custom.min.js",
-			"frontend/javascript/underscore.js",
-			"framework/admin/javascript/lib.js",
-			"frontend/javascript/jquery.ss.pagination.js",
-			"frontend/javascript/jquery.ss.endless.js",
-			"$ThemeDir/js/libs/gumby.js",
-			"$ThemeDir/js/libs/ui/gumby.retina.js",
-			"$ThemeDir/js/libs/ui/gumby.fixed.js",
-			"$ThemeDir/js/libs/ui/gumby.skiplink.js",
-			"$ThemeDir/js/libs/ui/gumby.toggleswitch.js",
-			"$ThemeDir/js/libs/ui/gumby.checkbox.js",
-			"$ThemeDir/js/libs/ui/gumby.radiobtn.js",
-			"$ThemeDir/js/libs/ui/gumby.tabs.js",
-			"$ThemeDir/js/libs/ui/gumby.navbar.js",
-			"$ThemeDir/js/libs/ui/gumby.fittext.js",
-			"$ThemeDir/js/libs/ui/jquery.validation.js",
-			"$ThemeDir/js/libs/gumby.init.js",
-			"$ThemeDir/js/libs/jquery.flexslider.js",
-			"$ThemeDir/js/libs/parsleyjs/dist/parsley.js",
-			"$ThemeDir/js/general.js"
-		);
-	}
 
 	public function getGameListingPage(){
 		return GameListingPage::get()->First();

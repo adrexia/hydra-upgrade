@@ -18,8 +18,8 @@
 	
 	<% require themedCSS('gumby') %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
-	<link rel="stylesheet" href="$ThemeDir/js/libs/medium-editor/dist/css/medium-editor.css"> <!-- Core -->
-	<link rel="stylesheet" href="$ThemeDir/js/libs/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
+	<link rel="stylesheet" href="$ThemeDir/js/src/libs/medium-editor/dist/css/medium-editor.css"> <!-- Core -->
+	<link rel="stylesheet" href="$ThemeDir/js/src/libs/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
 
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
@@ -28,6 +28,8 @@
 			$Layout
 	</div>
 	<% include Footer %>
+
+	<script type="text/javascript" src="{$ThemeDir}/js/script.min.js"></script>
 
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">
@@ -42,26 +44,5 @@
 			})();
 		</script>
 	<% end_if %>
-
-	<script src="$ThemeDir/js/libs/medium-editor/dist/js/medium-editor.js"></script>
-	<script>
-		var editor = new MediumEditor('.editable', {
-			anchorInputPlaceholder: 'Type a link',
-			buttons: ['bold', 'italic', 'quote', 'link', 'header1', 'header2'],
-			cleanPastedHTML: true,
-			diffLeft: 20,
-			diffTop: 10,
-			firstHeader: 'h3',
-			secondHeader: 'h4'
-		});
-
-	</script>
-	<script>
-	$( "form" ).submit(function( event ) {
-		var editable = S('.editable'),
-			value = editable.html();
-		editable.siblings('textarea').val(value);
-	});
-</script>
 </body>
 </html>

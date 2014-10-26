@@ -17,5 +17,8 @@ ErrorPage:
 UserDefinedForm:
   extensions:
    - UserFormsIcon
+DBField:
+  extensions:
+   - RichLinksExtension
 
 
