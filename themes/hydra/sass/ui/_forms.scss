@@ -348,14 +348,14 @@ form {
   position: relative;
   width: auto;
   display: inline-block;
-  margin: 0 0 2px 1.2%;
+  margin: 0 0 2px 0;
   overflow: hidden;
-  border: 1px solid darken($default-color, 5%);
+  border: 1px solid darken($navbar-color, 5%);
   @include border-radius(4px);
   font-family: $font-family;
   font-weight: $font-weight-semibold;
   height: auto;
-  @include background-image(linear-gradient(lighten($default-color, 20%), $default-color));
+  @include background-image(linear-gradient(lighten($navbar-color, 5%), $navbar-color));
   &:after {
     content: "\25BE";
     z-index: 0;
