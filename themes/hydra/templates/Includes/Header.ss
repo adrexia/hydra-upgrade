@@ -19,12 +19,14 @@
 						<% end_if %>
 							
 						<div class="btn-login five columns">
+						<p class="">
 							<% if $CurrentMember %>
-								<p class="meta-data">Logged in as <a href="$MemberProfilePage.Link">$CurrentMember.FirstName</a>
+							<span class="meta-data">
+								Logged in as <a href="$MemberProfilePage.Link">$CurrentMember.FirstName</a>
 								<% if $CMSAccess %>
-								 | <a href="{$BaseHref}admin">Admin</a>
+								 | <a href="{$BaseHref}admin">Admin</a> 
 								<% end_if %>
-								</p>
+							</span>
 								
 							<% end_if %>
 							<button class="btn medium success metro rounded login pretty pull_right">
@@ -34,6 +36,7 @@
 									<a href="{$BaseHref}Security/login">Login</a>
 								<% end_if %>
 							</button>
+								</p>
 						</div>
 					</section>
 			</div>

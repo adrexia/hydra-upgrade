@@ -18,7 +18,7 @@
 	float:right;
 }
 
-#Remember{
+#Remember { //only supplied an id
 	.checkbox{
 		float:left;
 		margin-right:10px;
@@ -33,9 +33,9 @@
 	position: absolute;
 }
 
-.btn-login{
-	float:right;
-	margin-top:50px;
+.btn-login {
+	text-align: right;
+	margin-top: 50px;
 	@include respond(all-phones) {
 		margin-top:-36px;
 		margin-bottom:60px;
@@ -46,8 +46,7 @@
 	.meta-data{
 		color: lighten($global-bg-color, 40%);
 		font-size:0.8em;
-		float:left;
-		padding-right:10px;
+		padding-right:20px;
 		line-height:30px;
 		text-align:right;
 		@include respond(all-phones) {
