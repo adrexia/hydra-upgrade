@@ -43,11 +43,12 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', '$SiteConfig.GACode', 'auto');
+			ga('create', '$SiteConfig.GACode', '$BaseHref');
+			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
 		</script>
 	<% end_if %>
-	
+
 	<% if SiteConfig.AddThisProfileID %>
 		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=$SiteConfig.AddThisProfileID"></script>
 	<% end_if %>
