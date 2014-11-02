@@ -16,3 +16,7 @@ require_once('conf/ConfigureFromEnv.php');
 
 // Set the site locale
 i18n::set_locale('en_US');
+
+if (!Director::isDev()) {
+	SS_Log::add_writer(new SS_LogEmailWriter('adrexia@gmail.com'), SS_Log::ERR, '<=');
+}
