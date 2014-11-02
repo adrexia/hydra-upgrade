@@ -61,3 +61,15 @@ $pagination-border: rgba(#333,0.1);
 		}
 	}
 }
+
+
+.pagination-content{
+	article{
+		margin-bottom:10px;
+		&:not(:first-child){
+			@include doubleborder(top, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
+			padding-top:20px;
+		}
+	}
+}
+

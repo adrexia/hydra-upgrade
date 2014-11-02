@@ -1,0 +1,17 @@
+
+.header {
+	.row{ 
+		position: relative;
+	}
+	.navbar{
+		margin-top:0;
+	}
+}
+
+.navbar {
+	margin-bottom:0;
+	margin-top:20px;
+	&.rounded{
+		@include border-radius(4px);
+	}
+}

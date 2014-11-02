@@ -91,7 +91,7 @@ $navbar-link-color: $header-font-color;
 $primary-color: $body-link-color;
 $secondary-color: darken(#79c608,20%);
 $default-color: #f2f2f2;
-$info-color: #4a4d50;
+$info-color: lighten($global-bg-color, 5%);
 $danger-color: #F15051;
 $warning-color: $header-font-color;
 $success-color: darken(#79c608,5%);

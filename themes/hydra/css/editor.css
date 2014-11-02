@@ -1326,7 +1326,7 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
 .badge.light a, .label.light a { color: #519fc4; }
 .badge.dark, .label.dark { background: #212121; }
-.badge.info, .label.info { background: #4a4d50; }
+.badge.info, .label.info { background: #312a29; }
 .badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
 .badge.light a, .label.light a { color: #519fc4; }
 .badge.dark, .label.dark { background: #212121; }
@@ -1352,7 +1352,7 @@ i.icon-logo-db:before { content: "\f603"; height: inherit; }
 .alert.primary, .message.primary { background: #9dc9de; border: 1px solid #519fc4; color: #2c6782; }
 .alert.secondary, .message.secondary { background: #79c608; border: 1px solid #3d6404; color: #010200; }
 .alert.default, .message.default { background: white; border: 1px solid #f2f2f2; color: #bfbfbf; color: #555555; border: 1px solid #f2f2f2; }
-.alert.info, .message.info { background: #7b8085; border: 1px solid #4a4d50; color: #191a1b; color: #f2f2f2; }
+.alert.info, .message.info { background: #695a57; border: 1px solid #312a29; color: black; background: #1b1716; color: #695a57; }
 .alert.danger, .message.danger { background: #f9aeaf; border: 1px solid #f15051; color: #cb1011; }
 .alert.warning, .message.warning { background: #fceb97; border: 1px solid #f9d834; color: #c1a206; color: #5e4f03; }
 .alert.success, .message.success { background: #a1f624; border: 1px solid #6aad07; color: #2e4b03; }

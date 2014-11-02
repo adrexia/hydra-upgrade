@@ -1,153 +1,5 @@
-.success.btn:hover{
-	color:#fff;
-	a{
-		color:#fff;
-	}
-}
-.success.btn{
-	a:hover{
-		color:#fff;
-	}
-}
 
-.alert {
-	max-width: 98%;
-}
-
-.pull-right{
-	float:right;
-}
-
-#Remember { //only supplied an id
-	.checkbox{
-		float:left;
-		margin-right:10px;
-	}
-}
-
-.nonvisual-indicator { // Content often used by people using screenreaders 
-	clip: rect(0 0 0 0);
-	height: 1px; width: 1px;
-	margin: -1px; padding: 0; border: 0;
-	overflow: hidden;
-	position: absolute;
-}
-
-.btn-login {
-	text-align: right;
-	margin-top: 50px;
-	@include respond(all-phones) {
-		margin-top:-36px;
-		margin-bottom:60px;
-	}
-	button a{
-		display: inline-block;
-	}
-	.meta-data{
-		color: lighten($global-bg-color, 40%);
-		font-size:0.8em;
-		padding-right:20px;
-		line-height:30px;
-		text-align:right;
-		@include respond(all-phones) {
-			display:none;
-		}
-	}
-}
-
-
-.icon-check{
-	.alert.primary &{
-		background:rgba(#fff, 0.7);
-		@include border-radius(3px);
-		height:20px;
-		width:20px;
-		border:1px solid rgba(#fff, 0.6);
-		line-height:20px;
-		color: darken($primary-color, 20%);
-		opacity:0.7;
-	}
-}
-label{
-	position:relative;
-	overflow:hidden;
-	&.checkbox {
-		float:left;
-		margin-top:0;
-		padding-right:30px;
-	}
-}
-.req-indicator{
-	position:absolute;
-	top:-100%;
-	&:after{
-		position:absolute;
-		top:100%;
-		left:5px;
-		content:'*';
-		color:$danger-color;
-		height:15px;
-		width:15px;
-	}
-}
-
-.input.text{
-	float:left;
-	width:98%;
-	.checkablevisibility &{
-		float:right;
-		width:90%;
-		margin-right:10px;
-		.checkbox{
-			margin-top: 5px;
-		}
-	}
-}
-
-.checkablevisibility{
-	.checkbox{
-		margin-top: 7px;
-	}
-}
-
-.field{
-	@include clearfix;
-	clear:both;
-	padding:10px 0;
-	margin:5px 0 5px 0;
-	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
-	.field{
-		border:none;
-		@include box-shadow(none);
-	}
-}
-
-.content .alert{
-	padding:10px;
-	margin-bottom:30px;
-	font-size:15px;
-	&.primary{
-		a{
-			color:darken($body-link-color, 50%);
-		}
-	}
-}
-
-.message{
-	@extend .alert;
-}
-.good{
-	background: mix($success-color, #fff, 50%);
-	border: 1px solid darken($success-color, 20%);
-	color: darken($success-color, 20%);
-}
-.bad{
-	background: lighten($danger-color, 20%);
-	border: 1px solid $danger-color;
-	color: darken($danger-color, 20%);
-}
-
-.showOnClick a{
+.showOnClick a {
 	position:relative;
 	padding-left:20px;
 
@@ -158,77 +10,15 @@ label{
 		width:20px;
 		height:20px;
 	}
-}
+} 
 
-
-.divider{
-	border-top: 3px solid $navbar-link-color;
-	opacity:0.8;
-	text-align:center;
-	@include border-image(url('../images/border-small.png') 30 0 stretch);
-}
-.header{
-	.row{ 
-		position:relative;
-	}
-	.navbar{
-		margin-top:0;
-	}
-}
-
-
-
-input.text {
-	@extend .input;
-}
-.Actions{
-	.btn{
-		@extend .metro;
-		@extend .pretty;
-		@extend .rounded;
-		@extend .success;
-		@extend .medium;
-		@include text-shadow(0 1px 1px #2e4b03);
-		font-weight:bold;
-		display:block;
-		color:#fff;
-		float:left;
-	}
-}
-
-.main{
-	//background: url(../images/hydra.png) bottom right no-repeat;
-}
-
-
-
-#ForgotPassword{
-	font-size: 0.8em;
-	padding-top:10px;
-	padding-left:20px;
-	float:left;
-}
-
-.navbar{
-	margin-bottom:0;
-	margin-top:20px;
-	&.rounded{
-		@include border-radius(4px);
-	}
-}
-
-.shaded{
-	background:darken($global-bg-color, 3%);
-	padding-bottom:20px;
-}
-
-.row.content{
+.row.content {
 	padding-top:40px;
 	padding-bottom:40px;
 }
 
-.footer{
-	 .navbar{
+.footer {
+	 .navbar {
 		padding: 0 20px;
 		margin-bottom:30px;
 		ul {
@@ -242,68 +32,15 @@ input.text {
 	}
 }
 
-.feature-group{
+.feature-group {
 	margin-bottom:30px;
-	.divider{
+	.divider {
 		opacity:0.3;
 		border-top: 1px solid $navbar-link-color;
 	}
 }
 
-
-.content.subhead{
+.content.subhead {
 	padding-bottom: 10px;
 }
 
-.meta-info{
-	padding-top:10px;
-	em{
-		display:block;
-		font-style:normal;
-	}
-	.label{
-		font-size:14px;
-		height:auto;
-		line-height:22px;
-		margin-top:10px;
-	}
-}
-
-.pagination-content{
-	article{
-		margin-bottom:10px;
-		&:not(:first-child){
-			@include doubleborder(top, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
-			padding-top:20px;
-		}
-	}
-}
-
-.pts {
-	padding-top:15px;
-}
-.ptm {
-	padding-top:20px;
-}
-.ptl{
-	padding-top:30px;
-}
-.ptxl{
-	padding-top:60px;
-}
-
-
-
-.pvl {
-	padding-top:30px;
-	padding-bottom:30px;
-}
-.pvm {
-	padding-top:20px;
-	padding-bottom:20px;
-}
-
-.pvs {
-	padding-top:10px;
-	padding-bottom:10px;
-}
