@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed2d22ffafed934bc057a5c684cca0c9",
+    "hash": "5f49964fbf705787f79e3704c6cfed7c",
     "packages": [
         {
             "name": "adrexia/gamesevent",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "e6af99ce50173d93fbe6f84d7f189f78b2ede13c"
+                "reference": "ccc388a1c7c7f7c94780dad36e057fa4fcb5de2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/e6af99ce50173d93fbe6f84d7f189f78b2ede13c",
-                "reference": "e6af99ce50173d93fbe6f84d7f189f78b2ede13c",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/ccc388a1c7c7f7c94780dad36e057fa4fcb5de2b",
+                "reference": "ccc388a1c7c7f7c94780dad36e057fa4fcb5de2b",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2014-10-06 08:14:46"
+            "time": "2014-11-02 06:30:59"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
@@ -144,12 +144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078"
+                "reference": "8024be9aa3ee446272937f46a8807fa52b337767"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
-                "reference": "5ed225fe8545c4e4bf502d56fdd87791ecfdd078",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8024be9aa3ee446272937f46a8807fa52b337767",
+                "reference": "8024be9aa3ee446272937f46a8807fa52b337767",
                 "shasum": ""
             },
             "replace": {
@@ -228,7 +228,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-09-25 03:36:45"
+            "time": "2014-11-01 17:51:50"
         },
         {
             "name": "mateusz/frontend",
@@ -810,12 +810,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "6206ecba9e9c606883e091bb366928c89bf8cb9a"
+                "reference": "feabffc4976a16f9860cc2768921833a6d97c102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/6206ecba9e9c606883e091bb366928c89bf8cb9a",
-                "reference": "6206ecba9e9c606883e091bb366928c89bf8cb9a",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/feabffc4976a16f9860cc2768921833a6d97c102",
+                "reference": "feabffc4976a16f9860cc2768921833a6d97c102",
                 "shasum": ""
             },
             "require": {
@@ -829,8 +829,7 @@
             "authors": [
                 {
                     "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
+                    "email": "unclecheese@leftandmain.com"
                 }
             ],
             "description": "Adds new form actions and buttons to GridField detail form for usability enhancements.",
@@ -839,7 +838,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-07-16 11:26:46"
+            "time": "2014-10-12 23:46:11"
         }
     ],
     "packages-dev": [
