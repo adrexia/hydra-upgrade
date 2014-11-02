@@ -128,3 +128,13 @@ label {
 		@include box-shadow(none);
 	}
 }
+
+.composite {
+	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
+	padding: 20px 0;
+	.field {
+		padding: 5px 0;
+		border: 0; //move border to parent
+		@include box-shadow(none);
+	}
+}

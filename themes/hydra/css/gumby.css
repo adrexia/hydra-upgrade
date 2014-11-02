@@ -2125,6 +2125,9 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .field:after { clear: both; }
 .field .field { border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
+.composite { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz-box-shadow: 0 1px 0 #1b1716; -o-box-shadow: 0 1px 0 #1b1716; box-shadow: 0 1px 0 #1b1716; padding: 20px 0; }
+.composite .field { padding: 5px 0; border: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
 .showOnClick a { position: relative; padding-left: 20px; }
 .showOnClick a:before { content: '+'; position: absolute; left: 0; width: 20px; height: 20px; }
 
