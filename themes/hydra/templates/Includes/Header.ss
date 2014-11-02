@@ -11,22 +11,27 @@
 								</a>
 							</h1>
 						<% else %>
-							<h1 class="eight columns">
+							<h1 class="seven columns">
 								<a href="$BaseHref" class="logo" rel="home">
 								$SiteConfig.LogoText
 								</a>
 							</h1>
 						<% end_if %>
 							
-						<div class="btn-login four columns">
+						<div class="btn-login five columns">
 							<% if $CurrentMember %>
-								<p class="meta-data">Logged in as <a href="$MemberProfilePage.Link">$CurrentMember.FirstName</a></p>
+								<p class="meta-data">Logged in as <a href="$MemberProfilePage.Link">$CurrentMember.FirstName</a>
+								<% if $CMSAccess %>
+								 | <a href="{$BaseHref}admin">Admin</a>
+								<% end_if %>
+								</p>
+								
 							<% end_if %>
 							<button class="btn medium success metro rounded login pretty pull_right">
-								<% if not $CurrentMember %>
-									<a href="{$BaseHref}Security/login">Login</a>
-								<% else %>
+								<% if $CurrentMember %>
 									<a href="{$BaseHref}Security/logout">Log out</a>
+								<% else %>
+									<a href="{$BaseHref}Security/login">Login</a>
 								<% end_if %>
 							</button>
 						</div>

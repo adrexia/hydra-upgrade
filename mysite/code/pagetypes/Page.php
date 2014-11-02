@@ -72,4 +72,8 @@ class Page_Controller extends ContentController {
 		);
 	}
 
+	public function CMSAccess() { 
+		return Permission::check('ADMIN') || Permission::check('CMS_ACCESS_LeftAndMain');
+	}
+
 }
