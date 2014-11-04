@@ -12,7 +12,7 @@
 						<article class="item $EvenOdd $FirstLast clearfix">
 							<header>
 								<h3 id="ID-{$ID}"><a href="$Top.GameListingPage.Link{$Link}">$Title</a></h3>
-								<strong class="">run by <% if MemberName %>$MemberName.LowerCase<% else %>Hydra<% end_if %></strong>
+								<strong class="">run by <% if $FacilitatorText %>$FacilitatorText<% else_if MemberName %>$MemberName.LowerCase<% else %>hydra<% end_if %></strong>
 							</header>
 							<div class="text pvm">
 								$Brief
