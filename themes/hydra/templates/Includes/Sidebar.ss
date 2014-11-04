@@ -3,14 +3,16 @@
 	<div class="ptxl">
 		<h4 class="pvm">Roster of Games</h4>
 		<% loop $GroupedGames.GroupedBy(getRoundTitle) %>
-			<div class="pvs">
-				<h5>$getRoundTitle()</h5>
-				<ul class="unstyled">
-					<% loop $Children %>
-						<li><a href="$Top.GameListingPage.Link{$Link}">$Title</a></li>
-					<% end_loop %>
-				</ul>
-			</div>
+			<% if getRoundTitle() =="Round 0" %><% else %>
+				<div class="pvs">
+					<h5> $getRoundTitle() </h5>
+					<ul class="unstyled">
+						<% loop $Children %>
+							<li><a href="$Top.GameListingPage.Link{$Link}">$Title</a></li>
+						<% end_loop %>
+					</ul>
+				</div>
+			<% end_if %>
 		<% end_loop %>
 	</div>
 	<% end_if %>
