@@ -6,7 +6,7 @@
 				<h1 class="page-header">$Title</h1>
 				$Content.RichLinks
 				
-				<strong class="">run by <% if $FacilitatorText %>$FacilitatorText<% else_if MemberName %>$MemberName.LowerCase<% else %>hydra<% end_if %></strong>
+				<strong class="">run by <% if $FacilitatorText %>$FacilitatorText.LowerCase<% else_if MemberName %>$MemberName.LowerCase<% else %>hydra<% end_if %></strong>
 				<div class="text pvm ">
 					<p class="lead">$Brief</p>
 					$Details

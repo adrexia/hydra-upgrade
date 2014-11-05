@@ -324,12 +324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "db1d6b3f72fccb4960135f35ecf2c51053b39499"
+                "reference": "9eef4895a4585f67aeceee43e89036f31670ac02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/db1d6b3f72fccb4960135f35ecf2c51053b39499",
-                "reference": "db1d6b3f72fccb4960135f35ecf2c51053b39499",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/9eef4895a4585f67aeceee43e89036f31670ac02",
+                "reference": "9eef4895a4585f67aeceee43e89036f31670ac02",
                 "shasum": ""
             },
             "require": {
@@ -360,7 +360,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2014-09-25 00:44:47"
+            "time": "2014-11-04 21:00:35"
         },
         {
             "name": "silverstripe/framework",
