@@ -6,9 +6,9 @@
 			<div class="main typography results-list" role="main" id="main">
 				<h1 class="page-header">$Title</h1>
 				$Content.RichLinks
-				<% if Games %>
+				<% if FilteredGames %>
 					<section class="pagination-content">
-					<% loop Games %>
+					<% loop FilteredGames %>
 						<article class="item $EvenOdd $FirstLast clearfix">
 							<header>
 								<h3 id="ID-{$ID}"><a href="$Top.GameListingPage.Link{$Link}">$Title</a></h3>
@@ -21,7 +21,7 @@
 					<% end_loop %>
 					</section>
 
-					<% with Games %>
+					<% with FilteredGames %>
 						<% include Pagination %>
 					<% end_with %>
 				<% else %>

@@ -4,9 +4,9 @@
 			<h2>$Title</h2>
 			<div class="content">
 				$Content
-				<% if Games %>
+				<% if FilteredGames %>
 					<section class="pagination-content">
-					<% loop Games %>
+					<% loop FilteredGames %>
 						<article class="$EvenOdd row $FirstLast">
 							<div class="columns twelve">
 								<header>
@@ -21,7 +21,7 @@
 					<% end_loop %>
 					</section>
 
-					<% with Games %>
+					<% with FilteredGames %>
 						<% include Pagination %>
 					<% end_with %>
 				<% else %>

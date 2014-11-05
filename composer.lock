@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "63b0a91f6900812166a3ec5db69ae014feed5a12"
+                "reference": "c23adde362ca2de214001bbb9dbc93f16259db28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/63b0a91f6900812166a3ec5db69ae014feed5a12",
-                "reference": "63b0a91f6900812166a3ec5db69ae014feed5a12",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/c23adde362ca2de214001bbb9dbc93f16259db28",
+                "reference": "c23adde362ca2de214001bbb9dbc93f16259db28",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2014-11-04 09:21:48"
+            "time": "2014-11-05 05:58:35"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
