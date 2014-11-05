@@ -5,7 +5,8 @@ class SliderItem extends DataObject {
 		'Title' => 'Varchar(255)',
 		'Attribution'=>'Varchar(255)',
 		'Caption' => 'Text',
-		'Archived' => 'Boolean'
+		'Archived' => 'Boolean',
+		'Sort'=>'Int'
 	);
 
 	private static $has_one = array(
@@ -21,6 +22,8 @@ class SliderItem extends DataObject {
 		'Link.Title' => 'Link',
 		'ArchivedReadable' => 'Current Status'
 	);
+
+	public static $default_sort = 'Sort';
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();

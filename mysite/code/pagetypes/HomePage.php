@@ -16,19 +16,23 @@ class HomePage extends Page {
 		$gridField = new GridField(
 			'NewsItems',
 			'NewsItems',
-			$this->NewsItems(),
-			GridFieldConfig_RelationEditor::create());
+			$this->NewsItems()->sort(array('Order'=>'ASC','Archived'=>'ASC')),
+			$config = GridFieldConfig_RelationEditor::create()
+		);
 		$gridField->setModelClass('NewsItem');
 		$fields->addFieldToTab('Root.News', $gridField);
+		$config->addComponent(new GridFieldOrderableRows());
+
 
 		// Carousel tab
 		$gridField = new GridField(
 			'SliderItems',
 			'Slider',
 			$this->SliderItems()->sort('Archived'),
-			GridFieldConfig_RelationEditor::create());
+			$sliderConf =GridFieldConfig_RelationEditor::create());
 		$gridField->setModelClass('SliderItem');
 		$fields->addFieldToTab('Root.Slider', $gridField);
+		$sliderConf->addComponent(new GridFieldOrderableRows());
 
 		return $fields;
 	}

@@ -4,7 +4,7 @@ class Quicklink extends DataObject {
 	private static $db = array(
 		'Name' => 'Varchar(255)',
 		'ExternalLink' => 'Varchar(255)',
-		'Order'=>'Int'
+		'Sort'=>'Int'
 	);
 
 	private static $has_one = array(
@@ -18,7 +18,7 @@ class Quicklink extends DataObject {
 		'ExternalLink' => 'External Link'
 	);
 
-	public static $default_sort = 'Order';
+	public static $default_sort = 'Sort';
 
 	public function getLink() {
 		if ($this->ExternalLink) {

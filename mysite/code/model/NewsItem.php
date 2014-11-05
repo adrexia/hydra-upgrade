@@ -5,8 +5,10 @@ class NewsItem extends DataObject {
 		'Title' => 'Varchar(255)',
 		'Author' => 'Varchar(255)',
 		'Content' => 'HTMLText',
-		'Archived' => 'Boolean' 
+		'Archived' => 'Boolean',
+		'Sort' => 'Int'
 	);
+
 
 	private static $has_one = array(
 		'Parent' => 'Page',
@@ -17,6 +19,8 @@ class NewsItem extends DataObject {
 		'Content' => 'Content',
 		'ArchivedReadable' => 'Current Status' 
 	);
+
+	public static $default_sort = 'Sort';
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
