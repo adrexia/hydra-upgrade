@@ -16,7 +16,7 @@ class HomePage extends Page {
 		$gridField = new GridField(
 			'NewsItems',
 			'NewsItems',
-			$this->NewsItems()->sort(array('Order'=>'ASC','Archived'=>'ASC')),
+			$this->NewsItems()->sort(array('Sort'=>'ASC','Archived'=>'ASC')),
 			$config = GridFieldConfig_RelationEditor::create()
 		);
 		$gridField->setModelClass('NewsItem');
@@ -28,7 +28,7 @@ class HomePage extends Page {
 		$gridField = new GridField(
 			'SliderItems',
 			'Slider',
-			$this->SliderItems()->sort('Archived'),
+			$this->SliderItems()->sort(array('Sort'=>'ASC','Archived'=>'ASC')),
 			$sliderConf =GridFieldConfig_RelationEditor::create());
 		$gridField->setModelClass('SliderItem');
 		$fields->addFieldToTab('Root.Slider', $gridField);

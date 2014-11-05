@@ -6,8 +6,7 @@ class NewsItem extends DataObject {
 		'Author' => 'Varchar(255)',
 		'Content' => 'HTMLText',
 		'Archived' => 'Boolean',
-		'Sort' => 'Int',
-		'Order' =>'Int' //temp fix for live
+		'Sort' => 'Int'
 	);
 
 
