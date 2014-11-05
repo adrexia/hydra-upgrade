@@ -17,7 +17,7 @@ $PageComments
 				<article class="$EvenOdd row $FirstLast">
 					<p class="meta-info two columns">
 						<em>
-							<time datetime="$LastEdited">$LastEdited.Format(d M Y)</time>
+							<time datetime="$Created">$Created.Format(d M Y)</time>
 						</em>
 						<br />
 						<span class="label metro rounded default $Author.LimitCharacters(1,'').LowerCase">
