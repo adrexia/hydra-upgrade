@@ -6,7 +6,8 @@ class NewsItem extends DataObject {
 		'Author' => 'Varchar(255)',
 		'Content' => 'HTMLText',
 		'Archived' => 'Boolean',
-		'Sort' => 'Int'
+		'Sort' => 'Int',
+		'Order' =>'Int' //temp fix for live
 	);
 
 
@@ -17,7 +18,7 @@ class NewsItem extends DataObject {
 	private static $summary_fields = array(
 		'Title' => 'Title',
 		'Content' => 'Content',
-		'ArchivedReadable' => 'Current Status' 
+		'ArchivedReadable' => 'Current Status'  
 	);
 
 	public static $default_sort = 'Sort';
