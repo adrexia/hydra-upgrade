@@ -43,7 +43,7 @@ class HomePage_Controller extends Page_Controller {
 
 
 	public function getNews($pageSize = 5){
-		$items =  $this->NewsItems()->sort("Created", "DESC");
+		$items =  $this->NewsItems()->sort(array('Sort'=>'ASC','Created'=>'ASC'));
 		// Apply pagination
 		$list = new AjaxPaginatedList($items, $this->request);
 		$list->setPageLength($pageSize);
