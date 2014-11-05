@@ -31,9 +31,8 @@ class Quicklink extends DataObject {
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
+		$fields->removeByName('Sort');
 		$fields->removeByName('ParentID');
-		$fields->removeByName('Order');
-
 
 		$externalLinkField = $fields->fieldByName('Root.Main.ExternalLink');
 

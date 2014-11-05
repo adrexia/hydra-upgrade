@@ -28,6 +28,7 @@ class SliderItem extends DataObject {
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('Archived');
+		$fields->removeByName('Sort');
 
 		$fields->addFieldToTab('Root.Main', new TreeDropdownField('LinkID', 'Link', 'SiteTree'));
 

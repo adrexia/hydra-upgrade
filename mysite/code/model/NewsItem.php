@@ -25,6 +25,7 @@ class NewsItem extends DataObject {
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->removeByName('Archived');
+		$fields->removeByName('Sort');
 
 		$fields->addFieldToTab('Root.Main', $group = new CompositeField(
 			$label = new LabelField("LabelArchive","Archive this news item?"),
