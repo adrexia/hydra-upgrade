@@ -164,7 +164,7 @@ h1 { font-family: 'cocaine_sansregular', sans-serif; padding-top: 25px; }
 h1.image, h1.captionImage, h1.media { margin-bottom: 0; padding-bottom: 0; max-height: 290px; overflow: hidden; }
 h1 a { color: #917e7b; font-size: 173px; }
 h1 a:hover { color: #c0b5b2; }
-@media only screen and (min-width: 768px) and (max-width: 959px) { h1 a { font-size: 140px; } }
+@media only screen and (min-width: 768px) and (max-width: 1099px) { h1 a { font-size: 140px; } }
 @media only screen and (max-width: 767px) { h1 a { font-size: 90px; } }
 h1 a img { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; margin-bottom: 0; padding: 0; }
 
@@ -1310,39 +1310,48 @@ i.icon-db-shape:before { content: "\f600"; height: inherit; }
 i.icon-logo-db:before { content: "\f603"; height: inherit; }
 
 /* Labels */
-.badge, .label { height: 20px; display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; line-height: 20px; text-align: center; color: #fff; }
-.badge a, .label a { color: #fff; }
-.badge.primary, .label.primary { background: #519fc4; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.secondary, .label.secondary { background: #3d6404; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.default, .label.default { background: #f2f2f2; color: #555555; border: 1px solid #f2f2f2; }
-.badge.default:hover, .label.default:hover { border: 1px solid #e5e5e5; }
-.badge.default a, .label.default a { color: #555555; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.info, .label.info { background: #312a29; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.danger, .label.danger { background: #f15051; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.warning, .label.warning { background: #f9d834; color: #5e4f03; }
-.badge.warning a, .label.warning a { color: #5e4f03; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
-.badge.success, .label.success { background: #6aad07; }
-.badge.light, .label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
-.badge.light a, .label.light a { color: #519fc4; }
-.badge.dark, .label.dark { background: #212121; }
+.badge, .label, a.label { height: 20px; display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; line-height: 20px; text-align: center; color: #fff; }
+.badge a, .label a, a.label a { color: #fff; }
+.badge.primary, .label.primary, a.label.primary { background: #519fc4; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.secondary, .label.secondary, a.label.secondary { background: #3d6404; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.default, .label.default, a.label.default { background: #f2f2f2; color: #555555; border: 1px solid #f2f2f2; }
+.badge.default:hover, .label.default:hover, a.label.default:hover { border: 1px solid #e5e5e5; color: #555555; }
+.badge.default a, .label.default a, a.label.default a { color: #555555; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.info, .label.info, a.label.info { background: #312a29; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.danger, .label.danger, a.label.danger { background: #f15051; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.warning, .label.warning, a.label.warning { background: #f9d834; color: #5e4f03; }
+.badge.warning a, .label.warning a, a.label.warning a { color: #5e4f03; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+.badge.success, .label.success, a.label.success { background: #6aad07; }
+.badge.light, .label.light, a.label.light { background: #fff; color: #d0c9bb; border: 1px solid #f2f2f2; }
+.badge.light a, .label.light a, a.label.light a { color: #519fc4; }
+.badge.dark, .label.dark, a.label.dark { background: #212121; }
+
+a.label { cursor: pointer; }
+a.label:hover.primary { background: #64aaca; }
+a.label:hover.secondary { background: #4c7c05; }
+a.label:hover.default { background: white; }
+a.label:hover.info { background: #070606; }
+a.label:hover.danger { background: #ef383a; }
+a.label:hover.warning { background: #f8d31b; }
+a.label:hover.success { background: #5b9506; }
 
 .badge { padding: 0 10px; font-size: 14px; font-size: 0.875rem; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 

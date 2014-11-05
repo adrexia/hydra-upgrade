@@ -2,26 +2,40 @@
 
 .alpha-change {
 	background-color: $passion;
-
+}
+.alpha-change-border {
+	border-color: rgba($passion, 0.5);
 }
 
 .f,.g,.h,.i,.v {
 	&.alpha-change {
 		background-color: $water;
 	}
+	&.alpha-change-border {
+		border-color: rgba($water, 0.5);
+	}
 }
 .j,.k,.l,.m,.w {
 	&.alpha-change {
 		background-color: darken($air, 25%);
+	}
+	&.alpha-change-border {
+		border-color: rgba($air, 0.5);
 	}
 }
 .n,.o,.p,.q,.x {
 	&.alpha-change {
 		background-color: $earth;
 	}
+	&.alpha-change-border {
+		border-color: rgba($earth,0.5);
+	}
 }
 .r,.s,.t,.u, .y {
 	&.alpha-change {
 		background-color: darken($people, 15%);
+	}
+	&.alpha-change-border {
+		border-color: rgba($people, 0.5);
 	}
 }

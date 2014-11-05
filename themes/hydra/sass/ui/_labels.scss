@@ -1,6 +1,6 @@
 /* Labels */
 
-.badge, .label {
+.badge, .label, a.label {
   height: 20px;
   display: inline-block;
   font-family: Helvetica, arial, verdana, sans-serif;
@@ -14,11 +14,13 @@
   @each $shade in $ui-coloring {
     &.#{nth($shade, 1)} {
       background: nth($shade, 2);
+
       @if nth($shade, 1) == default {
         color: darken(nth($shade, 2), 61.5%);
         border: 1px solid nth($shade, 2);
         &:hover {
           border: 1px solid darken(nth($shade, 2), 5%);
+          color: darken(nth($shade, 2), 61.5%);
         }
         a {
           color: darken(nth($shade, 2), 61.5%);
@@ -41,6 +43,17 @@
     }
     &.dark {
       background: #212121;
+    }
+  }
+}
+
+a.label {
+  cursor: pointer;
+  &:hover {
+    @each $shade in $ui-coloring {
+      &.#{nth($shade, 1)} {
+        background: nth($shade, 3);
+      }
     }
   }
 }

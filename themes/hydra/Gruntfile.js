@@ -23,6 +23,8 @@ grunt.initConfig({
         '../../framework/admin/javascript/lib.js',
         '../../frontend/javascript/jquery.ss.pagination.js',
         '../../frontend/javascript/jquery.ss.endless.js',
+        'js/src/libs/isotope/dist/isotope.pkgd.min.js',
+        'js/src/libs/isotope/js/layout-modes/fit-cols.js',
         'js/src/libs/gumby.js',
         'js/src/libs/ui/gumby.retina.js',
         'js/src/libs/ui/gumby.fixed.js',
@@ -39,7 +41,8 @@ grunt.initConfig({
         'js/src/libs/jquery.flexslider.js',
         'js/src/libs/parsleyjs/dist/parsley.js',
         'js/src/libs/gumby.min.js',
-        'js/src/general.src.js'
+        'js/src/general.src.js',
+        'js/src/isotope.src.js'
       ],
       dest: 'js/script.js',
     },

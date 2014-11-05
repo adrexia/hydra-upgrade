@@ -29,7 +29,7 @@
 	</div>
 	<% include Footer %>
 
-	<script type="text/javascript" src="{$ThemeDir}/js/script.min.js"></script>
+	<script type="text/javascript" src="{$ThemeDir}/js/script.js"></script>
 
 	<% if SiteConfig.GACode %>
 		<script>
