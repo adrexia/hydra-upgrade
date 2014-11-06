@@ -19,7 +19,7 @@ $(function() {
 			$( "form" ).submit(function( event ) {
 					var editable = S('.editable'),
 							value = editable.html();
-					editable.siblings('textarea').val(value);
+					editable.siblings('.field').find('textarea').val(value);
 			});
 
 	}
