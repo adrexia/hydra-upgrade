@@ -11,7 +11,7 @@
 						<a class="label metro rounded info success" data-filter="*">
 							all
 						</a>
-						<% loop $getGroupedGames.GroupedBy(Genre) %>
+						<% loop $getGroupedGames(Genre).GroupedBy(Genre) %>
 							<% if $Genre %>
 								<a class="label metro rounded info" data-filter=".$Genre.LimitWordCount(2, '').LowerCase">
 									$Genre.LimitWordCount(2, '').LowerCase
