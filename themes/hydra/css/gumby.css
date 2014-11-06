@@ -2145,7 +2145,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 
 /* ---- .element-item ---- */
 .masonry-items { margin-top: 20px; margin-left: -5px; }
-.masonry-items .item { position: relative; float: left; width: 33.33333%; margin: 0; padding: 0; }
+.masonry-items .item { position: relative; float: left; width: 50%; margin: 0; padding: 0; }
 @media only screen and (min-width: 768px) and (max-width: 1099px) { .masonry-items .item { width: 50%; } }
 @media only screen and (max-width: 767px) { .masonry-items .item { width: 100%; } }
 .masonry-items .item-wrap { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border-top: 1px solid #2b2524; margin: 20px 10px; padding: 5px 10px; background: rgba(21, 18, 17, 0.3); }

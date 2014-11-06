@@ -4,35 +4,38 @@
 			<h2>$Title</h2>
 			<div class="content">
 				$Content
+				<div class="row">
 				<% if FilteredGames %>
-					<div class="js-filters masonry-filters">
-							<strong>Filter by: </strong>
-							<a class="label metro rounded info success" data-filter="*">
-								all
-							</a>
-							<% loop $getGroupedGames.GroupedBy(Genre) %>
-								<% if $Genre %>
-									<a class="label metro rounded info" data-filter=".$Genre.LimitWordCount(2, '').LowerCase">
-										$Genre.LimitWordCount(2, '').LowerCase
+					<div class="js-filters masonry-filters columns three">
+						<h4 class="ptl">Filters </h4>
+						<a class="label metro rounded info success" data-filter="*">
+							all
+						</a>
+						<% loop $getGroupedGames.GroupedBy(Genre) %>
+							<% if $Genre %>
+								<a class="label metro rounded info" data-filter=".$Genre.LimitWordCount(2, '').LowerCase">
+									$Genre.LimitWordCount(2, '').LowerCase
+								</a>
+							<% end_if %>
+						<% end_loop %>
+						
+						<p></p>
+						<% loop $getGroupedGames.GroupedBy(Session) %>
+
+							<% if $Session %>
+								<% if $Session ==0 %>
+									<a class="label metro rounded info" data-filter="to-be-scheduled">
+										to-be-scheduled
+									</a>
+								<% else %>
+									<a class="label metro rounded info" data-filter=".round-{$Session}">
+										round {$Session}
 									</a>
 								<% end_if %>
-							<% end_loop %>
-							<% loop $getGroupedGames.GroupedBy(Session) %>
-								<% if $Session %>
-									<% if $Session ==0 %>
-										<a class="label metro rounded info" data-filter="to-be-scheduled">
-											to-be-scheduled
-										</a>
-									<% else %>
-										<a class="label metro rounded info" data-filter=".round-{$Session}">
-											round {$Session}
-										</a>
-									<% end_if %>
-								<% end_if %>
-							<% end_loop %>
-
+							<% end_if %>
+						<% end_loop %>
 					</div>
-					<section class="masonry-items js-isotope">
+					<section class="masonry-items js-isotope columns nine">
 					<% loop FilteredGames %>
 						<article class="item $Restriction $Genre.LimitWordCount(2, '').LowerCase <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
 
