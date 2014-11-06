@@ -17,9 +17,9 @@ $(function() {
 
 
 			$( "form" ).submit(function( event ) {
-					var editable = S('.editable'),
-							value = editable.html();
-					editable.siblings('.field').find('textarea').val(value);
+					var editable = $('.editable'),
+						value = editable.html();
+					editable.parent().find('textarea').val(value);
 			});
 
 	}
