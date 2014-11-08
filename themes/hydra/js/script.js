@@ -25049,7 +25049,7 @@ $(function() {
 			defaultText:'Add a genre',
 			autocomplete_url:'/fake_json_endpoint.html', //required by jquery ui
 			height: '30px',
-			width: '100%',
+			width: '98%',
 			placeholderColor:'rgba(255,255,255,0.3)',
 			delimiter:' ',
 			removeWithBackspace:true,

@@ -2145,7 +2145,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .composite { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz-box-shadow: 0 1px 0 #1b1716; -o-box-shadow: 0 1px 0 #1b1716; box-shadow: 0 1px 0 #1b1716; padding: 20px 0; }
 .composite .field { padding: 5px 0; border: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-.tagsinput { padding: 5px; overflow-y: auto; }
+.tagsinput { padding: 5px; overflow-y: auto; width: 98%; }
 .tagsinput span.tag { background: #6aad07; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 3px 5px 3px 0; padding: 0 3px 0px 10px; text-decoration: none; }
 .tagsinput span.tag a { position: relative; top: 2px; display: inline-block; padding: 0px 5px 0 5px; color: #fff; text-decoration: none; font-size: 16px; }
 .tagsinput input { background: transparent; border-radius: 3px; border: 1px solid transparent; color: #d0c9bb !important; font-family: helvetica; font-size: 13px; margin: 5px 5px 5px 0; outline: 0px; padding: 3px 3px 3px 10px; width: 100px !important; }
