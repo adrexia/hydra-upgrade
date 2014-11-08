@@ -11,14 +11,23 @@
 						<a class="label metro rounded info success" data-filter="*">
 							all
 						</a>
-						<% loop $getGroupedGames(Genre).GroupedBy(Genre) %>
-							<% if $Genre %>
-								<a class="label metro rounded info" data-filter=".$Genre.LimitWordCount(2, '').LowerCase">
-									$Genre.LimitWordCount(2, '').LowerCase
-								</a>
-							<% end_if %>
-						<% end_loop %>
-						
+						<% if $getGroupedGames() %>
+							<% loop $getGroupedGames(Genre).GroupedBy(Genre) %>
+								<% if $Genre %>
+									<% loop $Children %>
+										<% if $getGenresList() %>
+											<% loop $getGenresList() %>
+												<% if $Title %>
+												<a class="label metro rounded info" data-filter=".$Title.LowerCase">
+													$Title.LowerCase
+												</a>
+												<% end_if %>
+											<% end_loop %>
+										<% end_if %>
+									<% end_loop %>
+								<% end_if %>
+							<% end_loop %>
+						<% end_if %>
 						<p></p>
 						<% loop $getGroupedGames.GroupedBy(Session) %>
 
@@ -37,7 +46,7 @@
 					</div>
 					<section class="masonry-items js-isotope columns nine">
 					<% loop FilteredGames %>
-						<article class="item $Restriction $Genre.LimitWordCount(2, '').LowerCase <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
+						<article class="item $Restriction $Genre.LowerCase <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
 
 							<div class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
 								<header>

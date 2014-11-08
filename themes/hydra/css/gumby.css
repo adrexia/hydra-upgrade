@@ -1878,10 +1878,10 @@ form fieldset legend { padding: 5px 10px; }
 .field input, .field input[type="*"], .field textarea { max-width: 100%; width: 100%; padding: 0; margin: 0; border: none; outline: none; resize: none; -webkit-appearance: none; font-family: "Open Sans", helvetica, arial, sans-serif; font-weight: 300; font-size: 16px; font-size: 1rem; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .field .radio, .field .checkbox { position: relative; }
 .field .radio input[type="radio"], .field .checkbox input[type="checkbox"] { display: none; }
-.field .input, .field input.text { color: #d0c9bb; position: relative; padding: 0 10px; background: #5b4e4b; border: 1px solid #695a57; height: 35.85532px; line-height: 33.85532px; font-size: 16px; font-size: 1rem; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.field .input.search, .field input.search.text { height: 35.85532px; line-height: 33.85532px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
-.field .input:focus, .field input.text:focus, .field .input:active, .field input.text:active { background: #776662; border: 1px solid #85726e; }
-.field .input.textarea, .field input.textarea.text { height: auto; }
+.field .input, .field input.text, .field .tagsinput { color: #d0c9bb; position: relative; padding: 0 10px; background: #5b4e4b; border: 1px solid #695a57; height: 35.85532px; line-height: 33.85532px; font-size: 16px; font-size: 1rem; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.field .input.search, .field input.search.text, .field .search.tagsinput { height: 35.85532px; line-height: 33.85532px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
+.field .input:focus, .field input.text:focus, .field .tagsinput:focus, .field .input:active, .field input.text:active, .field .tagsinput:active { background: #776662; border: 1px solid #85726e; }
+.field .input.textarea, .field input.textarea.text, .field .textarea.tagsinput { height: auto; }
 .field .xnarrow { width: 13.33333%; }
 .field .narrow { width: 30.66667%; }
 .field .normal { width: 48%; }
@@ -1895,9 +1895,9 @@ form fieldset legend { padding: 5px 10px; }
 .field label + .xnarrow:last-child, .field label + .narrow:last-child, .field label + .normal:last-child, .field label + .wide:last-child, .field label + .xwide:last-child, .field label + .xxwide:last-child { margin-left: 0; }
 @media only screen and (max-width: 1120px) { .field .xxwide:first-child, .field .xxwide:last-child { margin-right: 0%; } }
 .field.prepend, .field.append { font-size: 0; white-space: nowrap; padding-bottom: 3.5px; }
-.field.prepend input, .field.prepend .input, .field.prepend input.text, .field.append input, .field.append .input, .field.append input.text { display: inline-block; max-width: 100%; }
-.field.prepend input, .field.prepend .input, .field.prepend input.text { -moz-border-radius: 0px 4px 4px 0; -webkit-border-radius: 0px; border-radius: 0px 4px 4px 0; }
-.field.append input, .field.append .input, .field.append input.text { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; }
+.field.prepend input, .field.prepend .input, .field.prepend input.text, .field.prepend .tagsinput, .field.append input, .field.append .input, .field.append input.text, .field.append .tagsinput { display: inline-block; max-width: 100%; }
+.field.prepend input, .field.prepend .input, .field.prepend input.text, .field.prepend .tagsinput { -moz-border-radius: 0px 4px 4px 0; -webkit-border-radius: 0px; border-radius: 0px 4px 4px 0; }
+.field.append input, .field.append .input, .field.append input.text, .field.append .tagsinput { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; }
 .field.prepend.append input { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 .field.prepend.append input:first-child { -moz-border-radius: 4px 0 0 4px; -webkit-border-radius: 4px; border-radius: 4px 0 0 4px; }
 .field.prepend.append input:last-child { margin-left: -1px; -moz-border-radius: 0px 4px 4px 0; -webkit-border-radius: 0px; border-radius: 0px 4px 4px 0; }
@@ -1912,26 +1912,26 @@ form fieldset legend { padding: 5px 10px; }
 .field.append *:last-child { -moz-border-radius: 0px 4px 4px 0; -webkit-border-radius: 0px; border-radius: 0px 4px 4px 0; }
 .field.append button, .field.prepend button { display: inline-block; }
 .field.append input:first-child { margin-right: 0; }
-.field.double input, .field.double .input, .field.double input.text { width: 50% !important; }
-.field.double input:last-child, .field.double .input:last-child, .field.double input.text:last-child { margin-left: -1px; }
+.field.double input, .field.double .input, .field.double input.text, .field.double .tagsinput { width: 50% !important; }
+.field.double input:last-child, .field.double .input:last-child, .field.double input.text:last-child, .field.double .tagsinput:last-child { margin-left: -1px; }
 .field.danger:after { font-family: "entypo"; content: "\2716"; font-size: 16px; position: absolute; top: 14%; right: 15px; z-index: 999; color: #f15051; }
 .field.danger.no-icon:after { display: none; }
 .field.danger.append:after, .field.danger.prepend:after { content: ""; }
-.field.danger input, .field.danger .input, .field.danger input.text, .field.danger textarea, .field.danger .textarea, .field.danger .radio span, .field.danger .checkbox span, .field.danger .picker { border-color: #f15051; color: #f15051; background: #fef5f5; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
+.field.danger input, .field.danger .input, .field.danger input.text, .field.danger .tagsinput, .field.danger textarea, .field.danger .textarea, .field.danger .radio span, .field.danger .checkbox span, .field.danger .picker { border-color: #f15051; color: #f15051; background: #fef5f5; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
 .field.danger textarea { color: #f15051; }
 .field.danger input::-webkit-input-placeholder, .field.danger textarea::-webkit-input-placeholder { color: #f15051; }
 .field.danger input:-moz-placeholder, .field.danger textarea:-moz-placeholder { color: #f15051; }
 .field.warning:after { font-family: "entypo"; content: "\26a0"; font-size: 16px; position: absolute; top: 14%; right: 15px; z-index: 999; color: #f9d834; }
 .field.warning.no-icon:after { display: none; }
 .field.warning.append:after, .field.warning.prepend:after { content: ""; }
-.field.warning input, .field.warning .input, .field.warning input.text, .field.warning textarea, .field.warning .textarea, .field.warning .radio span, .field.warning .checkbox span, .field.warning .picker { border-color: #f9d834; color: #f9d834; background: #fef9e1; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
+.field.warning input, .field.warning .input, .field.warning input.text, .field.warning .tagsinput, .field.warning textarea, .field.warning .textarea, .field.warning .radio span, .field.warning .checkbox span, .field.warning .picker { border-color: #f9d834; color: #f9d834; background: #fef9e1; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
 .field.warning textarea { color: #f9d834; }
 .field.warning input::-webkit-input-placeholder, .field.warning textarea::-webkit-input-placeholder { color: #f9d834; }
 .field.warning input:-moz-placeholder, .field.warning textarea:-moz-placeholder { color: #f9d834; }
 .field.success:after, .pagination-wrap.ssendless .ss-pagination a.field:after, .Actions .field.btn:after { font-family: "entypo"; content: "\2713"; font-size: 16px; position: absolute; top: 14%; right: 15px; z-index: 999; color: #6aad07; }
 .field.success.no-icon:after, .pagination-wrap.ssendless .ss-pagination a.field.no-icon:after, .Actions .field.no-icon.btn:after { display: none; }
 .field.success.append:after, .pagination-wrap.ssendless .ss-pagination a.field.append:after, .Actions .field.append.btn:after, .field.success.prepend:after, .pagination-wrap.ssendless .ss-pagination a.field.prepend:after, .Actions .field.prepend.btn:after { content: ""; }
-.field.success input, .pagination-wrap.ssendless .ss-pagination a.field input, .Actions .field.btn input, .field.success .input, .pagination-wrap.ssendless .ss-pagination a.field .input, .Actions .field.btn .input, .field.success input.text, .pagination-wrap.ssendless .ss-pagination a.field input.text, .Actions .field.btn input.text, .field.success textarea, .pagination-wrap.ssendless .ss-pagination a.field textarea, .Actions .field.btn textarea, .field.success .textarea, .pagination-wrap.ssendless .ss-pagination a.field .textarea, .Actions .field.btn .textarea, .field.success .radio span, .pagination-wrap.ssendless .ss-pagination a.field .radio span, .Actions .field.btn .radio span, .field.success .checkbox span, .pagination-wrap.ssendless .ss-pagination a.field .checkbox span, .Actions .field.btn .checkbox span, .field.success .picker, .pagination-wrap.ssendless .ss-pagination a.field .picker, .Actions .field.btn .picker { border-color: #6aad07; color: #6aad07; background: #c1f96e; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
+.field.success input, .pagination-wrap.ssendless .ss-pagination a.field input, .Actions .field.btn input, .field.success .input, .pagination-wrap.ssendless .ss-pagination a.field .input, .Actions .field.btn .input, .field.success input.text, .pagination-wrap.ssendless .ss-pagination a.field input.text, .Actions .field.btn input.text, .field.success .tagsinput, .pagination-wrap.ssendless .ss-pagination a.field .tagsinput, .Actions .field.btn .tagsinput, .field.success textarea, .pagination-wrap.ssendless .ss-pagination a.field textarea, .Actions .field.btn textarea, .field.success .textarea, .pagination-wrap.ssendless .ss-pagination a.field .textarea, .Actions .field.btn .textarea, .field.success .radio span, .pagination-wrap.ssendless .ss-pagination a.field .radio span, .Actions .field.btn .radio span, .field.success .checkbox span, .pagination-wrap.ssendless .ss-pagination a.field .checkbox span, .Actions .field.btn .checkbox span, .field.success .picker, .pagination-wrap.ssendless .ss-pagination a.field .picker, .Actions .field.btn .picker { border-color: #6aad07; color: #6aad07; background: #c1f96e; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
 .field.success textarea, .pagination-wrap.ssendless .ss-pagination a.field textarea, .Actions .field.btn textarea { color: #6aad07; }
 .field.success input::-webkit-input-placeholder, .pagination-wrap.ssendless .ss-pagination a.field input::-webkit-input-placeholder, .Actions .field.btn input::-webkit-input-placeholder, .field.success textarea::-webkit-input-placeholder, .pagination-wrap.ssendless .ss-pagination a.field textarea::-webkit-input-placeholder, .Actions .field.btn textarea::-webkit-input-placeholder { color: #6aad07; }
 .field.success input:-moz-placeholder, .pagination-wrap.ssendless .ss-pagination a.field input:-moz-placeholder, .Actions .field.btn input:-moz-placeholder, .field.success textarea:-moz-placeholder, .pagination-wrap.ssendless .ss-pagination a.field textarea:-moz-placeholder, .Actions .field.btn textarea:-moz-placeholder { color: #6aad07; }
@@ -2115,6 +2115,8 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 .content .alert, .content .message { padding: 10px; margin-bottom: 30px; font-size: 15px; }
 .content .alert.primary a, .content .primary.message a { color: #050d10; }
 
+.field input.text, .field .tagsinput { line-height: normal; }
+
 .Actions .btn, .Actions .pagination-wrap.ssendless .ss-pagination a, .pagination-wrap.ssendless .ss-pagination .Actions a { text-shadow: 0 1px 1px #2e4b03; font-weight: bold; display: block; color: #fff; float: left; }
 
 #ForgotPassword { font-size: 0.8em; padding-top: 10px; padding-left: 20px; float: left; }
@@ -2129,9 +2131,9 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .req-indicator { position: absolute; top: -100%; }
 .req-indicator:after { position: absolute; top: 100%; left: 5px; content: '*'; color: #f15051; height: 15px; width: 15px; }
 
-.input.text, input.text { float: left; width: 98%; }
-.checkablevisibility .input.text, .checkablevisibility input.text { float: right; width: 90%; margin-right: 10px; }
-.checkablevisibility .input.text .checkbox, .checkablevisibility input.text .checkbox { margin-top: 5px; }
+.input.text, input.text, .text.tagsinput { float: left; width: 98%; }
+.checkablevisibility .input.text, .checkablevisibility input.text, .checkablevisibility .text.tagsinput { float: right; width: 90%; margin-right: 10px; }
+.checkablevisibility .input.text .checkbox, .checkablevisibility input.text .checkbox, .checkablevisibility .text.tagsinput .checkbox { margin-top: 5px; }
 
 .checkablevisibility .checkbox { margin-top: 7px; }
 
@@ -2143,22 +2145,21 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .composite { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz-box-shadow: 0 1px 0 #1b1716; -o-box-shadow: 0 1px 0 #1b1716; box-shadow: 0 1px 0 #1b1716; padding: 20px 0; }
 .composite .field { padding: 5px 0; border: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-ul.tagit { padding: 1px 5px; overflow: auto; margin-left: inherit; /* usually we don't want the regular ul margins. */ margin-right: inherit; }
-ul.tagit li { display: block; float: left; margin: 2px 5px 2px 0; }
-ul.tagit li.tagit-choice { position: relative; line-height: inherit; }
+.tagsinput { padding: 5px; overflow-y: auto; }
+.tagsinput span.tag { background: #6aad07; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 3px 5px 3px 0; padding: 0 3px 0px 10px; text-decoration: none; }
+.tagsinput span.tag a { position: relative; top: 2px; display: inline-block; padding: 0px 5px 0 5px; color: #fff; text-decoration: none; font-size: 16px; }
+.tagsinput input { background: transparent; border-radius: 3px; border: 1px solid transparent; color: #d0c9bb !important; font-family: helvetica; font-size: 13px; margin: 5px 5px 5px 0; outline: 0px; padding: 3px 3px 3px 10px; width: 100px !important; }
+.tagsinput div { display: block; float: left; }
+.tagsinput .not_valid { margin: 3px 5px 3px 0; background: #f15051 !important; border-radius: 3px; color: #fff !important; padding: 5px 3px 5px 10px; }
 
-input.tagit-hidden-field { display: none; }
+.tag-field { padding-bottom: 42px; }
 
-ul.tagit li.tagit-choice-read-only { padding: .2em .5em .2em .5em; }
-ul.tagit li.tagit-choice-editable { padding: .2em 18px .2em .5em; }
-ul.tagit li.tagit-new { padding: .25em 4px .25em 0; }
-ul.tagit li.tagit-choice a.tagit-label { cursor: pointer; text-decoration: none; }
-ul.tagit li.tagit-choice .tagit-close { cursor: pointer; position: absolute; right: .1em; top: 50%; margin-top: -8px; line-height: 17px; }
-ul.tagit li.tagit-choice .tagit-close .text-icon { display: none; }
-ul.tagit li.tagit-choice input { display: block; float: left; margin: 2px 5px 2px 0; }
-ul.tagit input[type="text"] { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin: 0; padding: 0; width: inherit; background-color: inherit; outline: none; }
+.tags_clear { clear: both; width: 100%; height: 0px; }
 
-/* used for some custom themes that don't need image icons */
+.ui-helper-hidden-accessible { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
+
+.ui-autocomplete li { background: #312a29; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
+
 /* ---- .element-item ---- */
 .masonry-items { margin-top: 20px; margin-left: -5px; }
 .masonry-items .item { position: relative; float: left; width: 50%; margin: 0; padding: 0; }

@@ -38,7 +38,7 @@ grunt.initConfig({
         'js/src/libs/ui/jquery.validation.js',
         'js/src/libs/gumby.init.js',
         'js/src/libs/medium-editor/dist/js/medium-editor.js',
-        "js/src/libs/tag-it/js/tag-it.js",
+        "js/src/libs/tags-input/jquery.tagsinput.js",
         'js/src/libs/jquery.flexslider.js',
         'js/src/libs/parsleyjs/dist/parsley.js',
         'js/src/libs/gumby.min.js',

@@ -29,8 +29,14 @@
 }
 
 
-input.text {
+input.text, .tagsinput {
 	@extend .input;
+}
+
+.field {
+	input.text, .tagsinput {
+		line-height: normal;
+	}
 }
 .Actions {
 	.btn {

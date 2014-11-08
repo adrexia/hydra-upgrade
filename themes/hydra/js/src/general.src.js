@@ -26,22 +26,41 @@ $(function() {
 
 	if($('.flexslider').length > 0){
 
-			$('.flexslider').flexslider({
-					pauseOnAction: false,
-					directionNav: false,
-					animation: "slide",
-					slideshowSpeed:10000,
-					pausePlay: true,
-					pauseText: " ",
-					playText: " ",
-					smoothHeight: true
-			});
+		$('.flexslider').flexslider({
+				pauseOnAction: false,
+				directionNav: false,
+				animation: "slide",
+				slideshowSpeed:10000,
+				pausePlay: true,
+				pauseText: " ",
+				playText: " ",
+				smoothHeight: true
+		});
 	}
 
+	if($('.tag-field.genre').length > 0){
+
+		$(".tag-field.genre input").tagsInput({
+			autocomplete: {
+				delay: 0, 
+				minLength: 1,
+				source: $('.genre-list').text().split(","),
+				autoFill:true,
+				selectFirst: true,
+			},
+			defaultText:'Add a genre',
+			autocomplete_url:'/fake_json_endpoint.html', //required by jquery ui
+			height: '30px',
+			width: '100%',
+			placeholderColor:'rgba(255,255,255,0.3)',
+			delimiter:' ',
+			removeWithBackspace:true,
+		});
+	}
 
 	if($('.pagination').length > 0){
 
-					// Pagination - endless
+			// Pagination - endless
 			$('.pagination.endless').ssendless({
 					contentSelector: '.pagination-content',
 					templates: {
