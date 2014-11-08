@@ -2,7 +2,7 @@
 	padding: 5px;
 	overflow-y: auto;
 	width: 98%;
-	
+
 	span.tag {
 		background: $earth;
 		border-radius: 3px;
@@ -73,7 +73,7 @@
 	position: absolute;
 }
 .ui-autocomplete {
-
+	max-width:60%; // to stop horozontal scroll
 	li {
 		background: $info-color;
 		border-radius: 3px;
