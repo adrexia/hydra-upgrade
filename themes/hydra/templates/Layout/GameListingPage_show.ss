@@ -33,8 +33,14 @@
 					<% end_if %>
 					<% if $Genre %>
 						<tr>
-							<th>Genre:</th>
-							<td>$Genre</td>
+							<th>Genres:</th>
+							<td>
+								<% if $getGenresListNice() %>
+									<% loop $getGenresListNice() %>
+										<% if $Title %>{$Title.LowerCase} <% if not $Last %>, <% end_if %><% end_if %>
+									<% end_loop %>
+								<% end_if %>
+							</td>
 						</tr>
 					<% end_if %>
 					<% if $Costuming %>
