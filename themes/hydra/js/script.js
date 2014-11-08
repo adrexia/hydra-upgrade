@@ -25004,22 +25004,26 @@ $(function() {
 
 	if($('.editable').length > 0) {
 			var editor = new MediumEditor('.editable', {
-					anchorInputPlaceholder: 'Type a link',
-					buttons: ['bold', 'italic', 'quote', 'link', 'header1', 'header2'],
-					cleanPastedHTML: true,
-					diffLeft: 20,
-					diffTop: 10,
-					firstHeader: 'h3',
-					secondHeader: 'h4'
+				anchorInputPlaceholder: 'Type a link',
+				buttons: ['bold', 'italic', 'quote', 'link', 'header1', 'header2'],
+				cleanPastedHTML: true,
+				diffLeft: 20,
+				diffTop: 10,
+				firstHeader: 'h3',
+				secondHeader: 'h4',
+				placeholder: ''
 			});
 
+			var editable = $('.editable'),
+				value = editable.parent().find('textarea').val();
+
+			editable.html(value);
 
 			$( "form" ).submit(function( event ) {
 					var editable = $('.editable'),
 						value = editable.html();
 					editable.parent().find('textarea').val(value);
 			});
-
 	}
 
 	if($('.flexslider').length > 0){

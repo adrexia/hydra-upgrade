@@ -51,7 +51,15 @@
 					<% end_if %>
 					</tbody>
 				</table>
-
+				<% if $showEditLink %>
+					<% if $getEditLink %>
+					<span class="btn metro rounded medium success">
+						<a href="$getEditLink">
+							Edit Game
+						</a>
+					</span>
+					<% end_if %>
+				<% end_if %>
 			</div>
 		</article>
 	</section>

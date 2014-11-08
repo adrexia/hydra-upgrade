@@ -27,7 +27,10 @@ h1 {
     @include font-size($absurd);
   }
 }
-h2 { @include font-size($xlarge); }
+h2 { 
+  clear:both;
+  @include font-size($xlarge); 
+}
 h3 { @include font-size($larger);}
 h4 { @include font-size($large);}
 h5 { @include font-size($med);}

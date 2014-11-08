@@ -26,18 +26,28 @@
 		</article>
 
 	</section>
-			<section class="three columns">
-			<% include Sidebar %>
-			<% if Quicklinks %>
-			<div class="link-set">
-				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
-				<ul>
-					<% loop Quicklinks %>
-						<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
-					<% end_loop %>
-				</ul>
-			</div>
-			<% end_if %>
+	<section class="three columns">
+	<% if $getGamesByFacilitator %>
+		<h3 class="ptl">Games Submitted</h3>
+		<ul class="unstyled">
+		<% loop $getGamesByFacilitator %>
+			<li>
+				<a href="{$Top.Link}edit/$ID">$Title</a>
+			</li>
+		<% end_loop %>
+		</ul>
+	<% end_if %>
+	<% include Sidebar %>
+	<% if Quicklinks %>
+	<div class="link-set">
+		<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
+		<ul>
+			<% loop Quicklinks %>
+				<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
+			<% end_loop %>
+		</ul>
+	</div>
+	<% end_if %>
 
-		</section>
+</section>
 </div>
