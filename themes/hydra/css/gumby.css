@@ -2158,7 +2158,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 
 .ui-helper-hidden-accessible { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
 
-.ui-autocomplete { max-width: 60%; }
+.ui-autocomplete { max-width: 40%; }
 .ui-autocomplete li { background: #312a29; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
 
 /* ---- .element-item ---- */

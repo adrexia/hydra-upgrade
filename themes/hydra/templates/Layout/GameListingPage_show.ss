@@ -37,7 +37,7 @@
 							<td>
 								<% if $getGenresListNice() %>
 									<% loop $getGenresListNice() %>
-										<% if $Title %>{$Title.LowerCase} <% if not $Last %>, <% end_if %><% end_if %>
+										<% if $Title %>$Title<% if not $Last %>, <% end_if %><% end_if %>
 									<% end_loop %>
 								<% end_if %>
 							</td>
