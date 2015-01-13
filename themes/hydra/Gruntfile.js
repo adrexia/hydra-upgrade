@@ -42,6 +42,7 @@ grunt.initConfig({
         'js/src/libs/jquery.flexslider.js',
         'js/src/libs/parsleyjs/dist/parsley.js',
         'js/src/libs/gumby.min.js',
+        'js/src/preference_select.src.js',
         'js/src/general.src.js',
         'js/src/isotope.src.js'
       ],

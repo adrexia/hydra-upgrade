@@ -1,3 +1,15 @@
+.warning h1 {
+	font-family: arial, sans-serif;
+}
+
+.js .js-hide,
+.js .js-hide-input input {
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+	overflow: hidden;
+	position: absolute;
+}
 
 .showOnClick a {
 	position:relative;

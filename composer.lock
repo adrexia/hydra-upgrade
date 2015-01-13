@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "fd64132036dc187add4e438ed4a2df1aac19f299"
+                "reference": "5fe04b87530277ce53717db2edc0ff93d82c32be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/fd64132036dc187add4e438ed4a2df1aac19f299",
-                "reference": "fd64132036dc187add4e438ed4a2df1aac19f299",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/5fe04b87530277ce53717db2edc0ff93d82c32be",
+                "reference": "5fe04b87530277ce53717db2edc0ff93d82c32be",
                 "shasum": ""
             },
             "require": {
@@ -41,24 +41,27 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2014-11-08 23:08:15"
+            "time": "2015-01-13 09:15:17"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ajshort/silverstripe-gridfieldextensions.git",
-                "reference": "7bf3cf9a319f35ca858385c8146685ee4bfc5ad0"
+                "url": "git@github.com:ajshort/silverstripe-gridfieldextensions.git",
+                "reference": "187fa61d7adf0630956c920312e3cdb79f6111b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/7bf3cf9a319f35ca858385c8146685ee4bfc5ad0",
-                "reference": "7bf3cf9a319f35ca858385c8146685ee4bfc5ad0",
+                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/187fa61d7adf0630956c920312e3cdb79f6111b5",
+                "reference": "187fa61d7adf0630956c920312e3cdb79f6111b5",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -74,6 +77,10 @@
             ],
             "authors": [
                 {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                },
+                {
                     "name": "Andrew Short",
                     "email": "andrewjshort@gmail.com"
                 }
@@ -84,7 +91,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-07-09 12:49:12"
+            "time": "2014-12-07 21:44:55"
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
@@ -146,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767"
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8024be9aa3ee446272937f46a8807fa52b337767",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767",
+                "url": "https://api.github.com/repos/composer/installers/zipball/89d77bfbee79e16653f7162c86e602cc188471db",
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db",
                 "shasum": ""
             },
             "replace": {
@@ -203,6 +210,7 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -230,7 +238,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-11-01 17:51:50"
+            "time": "2014-11-29 01:29:17"
         },
         {
             "name": "mateusz/frontend",
@@ -812,12 +820,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "feabffc4976a16f9860cc2768921833a6d97c102"
+                "reference": "595dffde1ba402e802cd7786512f788d1c661627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/feabffc4976a16f9860cc2768921833a6d97c102",
-                "reference": "feabffc4976a16f9860cc2768921833a6d97c102",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/595dffde1ba402e802cd7786512f788d1c661627",
+                "reference": "595dffde1ba402e802cd7786512f788d1c661627",
                 "shasum": ""
             },
             "require": {
@@ -840,7 +848,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-10-12 23:46:11"
+            "time": "2014-11-22 10:29:29"
         }
     ],
     "packages-dev": [],

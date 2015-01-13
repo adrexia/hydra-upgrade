@@ -7,6 +7,25 @@
 				<div class="ptl">
 					$Form
 				</div>
+				<% if $SubmittedGames %>
+					<% if $getGroupedPlayerGames.GroupedBy(Session) %>
+					<table class="striped">
+						<tbody>
+							<% loop $getGroupedPlayerGames.GroupedBy(Session) %>
+								<tr>
+									<th>Round&nbsp;$Session</th>
+									<td>
+									<% loop $Children %>
+										{$Preference}.
+										<a href="$Game.Link">$Game.Title</a> <br />
+									<% end_loop %>
+									</td>
+								</tr>
+							<% end_loop %>
+						</tbody>
+					</table>
+					<% end_if %>
+				<% end_if %>
 				$PageComments
 			</div>
 		</article>

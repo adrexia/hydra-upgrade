@@ -35,7 +35,7 @@ table {
 
 	thead {
 		background-color: $table-thead-bgcolor;
-		color: #fff;
+		color: $body-font-color;
 
 		tr th {
 			font-size: $norm;
