@@ -12,8 +12,8 @@
 							all
 						</a>
 
-						<% if $getAllTags() %>
-							<% loop $getAllTags() %>
+						<% if $getAllTags(true) %>
+							<% loop $getAllTags(true) %>
 								<% if $Title %>
 								<a class="label metro rounded info" data-filter=".$Title">
 									$Title
@@ -43,7 +43,7 @@
 
 							<div class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
 								<header>
-									<h3 id="ID-{$ID}"><a href="$Top.GameListingPage.Link{$Link}">$Title</a></h3>
+									<h3 id="ID-{$ID}"><a href="$Top.GameListingPage.Link{$URLSegment}">$Title</a></h3>
 									<strong class="">run by <% if $FacilitatorText %>$FacilitatorText.LowerCase<% else_if MemberName %>$MemberName.LowerCase<% else %>hydra<% end_if %></strong>
 								</header>
 								<div class="text pvm">

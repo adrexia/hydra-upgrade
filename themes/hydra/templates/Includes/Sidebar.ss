@@ -8,7 +8,7 @@
 					<h5> $getRoundTitle() </h5>
 					<ul class="unstyled">
 						<% loop $Children %>
-							<li><a href="$Top.GameListingPage.Link{$Link}">$Title</a></li>
+							<li><a href="$Link">$Title</a></li>
 						<% end_loop %>
 					</ul>
 				</div>

@@ -9,6 +9,26 @@ class Page extends SiteTree {
 	private static $has_one = array(
 	);
 
+	public function getCurrentRegistration(){
+		$member = Member::currentUser();
+		if(!$member) return false;
+		
+		$reg = Registration::get()->filter(array(
+			'MemberID' => $member->ID,
+			'ParentID' => $this->getCurrentEvent()->ID,
+		));
+
+		if(!$reg){
+			return false;
+		}
+
+		return $reg->First();
+	}
+
+	public function getCurrentEvent(){
+		return SiteConfig::current_site_config()->CurrentEvent();
+	}
+
 }
 class Page_Controller extends ContentController {
 
@@ -47,10 +67,6 @@ class Page_Controller extends ContentController {
 
 	public function getMemberProfilePage(){
 		return MemberProfilePage::get()->First();
-	}
-
-	public function getCurrentEvent(){
-		return SiteConfig::current_site_config()->CurrentEvent();
 	}
 
 	public function HomePage() {

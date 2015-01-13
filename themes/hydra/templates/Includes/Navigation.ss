@@ -4,7 +4,11 @@
 	<ul class="twelve columns">
 		<% loop $Menu(1) %>
 			<% if $ClassName==RegistrationPage %>
-				<% if not $CurrentMember %>
+				<% if not $getCurrentRegistration %>
+					<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+				<% end_if %>
+			<% else_if $ClassName==GameSignupPage %>
+				<% if $getCurrentRegistration %>
 					<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
 				<% end_if %>
 			<% else %>
