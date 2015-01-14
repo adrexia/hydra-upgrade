@@ -3,7 +3,7 @@
 	// copes with 5 preferences maximum
 
 	.preference-group .field {
-		float:left;
+		float: left;
 		cursor: move; 
 		background: rgba(lighten($global-bg-color, 10%),0.5);
 		border: 0px solid lighten($global-bg-color, 12%);
@@ -12,11 +12,24 @@
 		font-weight: bold;
 		margin: 0;
 		margin-bottom: 1px;
-		padding: 5px 5px 5px 40px;
-
+		padding: 5px 40px 5px 40px;
+		
+		@include respond(all-phones) {
+			border-left-width: 5px;
+		}
+		&:first-child {
+			.icon-up {
+				display: none;
+			}
+		}
 		&:hover, &:focus {
 			background: lighten($global-bg-color, 10%);
 			border-color: $earth;
+			@include respond(all-phones) {
+				.icon-up {
+					color: $earth;
+				}
+			}
 		}
 		&:before {
 			box-sizing: border-box;
@@ -42,12 +55,20 @@
 			left: -17px;
 			top: 5px;
 			opacity:0.5;
+			@include respond(all-phones) {
+				content: "";
+			}
 		}
 		.icon-up {
-			color: #231e1d;
+			text-shadow: 1px 0 rgba(lighten($global-bg-color, 20%), 0.1);
+			position:absolute;
+			right: 5px;
+			top: 5px;
 			padding-left: 22px;
+			color: $navbar-color;
 			&:hover {
-				color: $earth;
+				color: lighten($earth, 3%);
+				cursor: pointer;
 			}
 		}
 	}
@@ -73,8 +94,3 @@
 		}
 	}
 }
-
-//preference 2
-
-//preference 1 bg 
-//preference 2 bg

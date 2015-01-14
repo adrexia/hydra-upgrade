@@ -4,13 +4,21 @@
 		position: relative;
 	}
 	.navbar{
-		margin-top:0;
+		margin-top: 0;
 	}
 }
 
 .navbar {
-	margin-bottom:0;
-	margin-top:20px;
+	margin-bottom: 0;
+	margin-top: 20px;
+
+	a.toggle {
+		line-height: 37px;
+		margin-top: 10px;
+		@include respond(all-phones) {
+			display: inline-block;
+		}
+	}
 	&.rounded{
 		@include border-radius(4px);
 	}

@@ -25011,6 +25011,17 @@ $(function() {
 
 	}
 
+	function moveToTop(object) {
+		var group = $(object).closest('.preference-group'),
+			options;
+
+		group.prepend($(object).closest('.control-group'));
+
+		// update input fields
+		options = group.find('.control-group input');
+		updatePreferences(options);
+	}
+
 	if ($('.preference-select .preference-group') !== undefined){
 
 		$('.preference-select .preference-group .control-group').attr('title', 'Drag and drop to reorder');
@@ -25028,16 +25039,16 @@ $(function() {
 		});
 
 
-		$('.preference-select .js-to-top').on('click', function(e){
-			var group = $(this).closest('.preference-group'),
-				options;
+		$('.preference-select .js-to-top').on(Gumby.click, function(e){
+			moveToTop(this);
 
-			group.prepend($(this).closest('.control-group'));
+		});
 
-			// update input fields
-			options = group.find('.control-group input');
-			updatePreferences(options);
+		$('.preference-select .field').on(Gumby.click, function(e) {
 
+			if($(window).width() < 768) {
+				moveToTop(this);
+			}
 		});
 	}
 
