@@ -2182,7 +2182,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .ui-autocomplete { max-width: 40%; }
 .ui-autocomplete li { background: #312a29; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
 
-.js .preference-select .preference-group .field { float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; font-weight: bold; margin: 0; margin-bottom: 1px; padding: 5px 40px 5px 40px; }
+.js .preference-select .preference-group .field { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 40px 5px 40px; }
 @media only screen and (max-width: 767px) { .js .preference-select .preference-group .field { border-left-width: 5px; } }
 .js .preference-select .preference-group .field:first-child .icon-up { display: none; }
 .js .preference-select .preference-group .field:hover, .js .preference-select .preference-group .field:focus { background: #3f3634; border-color: #6aad07; }
