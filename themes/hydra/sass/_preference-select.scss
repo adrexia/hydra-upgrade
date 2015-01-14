@@ -3,10 +3,6 @@
 	// copes with 5 preferences maximum
 
 	.preference-group .field {
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-		
 		position: relative;
 		float: left;
 		cursor: move; 
@@ -74,6 +70,11 @@
 				color: lighten($earth, 3%);
 				cursor: pointer;
 			}
+		}
+		.extra {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 	}
 

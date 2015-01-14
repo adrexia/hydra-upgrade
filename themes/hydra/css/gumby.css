@@ -2182,7 +2182,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .ui-autocomplete { max-width: 40%; }
 .ui-autocomplete li { background: #312a29; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
 
-.js .preference-select .preference-group .field { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 40px 5px 40px; }
+.js .preference-select .preference-group .field { position: relative; float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 40px 5px 40px; }
 @media only screen and (max-width: 767px) { .js .preference-select .preference-group .field { border-left-width: 5px; } }
 .js .preference-select .preference-group .field:first-child .icon-up { display: none; }
 .js .preference-select .preference-group .field:hover, .js .preference-select .preference-group .field:focus { background: #3f3634; border-color: #6aad07; }
@@ -2192,6 +2192,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 @media only screen and (max-width: 767px) { .js .preference-select .preference-group .field:after { content: ""; } }
 .js .preference-select .preference-group .field .icon-up { text-shadow: 1px 0 rgba(91, 78, 75, 0.1); position: absolute; right: 5px; top: 5px; padding-left: 22px; color: #151211; }
 .js .preference-select .preference-group .field .icon-up:hover { color: #73bc08; cursor: pointer; }
+.js .preference-select .preference-group .field .extra { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 .js .preference-select .preference-1 .field:nth-of-type(1) { border-color: #6aad07; }
 .js .preference-select .preference-1 .field:nth-of-type(1):before { content: "1"; }
 .js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1) { border-color: #443b39; }
