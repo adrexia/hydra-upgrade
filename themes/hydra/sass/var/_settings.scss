@@ -76,7 +76,7 @@ $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
-$header-font-color: #F9D834 !default;
+$header-font-color: lighten($sunlight, 13%) !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #D0C9BB !default;
