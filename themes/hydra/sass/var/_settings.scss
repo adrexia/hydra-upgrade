@@ -63,8 +63,8 @@ $ms-base: $base-font-size $importantNum;
 
 // Sizing
 $xsmall: ms(-2);
-$small: ms(-1);
-$norm: ms(0);									// $base-font-size (16px == default)
+$small: ms(-1) + 2;
+$norm: ms(0);	// $base-font-size (16px == default)
 $med: ms(1);
 $large: ms(2);
 $larger: ms(3);

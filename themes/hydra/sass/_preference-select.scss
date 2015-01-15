@@ -17,9 +17,23 @@
 		@include respond(all-phones) {
 			border-left-width: 5px;
 		}
+		.icon-heart {
+			display: none;
+		}
+		&.favourite .icon-heart {
+			color: $passion;
+		}
 		&:first-child {
 			.icon-up {
 				display: none;
+			}
+			.icon-heart {
+				display: block;
+			}
+			&.not-playing{
+				.icon-heart {
+					display: none;
+				}
 			}
 		}
 		&:hover, &:focus {
@@ -59,9 +73,8 @@
 				content: "";
 			}
 		}
-		.icon-up {
-			text-shadow: 1px 0 rgba(lighten($global-bg-color, 20%), 0.1);
-			position:absolute;
+		.icon {
+			position: absolute;
 			right: 5px;
 			top: 5px;
 			padding-left: 22px;
@@ -73,8 +86,6 @@
 		}
 		.extra {
 			text-overflow: ellipsis;
-			white-space: nowrap;
-			overflow: hidden;
 		}
 	}
 
@@ -84,7 +95,6 @@
 				.field:nth-of-type(#{$j}) {
 					border-color: $earth;
 					&:before {
-						// background-color: rgba($earth, 0.5);
 						content: "#{$j}";
 					}
 				}
@@ -99,3 +109,13 @@
 		}
 	}
 }
+
+.preference-table {
+	.icon-heart {
+		color: $passion;
+	}
+	.icon-check {
+		color: $earth;
+	}
+}
+
