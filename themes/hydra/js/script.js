@@ -25005,7 +25005,7 @@ $(function() {
 	// Favourite must always be first. If it's not first, clear favourite
 	function validateFavourite(object) {
 		var form = $(object).closest('.preference-select'),
-		favourite = form.find('.favourite');
+			favourite = form.find('.favourite');
 
 		if(favourite !== undefined){
 			//check if favourite is first child
@@ -25089,19 +25089,15 @@ $(function() {
 		});
 
 		$('.preference-select .field').on(Gumby.click, function(e) {
-
-			if($(window).width() < 768) {
-				if($(this).is( ":first-child")){
+			if($(this).is( ":first-child")){
+				if(!$(this).hasClass('not-playing')){
 					markFavourite(this);
-				} else {
-					moveToTop(this);
 				}
+			} else {
+				moveToTop(this);
 			}
 		});
-
-
 	}
-
 
 });
 

@@ -1,8 +1,12 @@
 .key {
+	display: none;
+}
+.js .key {
 	@include clearfix;
 	padding: 15px 10px;
 	margin-bottom: 30px;
-	width:100%;
+	width: 100%;
+	display: block;
 	background-color: $navbar-color;
 	.icon-heart {
 		color: $passion;

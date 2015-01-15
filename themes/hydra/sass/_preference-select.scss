@@ -12,13 +12,10 @@
 		color: #fff;
 		margin: 0;
 		margin-bottom: 1px;
-		padding: 5px 40px 5px 40px;
+		padding: 5px 50px 5px 40px;
 
 		@include respond(all-phones) {
 			border-left-width: 5px;
-		}
-		.icon-heart {
-			display: none;
 		}
 		&.favourite .icon-heart {
 			color: $passion;
@@ -39,10 +36,14 @@
 		&:hover, &:focus {
 			background: lighten($global-bg-color, 10%);
 			border-color: $earth;
-			@include respond(all-phones) {
-				.icon-up {
-					color: $earth;
-				}
+			.icon {
+				color: $earth;
+			}
+			// .icon-heart {
+			// 	color: $passion;
+			// }
+			&.favourite .icon-heart {
+				color: $passion;
 			}
 		}
 		&:before {
@@ -78,11 +79,15 @@
 			right: 5px;
 			top: 5px;
 			padding-left: 22px;
-			color: $navbar-color;
+			color: rgba(lighten($earth, 50%), 0.5);
 			&:hover {
 				color: lighten($earth, 3%);
 				cursor: pointer;
 			}
+		}
+		.icon-heart {
+			display: none;
+			color: rgba(lighten($passion, 20%), 0.5);
 		}
 		.extra {
 			text-overflow: ellipsis;

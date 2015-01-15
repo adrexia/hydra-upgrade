@@ -2182,20 +2182,21 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .ui-autocomplete { max-width: 40%; }
 .ui-autocomplete li { background: #312a29; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
 
-.js .preference-select .preference-group .field { position: relative; float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 40px 5px 40px; }
+.js .preference-select .preference-group .field { position: relative; float: left; cursor: move; background: rgba(63, 54, 52, 0.5); border: 0px solid #443b39; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 50px 5px 40px; }
 @media only screen and (max-width: 767px) { .js .preference-select .preference-group .field { border-left-width: 5px; } }
-.js .preference-select .preference-group .field .icon-heart { display: none; }
 .js .preference-select .preference-group .field.favourite .icon-heart { color: #f15051; }
 .js .preference-select .preference-group .field:first-child .icon-up { display: none; }
 .js .preference-select .preference-group .field:first-child .icon-heart { display: block; }
 .js .preference-select .preference-group .field:first-child.not-playing .icon-heart { display: none; }
 .js .preference-select .preference-group .field:hover, .js .preference-select .preference-group .field:focus { background: #3f3634; border-color: #6aad07; }
-@media only screen and (max-width: 767px) { .js .preference-select .preference-group .field:hover .icon-up, .js .preference-select .preference-group .field:focus .icon-up { color: #6aad07; } }
+.js .preference-select .preference-group .field:hover .icon, .js .preference-select .preference-group .field:focus .icon { color: #6aad07; }
+.js .preference-select .preference-group .field:hover.favourite .icon-heart, .js .preference-select .preference-group .field:focus.favourite .icon-heart { color: #f15051; }
 .js .preference-select .preference-group .field:before { box-sizing: border-box; display: block; padding: 5px 10px; background-color: #372f2d; height: 100%; content: ""; position: absolute; top: 0px; left: 0px; width: 30px; color: rgba(255, 255, 255, 0.7); font-weight: normal; }
 .js .preference-select .preference-group .field:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); content: "\e744"; font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; left: -17px; top: 5px; opacity: 0.5; }
 @media only screen and (max-width: 767px) { .js .preference-select .preference-group .field:after { content: ""; } }
-.js .preference-select .preference-group .field .icon { position: absolute; right: 5px; top: 5px; padding-left: 22px; color: #151211; }
+.js .preference-select .preference-group .field .icon { position: absolute; right: 5px; top: 5px; padding-left: 22px; color: rgba(224, 252, 183, 0.5); }
 .js .preference-select .preference-group .field .icon:hover { color: #73bc08; cursor: pointer; }
+.js .preference-select .preference-group .field .icon-heart { display: none; color: rgba(249, 174, 175, 0.5); }
 .js .preference-select .preference-group .field .extra { text-overflow: ellipsis; }
 .js .preference-select .preference-1 .field:nth-of-type(1) { border-color: #6aad07; }
 .js .preference-select .preference-1 .field:nth-of-type(1):before { content: "1"; }
@@ -2261,17 +2262,19 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .preference-table .icon-heart { color: #f15051; }
 .preference-table .icon-check { color: #6aad07; }
 
-.key { *zoom: 1; padding: 15px 10px; margin-bottom: 30px; width: 100%; background-color: #151211; }
-.key:before, .key:after { content: ""; display: table; }
-.key:after { clear: both; }
-.key .icon-heart { color: #f15051; }
-.key .icon-check { color: #6aad07; }
-.key .icon-up { color: #6aad07; }
-.key dt, .key dd { float: left; }
-.key dt { margin-left: 20px; }
-@media only screen and (max-width: 767px) { .key dt { clear: both; margin-left: 0; } }
-.key h3 { font-size: 14px; font-weight: bold; text-transform: uppercase; float: left; color: #d0c9bb; }
-@media only screen and (max-width: 767px) { .key h3 { display: none; } }
+.key { display: none; }
+
+.js .key { *zoom: 1; padding: 15px 10px; margin-bottom: 30px; width: 100%; display: block; background-color: #151211; }
+.js .key:before, .js .key:after { content: ""; display: table; }
+.js .key:after { clear: both; }
+.js .key .icon-heart { color: #f15051; }
+.js .key .icon-check { color: #6aad07; }
+.js .key .icon-up { color: #6aad07; }
+.js .key dt, .js .key dd { float: left; }
+.js .key dt { margin-left: 20px; }
+@media only screen and (max-width: 767px) { .js .key dt { clear: both; margin-left: 0; } }
+.js .key h3 { font-size: 14px; font-weight: bold; text-transform: uppercase; float: left; color: #d0c9bb; }
+@media only screen and (max-width: 767px) { .js .key h3 { display: none; } }
 
 /* ---- .element-item ---- */
 .masonry-items { margin-top: 20px; margin-left: -5px; }

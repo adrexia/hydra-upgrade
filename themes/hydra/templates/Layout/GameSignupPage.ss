@@ -6,6 +6,9 @@
 				$Content
 				<div class="ptl">
 					<% if userGameRegOpen %>
+					<% if Form %>
+							$GameLiveContent
+						<% end_if %>
 					<div class="key">
 						<h3>Key:</h3>
 						<dl>
