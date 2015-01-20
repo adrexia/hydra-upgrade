@@ -11,8 +11,7 @@
     @include border-radius($button-radius $button-radius);
   }
   &.photo {
-    border: 5px solid #fff;
-    @include box-shadow(0 0 1px $body-font-color);
+    @include box-shadow(0 0 1px rgba($body-font-color, 0.3));
     &.polaroid {
       padding-bottom: 50px;
       background: #fff;

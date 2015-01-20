@@ -1,10 +1,4 @@
-.captionImage, .media{
-	@extend .image;
-	@extend .photo;
-	.caption{
-		font-style:italic;
-	}
-}
+
 
 h2{
 	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
@@ -19,21 +13,119 @@ h2{
 	}
 }
 
-.content img{
+.captionImage, .media{
+	@extend .image;
+	@extend .photo;
+	.caption{
+		font-style:italic;
+	}
+}
+
+// Typography specific to how silverstripe outputs CMS editable fields
+// to be imported into the CMS
+.content img {
 	@extend .image;
 	@extend .photo;
 	@extend .rounded;
+	&.right {
+		float:right;
+		clear:right;
+		margin: 18px 0 18px 80px;
+	}
+	&.left {
+		float:left;
+		clear:left;
+		margin: 18px 80px 18px 0px;
+	}
+	&.leftAlone {
+		margin: 18px 80px 18px 0;
+		float: none;
+		display: block;
+		clear: both;
+	}
+	&.center {
+		display:block;
+		margin: 18px auto 18px auto;
+		clear: both;
+	}
+}
+
+// Media insert formatting  (Youtube embed) 
+.media.center{
+	margin:0 auto;
+	text-align:center;
+}
+.media.left{
+	float:left;
+	clear:left;
+	margin: 0 18px 18px 0px;
+}
+.media.leftAlone{
+	margin: 0 18px 18px 0;
+	float: none;
+	display: block;
+	clear: both;
+}
+.media.right{
+	float:right;
+	clear:right;
+	margin: 0 0 18px 18px;
+}
+
+.content {
+	.captionImage, .featured-image {
+		@include border-radius(0 0 $button-radius $button-radius);
+		max-width: 100%;
+		background-color: darken($global-bg-color, 2%);
+
+		&.left {
+			float: left;
+			margin: 0 80px 40px 0px;
+		}
+		&.right{
+			float:right;
+			margin: 0 0 40px 80px;
+		}
+		&.leftAlone{
+			float:none;
+			margin: 0 80px 40px 0px;
+		}
+		&.center{
+			margin: 0 auto 40px;
+		}
+		&.left, &.right, &.leftAlone, &.center {
+			@include respond(all-phones){
+				margin-bottom:40px;
+				margin-top:10px;
+			}
+			img {
+				@include border-radius($button-radius $button-radius 0 0);
+				margin: 0;
+				border: 0;
+			}
+		}
+		p {
+			clear: both;
+			padding: 15px 20px;
+			font-weight:normal;
+			font-size:16px;
+			line-height:22px;
+			@include respond(all-phones){
+				text-align: center;
+				margin: 0px 20px 40px 20px;
+			}
+		}
+	}
 }
 
 h1{
 	font-family: 'cocaine_sansregular', sans-serif;
 	padding-top:25px;
 	&.image{
-		//padding-top:0;
-		margin-bottom:0;
-		padding-bottom:0;
-		max-height:290px;
-		overflow:hidden;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		max-height: 290px;
+		overflow: hidden;
 	}
 	a {
 		color:lighten($global-bg-color,40%);

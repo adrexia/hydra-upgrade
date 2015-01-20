@@ -80,7 +80,7 @@ $header-font-color: lighten($sunlight, 13%) !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #D0C9BB !default;
-$body-link-color: lighten(#3D8EB4,7%) !default; 
+$body-link-color: $water !default; 
 $body-link-hover-color: lighten(#00afdb,5%) !default;
 
 // User Interface Colors
