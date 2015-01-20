@@ -25182,11 +25182,11 @@ $(function() {
 			$('.pagination-wrap.endless-scroll').addClass('ssendless');
 
 			$('.pagination.endless').on('ssendlessbeforepagefetch', function(event){
-					$(this).siblings('.ss-pagination').addClass('loading').find('a').html('<span class="text">Loading</span> <span class="loading-icon"><i class="icon-cw icon-spin"></i></span>');
+					$(this).siblings('.ss-pagination').addClass('load').find('a').html('<span class="text">Loading</span> <span class="loading-icon"><i class="icon-cw icon-spin">&nbsp;</i></span>');
 			});
 
 			$('.pagination.endless').on('ssendlessafterpagefetch', function(event){
-					$(this).siblings('.ss-pagination').removeClass('loading').find('a').html('<span class="text">Show More</span> <span class="loading-icon"><i class="icon-blank"></i></span>');
+					$(this).siblings('.ss-pagination').removeClass('load').find('a').html('<span class="text">Show More</span> <span class="loading-icon"><i class="icon-blank">&nbsp;</i></span>');
 			});
 
 	}

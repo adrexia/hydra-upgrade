@@ -38,10 +38,13 @@
 				</article>
 			<% end_loop %>
 			</section>
-			
-			<% with News %>
-				<% include Pagination %>
-			<% end_with %>
+			<div class="row">
+				<div class="columns ten push_two">
+				<% with News %>
+					<% include Pagination %>
+				<% end_with %>
+				</div>
+			</div>
 		<% else %>
 			<div class="resultsHeader">
 				<h2 class="pull-left">News</h2>
