@@ -20,7 +20,7 @@ gridfieldextensions/
 memberprofiles/
 html5/
 iframe/
-
+node_modules
 mimevalidator/
 
 multiform/
