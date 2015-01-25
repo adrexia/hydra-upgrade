@@ -31,7 +31,10 @@ table {
 
 	tr td:first-child,
 	tr th:first-child {
-		font-weight: $table-row-first-cell-font-weight;
+		font-weight: bold;
+		@include respond(all-phones) {
+			font-size: $small;
+		}
 	}
 
 	thead {

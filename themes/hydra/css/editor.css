@@ -191,7 +191,7 @@ h1 a:hover { color: #c0b5b2; }
 @media only screen and (max-width: 767px) { h1 a { font-size: 90px; } }
 h1 a img { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; margin-bottom: 0; padding: 0; }
 
-.content table thead tr th { font-weight: normal; font-size: 1.3em; padding: 15px 10px; }
+.content table thead tr th { padding: 15px 10px; }
 
 /* Icons */
 [class^="icon-"] a:before, [class*=" icon-"] a:before, [class^="icon-"] a:after, [class*=" icon-"] a:after, i[class^="icon-"], i[class*=" icon-"] { font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; }
@@ -1406,6 +1406,7 @@ table caption { text-align: center; font-size: 29.79335px; padding: .75em; }
 table thead th, table tbody td, table tr th, table tr td { display: table-cell; padding: 10px; vertical-align: top; text-align: left; border-top: 1px solid #3f3634; }
 table tr td, table tbody tr td { font-size: 16px; }
 table tr td:first-child, table tr th:first-child { font-weight: bold; }
+@media only screen and (max-width: 767px) { table tr td:first-child, table tr th:first-child { font-size: 11.88854px; } }
 table thead { background-color: #181414; color: #d0c9bb; }
 table thead tr th { font-size: 16px; font-weight: bold; vertical-align: bottom; }
 table.striped tr:nth-of-type(even), table table tr.stripe, table table tr.striped { background-color: #231e1d; }
@@ -1417,3 +1418,6 @@ table.rounded thead ~ tr:last-child td:first-child, table.rounded tbody tr:last-
 table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr:first-child td, table.rounded > tbody:first-child tr:first-child td { border-top: 0; }
 
 body { padding: 10px; }
+
+table { color: #fff; }
+table td { color: #fff; }
