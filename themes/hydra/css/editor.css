@@ -185,7 +185,7 @@ h2 { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz
 
 h1 { font-family: 'cocaine_sansregular', sans-serif; padding-top: 25px; }
 h1.image, h1.captionImage, h1.media { margin-bottom: 0; padding-bottom: 0; max-height: 290px; overflow: hidden; }
-h1 a { color: #d0c9bb; font-size: 173px; }
+h1 a { color: rgba(208, 201, 187, 0.8); font-size: 173px; }
 h1 a:hover { color: #c0b5b2; }
 @media only screen and (min-width: 768px) and (max-width: 1099px) { h1 a { font-size: 140px; } }
 @media only screen and (max-width: 767px) { h1 a { font-size: 90px; } }

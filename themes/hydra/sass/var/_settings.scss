@@ -87,7 +87,7 @@ $body-link-hover-color: $people !default;
 // User Interface Colors
 $global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
-$navbar-link-color: $body-font-color;
+$navbar-link-color: $body-link-color;
 
 $primary-color: $water;
 $secondary-color: $people;
