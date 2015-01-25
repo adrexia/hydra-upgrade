@@ -282,7 +282,7 @@ p.lead, .subhead p { font-size: 20px; font-size: 1.25rem; margin-bottom: 18.4133
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #519fc4; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #00c3f4; }
+a:hover { color: #de347f; }
 
 b, strong { font-weight: bold; }
 
@@ -385,7 +385,7 @@ h2 { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz
 
 h1 { font-family: 'cocaine_sansregular', sans-serif; padding-top: 25px; }
 h1.image, h1.captionImage, h1.media { margin-bottom: 0; padding-bottom: 0; max-height: 290px; overflow: hidden; }
-h1 a { color: #917e7b; font-size: 173px; }
+h1 a { color: #d0c9bb; font-size: 173px; }
 h1 a:hover { color: #c0b5b2; }
 @media only screen and (min-width: 768px) and (max-width: 1099px) { h1 a { font-size: 140px; } }
 @media only screen and (max-width: 767px) { h1 a { font-size: 90px; } }
@@ -1725,7 +1725,7 @@ table.rounded thead th, .Actions table.btn thead th, table.rounded thead td, .Ac
   .navbar .column, .navbar .columns { min-height: 0; } }
 .navbar.fixed { top: 0; left: 0; z-index: 99999; }
 .navbar a.toggle { display: none; }
-@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #fbe67e; background: #151211; height: 40px; line-height: 38px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 41.88854px; font-size: 2.61803rem; line-height: 55px; }
+@media only screen and (max-width: 767px) { .navbar a.toggle { top: 18%; right: 4%; width: 46px; position: absolute; text-align: center; display: inline-block; color: #d0c9bb; background: #151211; height: 40px; line-height: 38px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 41.88854px; font-size: 2.61803rem; line-height: 55px; }
   .navbar a.toggle:hover { background: #231e1d; }
   .navbar a.toggle:active, .navbar a.toggle.active { background: #070606; } }
 .navbar .logo { display: inline-block; margin: 0 1.81818% 0 0; padding: 0; height: 59.36817px; line-height: 57.36817px; }
@@ -1739,8 +1739,9 @@ table.rounded thead th, .Actions table.btn thead th, table.rounded thead td, .Ac
   .navbar ul.active { height: auto; max-height: 600px; z-index: 999999; -moz-transition-duration: 0.5s; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -moz-box-shadow: 0 2px 2px black; -webkit-box-shadow: 0 2px 2px black; box-shadow: 0 2px 2px black; } }
 .navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 59.36817px; line-height: 57.36817px; }
 @media only screen and (max-width: 767px) { .navbar ul li { display: block; position: relative; min-height: 50px; max-height: 320px; height: auto; width: 100%; border-right: 0 !important; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-transition-duration: 0.5s; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; } }
-.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: #fbe67e; text-shadow: 0 1px 2px black, 0 1px 0 black; height: 59.36817px; line-height: 57.36817px; font-size: 16px; font-size: 1rem; }
+.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: #d0c9bb; text-shadow: 0 1px 2px black, 0 1px 0 black; height: 59.36817px; line-height: 57.36817px; font-size: 16px; font-size: 1rem; }
 .navbar ul li > a i.icon-popup { position: absolute; }
+.navbar ul li > a:hover, .navbar ul li > a:focus { color: #519fc4; }
 .navbar ul li .btn { border-color: black !important; }
 .navbar ul li.field { margin-bottom: 0 !important; margin-right: 0; }
 @media only screen and (max-width: 767px) { .navbar ul li.field { padding: 0 20px; } }
@@ -1800,7 +1801,7 @@ table.rounded thead th, .Actions table.btn thead th, table.rounded thead td, .Ac
 
 .gumby-no-touch .navbar li .dropdown ul li a:hover { background: #312a29; }
 
-.gumby-touch .navbar a:hover { color: #fbe67e !important; }
+.gumby-touch .navbar a:hover { color: #d0c9bb !important; }
 
 .subnav { display: block; width: auto; overflow: hidden; margin: 0 0 18px 0; padding-top: 4px; }
 .subnav li, .subnav dt, .subnav dd { float: left; display: inline; margin-left: 9px; margin-bottom: 4px; }
@@ -2039,7 +2040,7 @@ form fieldset legend { padding: 5px 10px; }
 
 .nonvisual-indicator, .sr-only { clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; position: absolute; }
 
-.divider { border-top: 3px solid #fbe67e; opacity: 0.8; text-align: center; -moz-border-image: url("../images/border.png") 30 0 stretch; -o-border-image: url("../images/border.png") 30 0 stretch; -webkit-border-image: url("../images/border.png") 30 0 stretch; border-image: url("../images/border.png") 30 0 stretch; }
+.divider { border-top: 3px solid #d0c9bb; opacity: 0.8; text-align: center; -moz-border-image: url("../images/border.png") 30 0 stretch; -o-border-image: url("../images/border.png") 30 0 stretch; -webkit-border-image: url("../images/border.png") 30 0 stretch; border-image: url("../images/border.png") 30 0 stretch; }
 
 .shaded { background: #1b1716; padding-bottom: 20px; }
 
@@ -2333,7 +2334,7 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .footer .navbar ul a { color: #519fc4; font-size: 0.9em; }
 
 .feature-group { margin-bottom: 30px; }
-.feature-group .divider { opacity: 0.3; border-top: 1px solid #fbe67e; }
+.feature-group .divider { opacity: 0.3; border-top: 1px solid #d0c9bb; }
 
 .content.subhead { padding-bottom: 10px; }
 

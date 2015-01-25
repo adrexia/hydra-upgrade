@@ -82,12 +82,12 @@ $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #D0C9BB !default;
 $body-link-color: $water !default; 
-$body-link-hover-color: lighten(#00afdb,5%) !default;
+$body-link-hover-color: $people !default;
 
 // User Interface Colors
 $global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
-$navbar-link-color: $header-font-color;
+$navbar-link-color: $body-font-color;
 
 $primary-color: $water;
 $secondary-color: $people;

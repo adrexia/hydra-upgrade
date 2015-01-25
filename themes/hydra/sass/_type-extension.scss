@@ -128,7 +128,7 @@ h1{
 		overflow: hidden;
 	}
 	a {
-		color:lighten($global-bg-color,40%);
+		color: $air;
 		font-size:173px;
 		&:hover{
 			color:lighten($global-bg-color,60%);

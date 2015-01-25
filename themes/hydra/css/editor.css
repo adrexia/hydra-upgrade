@@ -82,7 +82,7 @@ p.lead, .subhead p { font-size: 20px; font-size: 1.25rem; margin-bottom: 18.4133
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #519fc4; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #00c3f4; }
+a:hover { color: #de347f; }
 
 b, strong { font-weight: bold; }
 
@@ -185,7 +185,7 @@ h2 { border-bottom: 1px solid #2b2524; -webkit-box-shadow: 0 1px 0 #1b1716; -moz
 
 h1 { font-family: 'cocaine_sansregular', sans-serif; padding-top: 25px; }
 h1.image, h1.captionImage, h1.media { margin-bottom: 0; padding-bottom: 0; max-height: 290px; overflow: hidden; }
-h1 a { color: #917e7b; font-size: 173px; }
+h1 a { color: #d0c9bb; font-size: 173px; }
 h1 a:hover { color: #c0b5b2; }
 @media only screen and (min-width: 768px) and (max-width: 1099px) { h1 a { font-size: 140px; } }
 @media only screen and (max-width: 767px) { h1 a { font-size: 90px; } }

@@ -139,6 +139,10 @@
         i.icon-popup {
           position: absolute;
         }
+        &:hover,
+        &:focus {
+          color: $body-link-color;
+        }
       }
       .btn {
         border-color: darken($navbar-color, 30%) !important;
