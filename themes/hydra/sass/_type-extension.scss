@@ -151,4 +151,16 @@ h1{
 	padding: 15px 10px;
 }
 
+.desktop-only {
+	@include respond(all-phones) {
+		display: none;
+	}
+}
+
+.mobile-large {
+	@include respond(all-phones) {
+		font-size: 2em;
+	}
+}
+
 

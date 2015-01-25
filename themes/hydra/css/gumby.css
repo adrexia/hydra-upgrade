@@ -393,6 +393,10 @@ h1 a img { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; ma
 
 .content table thead tr th { padding: 15px 10px; }
 
+@media only screen and (max-width: 767px) { .desktop-only { display: none; } }
+
+@media only screen and (max-width: 767px) { .mobile-large { font-size: 2em; } }
+
 /* Icons */
 [class^="icon-"] a:before, [class*=" icon-"] a:before, [class^="icon-"] a:after, [class*=" icon-"] a:after, i[class^="icon-"], i[class*=" icon-"] { font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; }
 
