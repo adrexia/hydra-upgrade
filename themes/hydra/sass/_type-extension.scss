@@ -128,8 +128,9 @@ h1{
 		overflow: hidden;
 	}
 	a {
-		color: rgba($air, 0.8);
+		color: darken($air, 15%);
 		font-size: 173px;
+		text-shadow: 10px 10px 50px rgba(#000, 0.5);
 
 		&:hover{
 			color:lighten($global-bg-color,60%);
