@@ -16,7 +16,7 @@
 	border-top: 3px solid $navbar-link-color;
 	opacity:0.8;
 	text-align:center;
-	@include border-image(url('../images/border-small.png') 30 0 stretch);
+	@include border-image(url('../images/border.png') 30 0 stretch);
 }
 
 .shaded {
