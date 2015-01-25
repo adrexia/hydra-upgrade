@@ -1405,6 +1405,7 @@ table { display: table; background-color: #151211; border-collapse: collapse; bo
 table caption { text-align: center; font-size: 29.79335px; padding: .75em; }
 table thead th, table tbody td, table tr th, table tr td { display: table-cell; padding: 10px; vertical-align: top; text-align: left; border-top: 1px solid #3f3634; }
 table tr td, table tbody tr td { font-size: 16px; }
+@media only screen and (max-width: 767px) { table tr td, table tbody tr td { font-size: 13.88854px; } }
 table tr td:first-child, table tr th:first-child { font-weight: bold; }
 @media only screen and (max-width: 767px) { table tr td:first-child, table tr th:first-child { font-size: 11.88854px; } }
 table thead { background-color: #181414; color: #d0c9bb; }

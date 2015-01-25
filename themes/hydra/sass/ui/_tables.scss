@@ -27,6 +27,9 @@ table {
 
 	tr td, tbody tr td {
 		font-size: $norm;
+		@include respond(all-phones) {
+			font-size: $small + 2;
+		}
 	}
 
 	tr td:first-child,
