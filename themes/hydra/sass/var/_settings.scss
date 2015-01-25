@@ -2,7 +2,7 @@
 // Happy Tinkering!
 
 $sunlight: #F9D834;
-$water: lighten(#3D8EB4,7%);
+$water: #1d9aba;
 $air: #D0C9BB;
 $earth: darken(#79c608,5%);
 $passion: #F15051;
@@ -81,13 +81,13 @@ $header-font-color: lighten($sunlight, 15%) !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #D0C9BB !default;
-$body-link-color: $water !default; 
+$body-link-color: mix($water, #fff, 80%) !default; 
 $body-link-hover-color: $people !default;
 
 // User Interface Colors
 $global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
-$navbar-link-color: $body-link-color;
+$navbar-link-color: $header-font-color;
 
 $primary-color: $water;
 $secondary-color: $people;
