@@ -6,7 +6,7 @@
 	border-color: rgba($passion, 0.5);
 }
 
-.n,.w,.y,.i {
+.w,.y,.i,.g {
 	&.alpha-change {
 		background-color: $inspiration;
 	}
@@ -15,7 +15,7 @@
 	}
 }
 
-.f,.g,.x,.t {
+.f,.x,.t,.h, {
 	&.alpha-change {
 		background-color: $water;
 	}
@@ -39,7 +39,7 @@
 		border-color: rgba($earth,0.5);
 	}
 }
-.r,.u,.o,.h {
+.r,.u,.o,.n {
 	&.alpha-change {
 		background-color: $people;
 	}

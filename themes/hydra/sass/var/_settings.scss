@@ -77,7 +77,7 @@ $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
-$header-font-color: lighten($sunlight, 13%) !default;
+$header-font-color: lighten($sunlight, 15%) !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
 $body-font-color: #D0C9BB !default;
@@ -89,23 +89,23 @@ $global-bg-color: #231E1D; //#101015  //1b1b24
 $navbar-color: darken($global-bg-color, 5%);
 $navbar-link-color: $header-font-color;
 
-$primary-color: $body-link-color;
-$secondary-color: darken(#79c608,20%);
-$default-color: #f2f2f2;
-$info-color: lighten($global-bg-color, 5%);
-$danger-color: #F15051;
-$warning-color: $header-font-color;
-$success-color: darken(#79c608,5%);
+$primary-color: $water;
+$secondary-color: $people;
+$default-color: lighten($global-bg-color, 5%);
+$info-color: $inspiration;
+$danger-color: $passion;
+$warning-color: $sunlight;
+$success-color: $earth;
 
 $primary-hover-color: lighten($primary-color, 5%);
 $secondary-hover-color: lighten($secondary-color, 5%);
-$default-hover-color: #ffffff;
-$info-hover-color: darken($info-color, 15%);
+$default-hover-color: darken($default-color, 15%);
+$info-hover-color: lighten(mix($info-color, $secondary-color, 80%), 3%);
 $danger-hover-color: darken($danger-color, 5%);
 $warning-hover-color: darken($header-font-color,5%);
 $success-hover-color: darken($success-color, 5%);
 
-$horizontal-rule-color: #ccc !default;
+$horizontal-rule-color: $default-color !default;
 
 $black: #000;
 $white: #fff;

@@ -16,12 +16,6 @@
       background: nth($shade, 2);
 
       @if nth($shade, 1) == default {
-        color: darken(nth($shade, 2), 61.5%);
-        border: 1px solid nth($shade, 2);
-        &:hover {
-          border: 1px solid darken(nth($shade, 2), 5%);
-          color: darken(nth($shade, 2), 61.5%);
-        }
         a {
           color: darken(nth($shade, 2), 61.5%);
         }
@@ -93,7 +87,7 @@ a.label {
       }
       @if nth($shade, 1) == info {
         background: darken(nth($shade, 2), 8%);
-        color: lighten(nth($shade, 2), 20%);
+        color: lighten(nth($shade, 2), 30%);
       }
     }
   }

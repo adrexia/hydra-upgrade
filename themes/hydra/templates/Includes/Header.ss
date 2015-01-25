@@ -29,7 +29,7 @@
 							</span>
 								
 							<% end_if %>
-							<span class="btn medium success metro rounded login pretty pull_right">
+							<span class="btn medium success metro rounded login pull_right">
 								<% if $CurrentMember %>
 									<a href="{$BaseHref}Security/logout">Log out</a>
 								<% else %>

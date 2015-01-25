@@ -8,14 +8,14 @@
 				<% if FilteredGames %>
 					<div class="js-filters masonry-filters columns three">
 						<h4 class="ptl">Filters </h4>
-						<a class="label metro rounded info success" data-filter="*">
+						<a class="label metro rounded default success" data-filter="*">
 							all
 						</a>
 
 						<% if $getAllTags(true) %>
 							<% loop $getAllTags(true) %>
 								<% if $Title %>
-								<a class="label metro rounded info" data-filter=".$Title">
+								<a class="label metro rounded default" data-filter=".$Title">
 									$Title
 								</a>
 								<% end_if %>
@@ -26,11 +26,11 @@
 
 							<% if $Session %>
 								<% if $Session ==0 %>
-									<a class="label metro rounded info" data-filter="to-be-scheduled">
+									<a class="label metro rounded default" data-filter="to-be-scheduled">
 										to-be-scheduled
 									</a>
 								<% else %>
-									<a class="label metro rounded info" data-filter=".round-{$Session}">
+									<a class="label metro rounded default" data-filter=".round-{$Session}">
 										round {$Session}
 									</a>
 								<% end_if %>
