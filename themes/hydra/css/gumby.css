@@ -2120,17 +2120,20 @@ ul.sitemap li div.collapse a, ul.sitemap li div.collapse .page-toggle a.button {
 
 .alpha-change-border { border-color: rgba(241, 80, 81, 0.5); }
 
-.f.alpha-change, .g.alpha-change, .h.alpha-change, .i.alpha-change, .v.alpha-change { background-color: #519fc4; }
-.f.alpha-change-border, .g.alpha-change-border, .h.alpha-change-border, .i.alpha-change-border, .v.alpha-change-border { border-color: rgba(81, 159, 196, 0.5); }
+.n.alpha-change, .w.alpha-change, .y.alpha-change, .i.alpha-change { background-color: #783980; }
+.n.alpha-change-border, .w.alpha-change-border, .y.alpha-change-border, .i.alpha-change-border { border-color: rgba(120, 57, 128, 0.5); }
 
-.j.alpha-change, .k.alpha-change, .l.alpha-change, .m.alpha-change, .w.alpha-change { background-color: #9c8d70; }
-.j.alpha-change-border, .k.alpha-change-border, .l.alpha-change-border, .m.alpha-change-border, .w.alpha-change-border { border-color: rgba(208, 201, 187, 0.5); }
+.f.alpha-change, .g.alpha-change, .x.alpha-change, .t.alpha-change { background-color: #519fc4; }
+.f.alpha-change-border, .g.alpha-change-border, .x.alpha-change-border, .t.alpha-change-border { border-color: rgba(81, 159, 196, 0.5); }
 
-.n.alpha-change, .o.alpha-change, .p.alpha-change, .q.alpha-change, .x.alpha-change { background-color: #6aad07; }
-.n.alpha-change-border, .o.alpha-change-border, .p.alpha-change-border, .q.alpha-change-border, .x.alpha-change-border { border-color: rgba(106, 173, 7, 0.5); }
+.j.alpha-change, .k.alpha-change, .l.alpha-change, .m.alpha-change { background-color: #9c8d70; }
+.j.alpha-change-border, .k.alpha-change-border, .l.alpha-change-border, .m.alpha-change-border { border-color: rgba(208, 201, 187, 0.5); }
 
-.r.alpha-change, .s.alpha-change, .t.alpha-change, .u.alpha-change, .y.alpha-change { background-color: #df6c0c; }
-.r.alpha-change-border, .s.alpha-change-border, .t.alpha-change-border, .u.alpha-change-border, .y.alpha-change-border { border-color: rgba(245, 148, 66, 0.5); }
+.p.alpha-change, .q.alpha-change, .v.alpha-change, .s.alpha-change { background-color: #6aad07; }
+.p.alpha-change-border, .q.alpha-change-border, .v.alpha-change-border, .s.alpha-change-border { border-color: rgba(106, 173, 7, 0.5); }
+
+.r.alpha-change, .u.alpha-change, .o.alpha-change, .h.alpha-change { background-color: #de347f; }
+.r.alpha-change-border, .u.alpha-change-border, .o.alpha-change-border, .h.alpha-change-border { border-color: rgba(222, 52, 127, 0.5); }
 
 .alert, .message { max-width: 98%; }
 

@@ -6,10 +6,11 @@ $water: lighten(#3D8EB4,7%);
 $air: #D0C9BB;
 $earth: darken(#79c608,5%);
 $passion: #F15051;
-$people: mix($sunlight, $passion, 50%);
+$people: #de347f;
+$inspiration: #783980;
 
-$brand-list: $sunlight, $water, $air, $earth, $passion, $people;
-$secondary-brand-list: $water, $air, $earth, $passion, $people;
+$brand-list: $sunlight, $water, $air, $earth, $passion, $people, $inspiration;
+$secondary-brand-list: $water, $air, $earth, $passion, $people, $inspiration;
 
 // Grid Settings
 $row-max-width: 1100px !default;    				// 940px

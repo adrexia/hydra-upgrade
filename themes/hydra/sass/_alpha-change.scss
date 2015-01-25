@@ -1,5 +1,4 @@
-// cycle through $secondary-brand-list: $water, $air, $earth, $passion, $people;
-
+// Colours based on alphabet
 .alpha-change {
 	background-color: $passion;
 }
@@ -7,7 +6,16 @@
 	border-color: rgba($passion, 0.5);
 }
 
-.f,.g,.h,.i,.v {
+.n,.w,.y,.i {
+	&.alpha-change {
+		background-color: $inspiration;
+	}
+	&.alpha-change-border {
+		border-color: rgba($inspiration, 0.5);
+	}
+}
+
+.f,.g,.x,.t {
 	&.alpha-change {
 		background-color: $water;
 	}
@@ -15,7 +23,7 @@
 		border-color: rgba($water, 0.5);
 	}
 }
-.j,.k,.l,.m,.w {
+.j,.k,.l,.m {
 	&.alpha-change {
 		background-color: darken($air, 25%);
 	}
@@ -23,7 +31,7 @@
 		border-color: rgba($air, 0.5);
 	}
 }
-.n,.o,.p,.q,.x {
+.p,.q,.v,.s {
 	&.alpha-change {
 		background-color: $earth;
 	}
@@ -31,9 +39,9 @@
 		border-color: rgba($earth,0.5);
 	}
 }
-.r,.s,.t,.u, .y {
+.r,.u,.o,.h {
 	&.alpha-change {
-		background-color: darken($people, 15%);
+		background-color: $people;
 	}
 	&.alpha-change-border {
 		border-color: rgba($people, 0.5);
