@@ -54,7 +54,7 @@ html, body { height: 100%; }
   100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
 @keyframes fa-spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", helvetica, arial, sans-serif; font-weight: 300; color: #fbe474; text-rendering: optimizeLegibility; padding-top: 0.273em; line-height: 1.15538em; padding-bottom: 0.273em; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", helvetica, arial, sans-serif; font-weight: 300; color: #fbe67e; text-rendering: optimizeLegibility; padding-top: 0.273em; line-height: 1.15538em; padding-bottom: 0.273em; }
 
 @media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
 h1 { font-size: 67.77709px; font-size: 4.23607rem; }
@@ -1374,7 +1374,7 @@ a.label:hover.secondary { background: #e24a8d; }
 a.label:hover.default { background: #070606; }
 a.label:hover.info { background: #973c89; }
 a.label:hover.danger { background: #ef383a; }
-a.label:hover.warning { background: #fae05c; }
+a.label:hover.warning { background: #fae266; }
 a.label:hover.success { background: #5b9506; }
 
 .badge { padding: 0 10px; font-size: 14px; font-size: 0.875rem; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
@@ -1401,7 +1401,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 
 .video > video, .video > iframe, .video > object, .video > embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-table { display: table; background-color: #151211; border-collapse: collapse; border-spacing: 0; margin-bottom: 20px; width: 100%; border: 1px solid #3f3634; }
+table { display: table; background-color: #151211; border-collapse: collapse; border-spacing: 0; margin-bottom: 20px; width: 100%; border: 1px solid #3f3634; line-height: 1.2em; }
 table caption { text-align: center; font-size: 29.79335px; padding: .75em; }
 table thead th, table tbody td, table tr th, table tr td { display: table-cell; padding: 10px; vertical-align: top; text-align: left; border-top: 1px solid #3f3634; }
 table tr td, table tbody tr td { font-size: 16px; }
