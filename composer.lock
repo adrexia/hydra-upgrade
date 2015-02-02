@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "59e4452b072c6d040b827b5efe4eb61a8e4e8203"
+                "reference": "d98ddb0a5f03f3eecf8b022c49ecf60dedd0612a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/59e4452b072c6d040b827b5efe4eb61a8e4e8203",
-                "reference": "59e4452b072c6d040b827b5efe4eb61a8e4e8203",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/d98ddb0a5f03f3eecf8b022c49ecf60dedd0612a",
+                "reference": "d98ddb0a5f03f3eecf8b022c49ecf60dedd0612a",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-02-02 08:52:56"
+            "time": "2015-02-02 09:08:13"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:ajshort/silverstripe-gridfieldextensions.git",
-                "reference": "bb0a84d16a993af2a406d5e8a7c789370d73e591"
+                "reference": "4855ac5ec0493519961666adbc98c6dd4988c8f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/bb0a84d16a993af2a406d5e8a7c789370d73e591",
-                "reference": "bb0a84d16a993af2a406d5e8a7c789370d73e591",
+                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/4855ac5ec0493519961666adbc98c6dd4988c8f4",
+                "reference": "4855ac5ec0493519961666adbc98c6dd4988c8f4",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-01-18 22:53:51"
+            "time": "2015-01-29 05:19:38"
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
