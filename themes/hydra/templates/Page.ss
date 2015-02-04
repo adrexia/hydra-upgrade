@@ -23,6 +23,7 @@
 
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
+	$BetterNavigator 
 	<% include Header %>
 	<div class="main" role="main">
 			$Layout

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5448b59ff2cb84cac48513c8da643894",
+    "hash": "b625a2b0df690686af3cc3919a046ef2",
     "packages": [
         {
             "name": "adrexia/gamesevent",
@@ -240,6 +240,46 @@
                 "zikula"
             ],
             "time": "2015-01-21 21:08:45"
+        },
+        {
+            "name": "jonom/silverstripe-betternavigator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonom/silverstripe-betternavigator.git",
+                "reference": "fdd895ef9de0ed88b0a27c8feae2ec6428b73b86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/fdd895ef9de0ed88b0a27c8feae2ec6428b73b86",
+                "reference": "fdd895ef9de0ed88b0a27c8feae2ec6428b73b86",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "betternavigator"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathon Menz",
+                    "homepage": "http://jonathonmenz.com"
+                }
+            ],
+            "description": "Front-end utility menu for SilverStripe websites featuring administration and development tools",
+            "keywords": [
+                "BetterNavigator",
+                "SilverStripeNavigator",
+                "navigator",
+                "silverstripe"
+            ],
+            "time": "2014-11-21 23:58:06"
         },
         {
             "name": "mateusz/frontend",
@@ -861,7 +901,8 @@
         "unclecheese/betterbuttons": 20,
         "silverstripe/dashboard": 20,
         "adrexia/gamesevent": 20,
-        "silverstripe/standardsediting": 20
+        "silverstripe/standardsediting": 20,
+        "jonom/silverstripe-betternavigator": 20
     },
     "platform": {
         "php": ">=5.3.2"
