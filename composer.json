@@ -23,7 +23,8 @@
 		"silverstripe/spellcheck": "1.0.0",
 		"silverstripe/userforms": "2.0.5",
 		"silverstripe/standardsediting": "dev-master",
-		"jonom/silverstripe-betternavigator": "dev-master"
+		"jonom/silverstripe-betternavigator": "dev-master",
+		"adrexia/dashboardmods": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600

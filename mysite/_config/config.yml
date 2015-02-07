@@ -11,12 +11,6 @@ SSViewer:
 SiteConfig:
   extensions:
    - CustomSiteConfig
-ErrorPage:
-  extensions:
-   - ErrorPageIcon
-UserDefinedForm:
-  extensions:
-   - UserFormsIcon
 DBField:
   extensions:
    - RichLinksExtension
@@ -24,4 +18,7 @@ LeftAndMain:
   extra_requirements_css:
    - 'mysite/css/custom.css'
 
-
+ErrorPage:
+  icon: "mysite/images/sitetree_images/error.png"
+UserDefinedForm:
+  icon: "mysite/images/sitetree_images/form.png"

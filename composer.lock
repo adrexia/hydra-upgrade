@@ -4,8 +4,38 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b625a2b0df690686af3cc3919a046ef2",
+    "hash": "58427ca612d218ff566cfe157e624ca9",
     "packages": [
+        {
+            "name": "adrexia/dashboardmods",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adrexia/silverstripe-dashboardmods.git",
+                "reference": "3f3eb468ab49bffb4a24523fb4dc8b9ef9d2b75d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-dashboardmods/zipball/3f3eb468ab49bffb4a24523fb4dc8b9ef9d2b75d",
+                "reference": "3f3eb468ab49bffb4a24523fb4dc8b9ef9d2b75d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/dashboard": "*",
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Design modifications to the SilverStripe Dashboard module",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2015-02-07 08:01:06"
+        },
         {
             "name": "adrexia/gamesevent",
             "version": "dev-master",
@@ -861,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "595dffde1ba402e802cd7786512f788d1c661627"
+                "reference": "376785f5af0256c97f07346fd217896db876455e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/595dffde1ba402e802cd7786512f788d1c661627",
-                "reference": "595dffde1ba402e802cd7786512f788d1c661627",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/376785f5af0256c97f07346fd217896db876455e",
+                "reference": "376785f5af0256c97f07346fd217896db876455e",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +919,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-11-22 10:29:29"
+            "time": "2015-02-04 10:46:19"
         }
     ],
     "packages-dev": [],
@@ -902,7 +932,8 @@
         "silverstripe/dashboard": 20,
         "adrexia/gamesevent": 20,
         "silverstripe/standardsediting": 20,
-        "jonom/silverstripe-betternavigator": 20
+        "jonom/silverstripe-betternavigator": 20,
+        "adrexia/dashboardmods": 20
     },
     "platform": {
         "php": ">=5.3.2"
