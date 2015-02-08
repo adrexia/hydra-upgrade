@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-dashboardmods.git",
-                "reference": "e9dd4a72edc8ad5529ce48cbff7598c242f63c26"
+                "reference": "3b2f8fc5bbe2b8b78033b6d050e7f00c77efb127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-dashboardmods/zipball/e9dd4a72edc8ad5529ce48cbff7598c242f63c26",
-                "reference": "e9dd4a72edc8ad5529ce48cbff7598c242f63c26",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-dashboardmods/zipball/3b2f8fc5bbe2b8b78033b6d050e7f00c77efb127",
+                "reference": "3b2f8fc5bbe2b8b78033b6d050e7f00c77efb127",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-02-07 11:43:43"
+            "time": "2015-02-08 05:13:21"
         },
         {
             "name": "adrexia/gamesevent",
