@@ -13,7 +13,7 @@ class UserDefinedFormExtension extends DataExtension {
 		$config->getComponentByType('GridFieldDataColumns')->setDisplayFields(
 			array(
 				'ID'=>'ID',
-				'SubmittedBy.Title'=>'Submitted By',
+				'SubmittedBy.Name'=>'Submitted By',
 				'Created'=>'Created'
 			)
 		);
