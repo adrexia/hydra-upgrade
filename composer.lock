@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58427ca612d218ff566cfe157e624ca9",
+    "hash": "72b7c94eb9281980bfd2d20d24b3c669",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -848,16 +848,16 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "2.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "66a4d82d3aa8169855c953b0dfb33ea7ba314b19"
+                "reference": "99ac1a3e20f60dc226e7b7166afd1ad81b7b06c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/66a4d82d3aa8169855c953b0dfb33ea7ba314b19",
-                "reference": "66a4d82d3aa8169855c953b0dfb33ea7ba314b19",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/99ac1a3e20f60dc226e7b7166afd1ad81b7b06c3",
+                "reference": "99ac1a3e20f60dc226e7b7166afd1ad81b7b06c3",
                 "shasum": ""
             },
             "require": {
@@ -868,6 +868,11 @@
                 "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions"
             },
             "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -883,7 +888,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-08-12 08:05:47"
+            "time": "2015-01-06 03:59:34"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -931,6 +936,7 @@
         "unclecheese/betterbuttons": 20,
         "silverstripe/dashboard": 20,
         "adrexia/gamesevent": 20,
+        "silverstripe/userforms": 20,
         "silverstripe/standardsediting": 20,
         "jonom/silverstripe-betternavigator": 20,
         "adrexia/dashboardmods": 20

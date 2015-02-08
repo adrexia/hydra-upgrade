@@ -22,3 +22,9 @@ ErrorPage:
   icon: "mysite/images/sitetree_images/error.png"
 UserDefinedForm:
   icon: "mysite/images/sitetree_images/form.png"
+  extensions:
+   - UserDefinedFormExtension
+
+SubmittedForm:
+  extensions:
+   - SubmittedFormExtension
