@@ -16,7 +16,9 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,600,300,700' rel='stylesheet' type='text/css'>
 	<% require themedCSS('gumby') %>
+
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	<link rel="stylesheet" href="$ThemeDir/js/src/libs/medium-editor/dist/css/medium-editor.css"> <!-- Core -->
 	<link rel="stylesheet" href="$ThemeDir/js/src/libs/medium-editor/dist/css/themes/default.css"> <!-- or any other theme -->
