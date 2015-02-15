@@ -31,9 +31,9 @@
 							<% end_if %>
 							<span class="btn medium success metro rounded login pull_right">
 								<% if $CurrentMember %>
-									<a href="{$BaseHref}Security/logout">Log out</a>
+									<a href="{$BaseHref}Security/logout?BackURL={$Link}">Log out</a>
 								<% else %>
-									<a href="{$BaseHref}Security/login">Login</a>
+									<a href="{$BaseHref}Security/login?BackURL={$Link}">Login</a>
 								<% end_if %>
 							</span>
 								</p>
