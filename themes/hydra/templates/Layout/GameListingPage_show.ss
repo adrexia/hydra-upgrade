@@ -35,9 +35,9 @@
 						<tr>
 							<th>Genres:</th>
 							<td>
-								<% if $getGenresListNice() %>
-									<% loop $getGenresListNice() %>
-										<% if $Title %>$Title<% if not $Last %>, <% end_if %><% end_if %>
+								<% if $getGenresList() %>
+									<% loop $getGenresList() %>
+										<% if $Title %>$Top.NiceString($Title)<% if not $Last %>, <% end_if %><% end_if %>
 									<% end_loop %>
 								<% end_if %>
 							</td>

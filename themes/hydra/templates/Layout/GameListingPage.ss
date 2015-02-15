@@ -16,7 +16,7 @@
 							<% loop $getAllTags(true) %>
 								<% if $Title %>
 								<a class="label metro rounded default" data-filter=".$Title">
-									$Title
+									$Top.NiceString($Title)
 								</a>
 								<% end_if %>
 							<% end_loop %>

@@ -42,12 +42,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "231d8f8fa59c89f10ad76f489e104dd0b26b15d8"
+                "reference": "e1ea94685689bc41985b48eb9f55f036f8af429f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/231d8f8fa59c89f10ad76f489e104dd0b26b15d8",
-                "reference": "231d8f8fa59c89f10ad76f489e104dd0b26b15d8",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/e1ea94685689bc41985b48eb9f55f036f8af429f",
+                "reference": "e1ea94685689bc41985b48eb9f55f036f8af429f",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-02-04 08:20:02"
+            "time": "2015-02-15 04:33:35"
         },
         {
             "name": "ajshort/silverstripe-gridfieldextensions",
@@ -183,12 +183,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d"
+                "reference": "fadc14257fa015b3e07f4d64710ea02f99356ccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/2d91dc9ce37bbf876cd408d483270a07001d8c7d",
-                "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d",
+                "url": "https://api.github.com/repos/composer/installers/zipball/fadc14257fa015b3e07f4d64710ea02f99356ccd",
+                "reference": "fadc14257fa015b3e07f4d64710ea02f99356ccd",
                 "shasum": ""
             },
             "replace": {
@@ -234,6 +234,7 @@
                 "Thelia",
                 "WolfCMS",
                 "agl",
+                "aimeos",
                 "annotatecms",
                 "bitrix",
                 "cakephp",
@@ -269,7 +270,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-01-21 21:08:45"
+            "time": "2015-02-12 22:23:32"
         },
         {
             "name": "jonom/silverstripe-betternavigator",
@@ -896,12 +897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "376785f5af0256c97f07346fd217896db876455e"
+                "reference": "b78f3c7449651ba2acefe4000f161e17384fcad3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/376785f5af0256c97f07346fd217896db876455e",
-                "reference": "376785f5af0256c97f07346fd217896db876455e",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/b78f3c7449651ba2acefe4000f161e17384fcad3",
+                "reference": "b78f3c7449651ba2acefe4000f161e17384fcad3",
                 "shasum": ""
             },
             "require": {
@@ -924,7 +925,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-02-04 10:46:19"
+            "time": "2015-02-09 02:07:59"
         }
     ],
     "packages-dev": [],
