@@ -3,9 +3,9 @@
 	<div class="ptxl">
 		<h4 class="pvm">Roster of Games</h4>
 		<% loop $GroupedGames.GroupedBy(getRoundTitle) %>
-			<% if getRoundTitle() =="Round 0" %><% else %>
+			<% if getRoundTitle() =="round-0" %><% else %>
 				<div class="pvs">
-					<h5> $getRoundTitle() </h5>
+					<h5><a href="{$Top.getGameListingPage().Link}#$getRoundTitle()">$Top.NiceString($getRoundTitle(), true)</a></h5>
 					<ul class="unstyled">
 						<% loop $Children %>
 							<li><a href="$Link">$Title</a></li>

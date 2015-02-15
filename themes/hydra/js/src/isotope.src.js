@@ -4,30 +4,33 @@
 $(function() {
 	"use strict";
 
+	function setFilter (filterBy){
+		$('.js-filters').find('.success').removeClass('success');
+		$('.label[data-filter="'+filterBy+'"]').addClass('success');
+		$container.isotope({ filter: filterBy });
+	}
+
 	// init Isotope
 	var $container = $('.js-isotope').isotope({
 		itemSelector: '.item',
 		layoutMode: 'masonry',
 		gutter: 10,
 		resizesContainer: true
-	});
+	}),
+	hash = window.location.hash.substring(1),
+	genreClass = '.' + hash;
 
-
-	// bind filter button click
 	$('.js-filters').on( 'click', '.label', function() {
-		var filterValue = $( this ).attr('data-filter');
-
-		$container.isotope({ filter: filterValue });
+		setFilter($(this).attr('data-filter'));
 	});
 
-	// change is-checked class on labels
-	$('.js-filters').each( function( i, labelGroup ) {
-		var $labelGroup = $( labelGroup );
-		$labelGroup.on( 'click', '.label', function() {
-			$labelGroup.find('.success').removeClass('success');
-			$( this ).addClass('success');
-		});
-	});
+	// Apply from anchor
+	if($('#' + hash).length < 1 && $(genreClass).length > 0 && $('.js-isotope').length > 0 ){
+		// fixes bug where filter doesn't clear after having been set
+		window.setTimeout(function(){
+			$('.label[data-filter="'+genreClass+'"]').trigger('click');
+		}, 5);
+	}
 
 });
 

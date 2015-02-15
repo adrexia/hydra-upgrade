@@ -149,6 +149,20 @@ h1{
 	}
 }
 
+h2, h3,h4,h5,h6 {
+	a {
+
+		color: darken($air, 15%);
+		border-bottom: 1px solid rgba($body-link-color,0.2);
+		display: block;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		&:hover {
+			border-bottom: 1px solid rgba($body-link-hover-color,0.2);
+		}
+	}
+}
+
 .content table thead tr th {
 	padding: 15px 10px;
 }

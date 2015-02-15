@@ -12,7 +12,8 @@
 	</div>
 	</section>
 	<section class="three columns">
-		 <% if Quicklinks %>
+		<% include Sidebar %>
+		<% if Quicklinks %>
 			<div class="link-set">
 				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
 				<ul>
@@ -21,7 +22,6 @@
 					<% end_loop %>
 				</ul>
 			</div>
-			<% end_if %>
-
+		<% end_if %>
 	</section>
 </div>

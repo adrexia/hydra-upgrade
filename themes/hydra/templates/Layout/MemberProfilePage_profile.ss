@@ -19,8 +19,9 @@
 		</article>
 	</div>
 	</section>
-			<section class="three columns">
-		 <% if Quicklinks %>
+	<section class="three columns">
+		<% include Sidebar %>
+		<% if Quicklinks %>
 			<div class="link-set">
 				<h2><i class="icon-link" aria-hidden="true"></i> Links</h2>
 				<ul>
@@ -30,6 +31,5 @@
 				</ul>
 			</div>
 			<% end_if %>
-
-		</section>
+	</section>
 </div>

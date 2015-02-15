@@ -11,19 +11,8 @@
 						<a class="label metro rounded default success" data-filter="*">
 							all
 						</a>
-
-						<% if $getAllTags(true) %>
-							<% loop $getAllTags(true) %>
-								<% if $Title %>
-								<a class="label metro rounded default" data-filter=".$Title">
-									$Top.NiceString($Title)
-								</a>
-								<% end_if %>
-							<% end_loop %>
-						<% end_if %>
 						<p></p>
 						<% loop $getGroupedGames.GroupedBy(Session) %>
-
 							<% if $Session %>
 								<% if $Session ==0 %>
 									<a class="label metro rounded default" data-filter="to-be-scheduled">
@@ -36,10 +25,22 @@
 								<% end_if %>
 							<% end_if %>
 						<% end_loop %>
+						<p></p>
+						<% if $getAllTags(true) %>
+							<% loop $getAllTags(true) %>
+								<% if $Title %>
+								<a class="label metro rounded default" data-filter=".$Title">
+									$Top.NiceString($Title)
+								</a>
+								<% end_if %>
+							<% end_loop %>
+						<% end_if %>
+						
+						
 					</div>
 					<section class="masonry-items js-isotope columns nine">
 					<% loop FilteredGames %>
-						<article class="item $Restriction $Genre <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
+						<article class="item item-filter $Restriction $Genre <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
 
 							<div class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
 								<header>

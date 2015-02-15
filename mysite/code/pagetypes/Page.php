@@ -92,4 +92,13 @@ class Page_Controller extends ContentController {
 		return Permission::check('ADMIN') || Permission::check('CMS_ACCESS_LeftAndMain');
 	}
 
+	// Strip underscores and spaces from a string
+	public function NiceString($title, $sentenceCase = false) {
+		$title = str_replace("_",  " ", $title);
+		if ($sentenceCase) {
+			$title = ucfirst($title);
+		}
+		return str_replace("-",  " ", $title);
+	}
+
 }
