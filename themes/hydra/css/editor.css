@@ -194,7 +194,8 @@ h1 a img { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; ma
 h2 a, h3 a, h4 a, h5 a, h6 a { color: #b1a58e; border-bottom: 1px solid rgba(74, 174, 199, 0.2); display: block; margin-bottom: 10px; padding-bottom: 5px; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { border-bottom: 1px solid rgba(222, 52, 127, 0.2); }
 
-table.blocks a { color: #d0c9bb; }
+.link-blocks td a { color: #d0c9bb; }
+.link-blocks td a:hover { color: #fff; }
 
 .content table thead tr th { padding: 15px 10px; }
 
