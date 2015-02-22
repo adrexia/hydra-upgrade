@@ -25277,11 +25277,13 @@ $(function() {
 	});
 
 	// Apply from anchor
-	if($('#' + hash).length < 1 && $(genreClass).length > 0 && $('.js-isotope').length > 0 ){
-		// fixes bug where filter doesn't clear after having been set
-		window.setTimeout(function(){
-			$('.label[data-filter="'+genreClass+'"]').trigger('click');
-		}, 5);
+	if(hash && $('#' + hash).length < 1){
+		if($(genreClass).length > 0 && $('.js-isotope').length > 0 ){
+			// fixes bug where filter doesn't clear after having been set
+			setTimeout(function(){
+				$('.label[data-filter="'+genreClass+'"]').trigger('click');
+			}, 5);
+		}
 	}
 
 });
