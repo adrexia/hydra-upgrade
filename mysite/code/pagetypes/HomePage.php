@@ -13,6 +13,8 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 
 
+
+
 		$gridField = new GridField(
 			'NewsItems',
 			'NewsItems',

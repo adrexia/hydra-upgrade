@@ -28,3 +28,7 @@ UserDefinedForm:
 SubmittedForm:
   extensions:
    - SubmittedFormExtension
+
+Link:
+  extensions:
+   - LinkExtension

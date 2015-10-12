@@ -3,17 +3,16 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.2",
-		"silverstripe/cms": "3.1.9",
-		"silverstripe/framework": "3.1.9",
+		"silverstripe/cms": "3.1.11",
+		"silverstripe/framework": "3.1.11",
 		"mateusz/frontend": "dev-master",
 		"ajshort/silverstripe-memberprofiles": "0.4",
-		"ajshort/silverstripe-gridfieldextensions": "dev-master",
 		"unclecheese/betterbuttons": "dev-master",
 		"silverstripe/dashboard": "dev-master",
 		"adrexia/gamesevent": "dev-master",
-		"silverstripe/userforms": "dev-master",
-		"silverstripe/html5": "1.0.2",
-		"silverstripe/iframe": "1.0.4",
+		"silverstripe/userforms": "3.0.2",
+		"silverstripe/html5": "1.0.3",
+		"silverstripe/iframe": "1.0.7",
 		"silverstripe/mimevalidator": "1.0.0",
 		"silverstripe/multivaluefield": "2.0.3",
 		"silverstripe/queuedjobs": "2.2.1",
@@ -21,10 +20,11 @@
 		"silverstripe/securityreport": "1.0.1",
 		"silverstripe/selectupload": "1.0.1",
 		"silverstripe/spellcheck": "1.0.0",
-		"silverstripe/userforms": "dev-master",
 		"silverstripe/standardsediting": "dev-master",
 		"jonom/silverstripe-betternavigator": "dev-master",
-		"adrexia/dashboardmods": "dev-master"
+		"adrexia/dashboardmods": "dev-master",
+		"sheadawson/silverstripe-linkable": "dev-master",
+		"unclecheese/display-logic": "1.2.1"
 	},
 	"config": {
 		"process-timeout": 600

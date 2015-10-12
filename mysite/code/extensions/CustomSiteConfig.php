@@ -25,7 +25,7 @@ class CustomSiteConfig extends DataExtension {
 			'FooterLinks',
 			$this->owner->FooterLinks(),
 			$conf = GridFieldConfig_RelationEditor::create());
-		$conf->addComponent(new GridFieldOrderableRows('Order'));
+		$conf->addComponent(new GridFieldOrderableRows('Sort'));
 		$footerLinks->getConfig()->getComponentByType('GridFieldAddNewButton')->setButtonName('Add Link to Footer');
 
 		$fields->addFieldToTab('Root.Footer', $footerLinks);
