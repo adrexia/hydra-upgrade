@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "7a2dd3e4c6444a6f2a5b93cb62f474b4",
+    "content-hash": "8136e94d64230edb7fcb3f1c6abe9476",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -42,12 +43,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "02211df43085e8fa0928d8fd1b34bf1f675be042"
+                "reference": "4443aff160b17c6de91bf26c7683dc2d477373a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/02211df43085e8fa0928d8fd1b34bf1f675be042",
-                "reference": "02211df43085e8fa0928d8fd1b34bf1f675be042",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/4443aff160b17c6de91bf26c7683dc2d477373a8",
+                "reference": "4443aff160b17c6de91bf26c7683dc2d477373a8",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +72,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-10-12 07:42:31"
+            "time": "2015-10-13 09:02:36"
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
@@ -357,12 +358,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sheadawson/silverstripe-linkable.git",
-                "reference": "4bf7af6c0618e64aa36996b8c01c4058a53bf14c"
+                "reference": "65247e07ba1722b1c3494538d0e424be3b716506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/4bf7af6c0618e64aa36996b8c01c4058a53bf14c",
-                "reference": "4bf7af6c0618e64aa36996b8c01c4058a53bf14c",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/65247e07ba1722b1c3494538d0e424be3b716506",
+                "reference": "65247e07ba1722b1c3494538d0e424be3b716506",
                 "shasum": ""
             },
             "require": {
@@ -397,7 +398,7 @@
                 "link",
                 "silverstripe"
             ],
-            "time": "2015-10-07 04:04:52"
+            "time": "2015-10-12 07:49:58"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
