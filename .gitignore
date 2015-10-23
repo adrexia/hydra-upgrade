@@ -45,3 +45,6 @@ display_logic/
 linkable/
 
 segment-field/
+
+silverstripe-spamprotection-honeypot/
+spamprotection/

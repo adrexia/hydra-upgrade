@@ -43,19 +43,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "ef1be4ebd15974c7e0ea30c8dae4843a63b6eeb7"
+                "reference": "72acddabddcd7646bf248ff0340b3ef5e740f409"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/ef1be4ebd15974c7e0ea30c8dae4843a63b6eeb7",
-                "reference": "ef1be4ebd15974c7e0ea30c8dae4843a63b6eeb7",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/72acddabddcd7646bf248ff0340b3ef5e740f409",
+                "reference": "72acddabddcd7646bf248ff0340b3ef5e740f409",
                 "shasum": ""
             },
             "require": {
                 "ajshort/silverstripe-memberprofiles": "*",
                 "mateusz/frontend": "*",
                 "silverstripe/cms": "~3.1",
-                "silverstripe/framework": "~3.1"
+                "silverstripe/framework": "~3.1",
+                "studiobonito/silverstripe-spamprotection-honeypot": "1.1.0"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -72,7 +73,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-10-23 10:28:48"
+            "time": "2015-10-23 11:34:45"
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
@@ -919,6 +920,43 @@
             "time": "2014-07-21 22:29:57"
         },
         {
+            "name": "silverstripe/spamprotection",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
+                "reference": "39f7f0be454af5f67f2789c6e7691221896fa313"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/39f7f0be454af5f67f2789c6e7691221896fa313",
+                "reference": "39f7f0be454af5f67f2789c6e7691221896fa313",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Saophalkun Ponlu",
+                    "email": "phalkunz@silverstripe.com"
+                },
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io",
+                    "homepage": "http://wilr.github.com"
+                }
+            ],
+            "description": "Spam protection module for SilverStripe.",
+            "keywords": [
+                "silverstripe",
+                "spamprotection"
+            ],
+            "time": "2014-03-07 07:38:25"
+        },
+        {
             "name": "silverstripe/spellcheck",
             "version": "1.0.0",
             "source": {
@@ -1050,6 +1088,62 @@
                 "userforms"
             ],
             "time": "2015-09-20 21:10:28"
+        },
+        {
+            "name": "studiobonito/silverstripe-spamprotection-honeypot",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studiobonito/silverstripe-spamprotection-honeypot.git",
+                "reference": "7a55ab7e283876de11f220be2f1fd58d3db25f63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studiobonito/silverstripe-spamprotection-honeypot/zipball/7a55ab7e283876de11f220be2f1fd58d3db25f63",
+                "reference": "7a55ab7e283876de11f220be2f1fd58d3db25f63",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "silverstripe/framework": "~3.1.0",
+                "silverstripe/spamprotection": "~1.2.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "symfony/class-loader": "~2.3"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "psr-4": {
+                    "StudioBonito\\SilverStripe\\SpamProtection\\Honeypot\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Densham",
+                    "email": "tom.densham@studiobonito.co.uk",
+                    "homepage": "http://www.studiobonito.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provide Honeypot spam protection for SilverStripe CMS.",
+            "homepage": "https://github.com/studiobonito/silverstripe-spamprotection-honeypot",
+            "keywords": [
+                "Honeypot",
+                "form",
+                "protection",
+                "silverstripe",
+                "silverstripe-spamprotection-honeypot",
+                "spam",
+                "studiobonito"
+            ],
+            "time": "2015-09-28 11:06:44"
         },
         {
             "name": "unclecheese/betterbuttons",
