@@ -45,6 +45,14 @@
   margin-bottom: 60px;
   padding: 0;
   padding-bottom:2px;
+
+  max-height: 400px;
+  @include respond(large-screens){
+	  max-height: 500px;
+  }
+  @include respond(all-phones){
+	  max-height: none;
+  }
   .caption {
 	z-index:8;
 	position:absolute;
