@@ -1,11 +1,12 @@
+<% include Slider %>
+
 <div class="typography row">
 	<article class="twelve columns feature-group">
-		<% include Slider %>
+
 		<div class="content subhead">$Content</div>
 		<div class="divider"></div>
 	</article>
 </div>
-
 
 <div class="typography row content">
 	<section class="twelve columns">
@@ -33,8 +34,8 @@
 							$Content
 						</div>
 					</div>
-					
-					
+
+
 				</article>
 			<% end_loop %>
 			</section>

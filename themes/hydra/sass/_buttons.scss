@@ -12,10 +12,12 @@
 
 .btn-login {
 	text-align: right;
-	margin-top: 50px;
+	margin-top: 16px;
 	@include respond(all-phones) {
-		margin-top:-36px;
-		margin-bottom:60px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 3;
 	}
 	button a {
 		display: inline-block;

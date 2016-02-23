@@ -1,0 +1,43 @@
+// Generic custom css (anything longer than a screen view should have its own file)
+
+.message.required {
+	color: $passion;
+}
+
+.label.success {
+	color: #fff;
+}
+
+.btn-login {
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.header {
+		padding-top: 45px;
+	}
+	.btn-login .meta-data {
+		display: none;
+	}
+
+
+	.btn-login {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 0;
+		width: 100% !important; //override an important
+
+		> p {
+			float: none;
+		}
+
+		.btn {
+			width: 100%;
+			&.rounded {
+				border-radius: 0;
+			}
+		}
+	}
+}

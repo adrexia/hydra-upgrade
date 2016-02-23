@@ -77,15 +77,15 @@ $tremendous: ms(9);
 $absurd: ms(10);
 
 // Typography Colors
-$header-font-color: lighten($sunlight, 15%) !default;
+$header-font-color: lighten(#272b33, 70%) !default;
 $header-link-color: $header-font-color !default;
 $header-link-hover-color: darken($header-font-color,10%) !default;
-$body-font-color: #D0C9BB !default;
-$body-link-color: mix($water, #fff, 80%) !default; 
+$body-font-color: lighten(#272b33, 70%) !default;
+$body-link-color: mix($water, #fff, 80%) !default;
 $body-link-hover-color: $people !default;
 
 // User Interface Colors
-$global-bg-color: #231E1D; //#1F252B;//#231E1D; //#101015  //1b1b24 //#191b26
+$global-bg-color: darken(#272b33, 5%); //#1F252B;//#231E1D; //#101015  //1b1b24 //#191b26
 $navbar-color: darken($global-bg-color, 5%);
 $navbar-link-color: $header-font-color;
 
@@ -95,7 +95,7 @@ $default-color: lighten($global-bg-color, 5%);
 $info-color: $inspiration;
 $danger-color: $passion;
 $warning-color: $sunlight;
-$success-color: $earth;
+$success-color: $water;
 
 $primary-hover-color: lighten($primary-color, 5%);
 $secondary-hover-color: lighten($secondary-color, 5%);
@@ -156,4 +156,3 @@ $table-stripe-bgcolor: $global-bg-color;
 // Floats
 $default-float: left;
 $switch-float: right;
-

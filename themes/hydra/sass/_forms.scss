@@ -53,7 +53,7 @@ form fieldset legend {
 
 form fieldset.zebra {
 	@include border-radius(3px);
-	margin: 0; 
+	margin: 0;
 	padding: 10px 20px;
 	.field, .composite {
 		border: none;
@@ -105,15 +105,10 @@ input.text, .tagsinput {
 .Actions {
 	.btn {
 		@extend .metro;
-		@extend .pretty;
 		@extend .rounded;
 		@extend .success;
 		@extend .medium;
-		@include text-shadow(0 1px 1px #2e4b03);
-		font-weight:bold;
-		display:block;
-		color:#fff;
-		float:left;
+
 	}
 }
 

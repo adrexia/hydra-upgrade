@@ -1,0 +1,67 @@
+/*
+ * Styles for header elements
+ */
+.header {
+	@include clearfix;
+	.brand {
+		@extend h1;
+		width: 100%;
+		font-size: 3em;
+		line-height:1em;
+		margin: 0;
+		overflow:visible;
+		padding: 0;
+		a {
+			position: relative;
+			display: block;
+
+			img {
+				margin: 0;
+				display: block;
+				max-height: 150px;
+			}
+
+			span {
+				float: left;
+				margin-top: 38px;
+				margin-left: 20px;
+			}
+
+			&:visited {
+				color: $body-font-color;
+			}
+		}
+	}
+}
+
+/* Customise search field */
+.search-group{
+	@include clearfix;
+	.search-query {
+		-webkit-appearance: textfield;
+		color: $body-font-color;
+		display:block;
+		float:left;
+		padding:5px;
+		width:200px;
+	}
+	form{
+		@include line-and-height(height-calc($larger - 3));
+		@include font-size($norm);
+		padding-right:none;
+		.btn{
+			float:left;
+			margin-left:-5px;
+			input{
+				display:block;
+			}
+		}
+	}
+	fieldset{
+		text-align:right;
+		padding-left:0;
+		padding-right:0;
+		border:0;
+		height:35px;
+	}
+}
