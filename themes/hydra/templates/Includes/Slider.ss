@@ -16,10 +16,11 @@
 							<% end_if %>
 
 							<% if Title %>
-								<h4>
+								<h4 class="sr-only">
 								<% if Link %><a href="$Link.Link"><% end_if %>
-								$Title</h4>
+								$Title
 								<% if Link %>	</a><% end_if %>
+								</h4>
 
 							<% end_if %>
 							<p>$Caption</p>
@@ -27,6 +28,6 @@
 					<% end_if %>
 				</li>
 			<% end_loop %>
-		</ul> 
+		</ul>
 	</div>
 <% end_if %>
