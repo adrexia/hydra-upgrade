@@ -22,6 +22,9 @@
 	button a {
 		display: inline-block;
 	}
+	p {
+		text-align: right;
+	}
 	.meta-data {
 		color: lighten($global-bg-color, 40%);
 		font-size:0.8em;

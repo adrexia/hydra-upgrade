@@ -2067,6 +2067,7 @@ form fieldset legend { padding: 5px 10px; }
 .btn-login { text-align: right; margin-top: 16px; }
 @media only screen and (max-width: 767px) { .btn-login { position: absolute; right: 20px; top: 20px; z-index: 3; } }
 .btn-login button a { display: inline-block; }
+.btn-login p { text-align: right; }
 .btn-login .meta-data { color: #768196; font-size: 0.8em; padding-right: 20px; line-height: 30px; text-align: right; }
 @media only screen and (max-width: 767px) { .btn-login .meta-data { display: none; } }
 
@@ -2185,6 +2186,8 @@ fieldset.odd { background: rgba(17, 19, 22, 0.5); }
 .field.inline .picker { width: 95%; }
 @media only screen and (max-width: 767px) { .field.inline .picker { width: 98%; } }
 .field.small-input input { width: 45px; margin-right: 5px; }
+
+.Actions .btn { float: left; }
 
 #ForgotPassword { font-size: 0.8em; padding-top: 10px; padding-left: 20px; float: left; }
 
