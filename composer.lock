@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc306b54ff163bd9f1b543726a090ea8",
-    "content-hash": "57ae52bfd4bba1fbce8651fbf451b68d",
+    "hash": "b2c00c4de22943305298661b21611dfd",
+    "content-hash": "4997509abce4f7605fb7b5a5cf5c3a8e",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -74,60 +74,6 @@
                 "silverstripe"
             ],
             "time": "2016-02-27 01:59:05"
-        },
-        {
-            "name": "ajshort/silverstripe-memberprofiles",
-            "version": "0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/adrexia/silverstripe-memberprofiles.git",
-                "reference": "6c6fd8d36438116a826d9ac487ee9c2c1f1e193d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/6c6fd8d36438116a826d9ac487ee9c2c1f1e193d",
-                "reference": "6c6fd8d36438116a826d9ac487ee9c2c1f1e193d",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "~3.1",
-                "silverstripe/framework": "~3.1"
-            },
-            "replace": {
-                "silverstripe/memberprofiles": "*"
-            },
-            "suggest": {
-                "ajshort/silverstripe-gridfieldextensions": "Allows drag-and-drop reordering of fields"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "installer-name": "memberprofiles",
-                "screenshots": [
-                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/edit-profile.png",
-                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/cms-profile-fields.png",
-                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/member-list.png"
-                ]
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Andrew Short",
-                    "email": "andrewjshort@gmail.com"
-                }
-            ],
-            "description": "Member registration and profile management",
-            "keywords": [
-                "member",
-                "profile",
-                "registration",
-                "silverstripe"
-            ],
-            "support": {
-                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/3.1"
-            },
-            "time": "2013-09-15 12:31:44"
         },
         {
             "name": "composer/installers",
@@ -459,6 +405,61 @@
                 "silverstripe"
             ],
             "time": "2015-11-17 15:02:18"
+        },
+        {
+            "name": "silverstripe-australia/memberprofiles",
+            "version": "1.1.1b",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adrexia/silverstripe-memberprofiles.git",
+                "reference": "20b7d05cb7caf72838f008679aa9d36f9d94b9cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-memberprofiles/zipball/20b7d05cb7caf72838f008679aa9d36f9d94b9cf",
+                "reference": "20b7d05cb7caf72838f008679aa9d36f9d94b9cf",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "ajshort/silverstripe-memberprofiles": "self.version",
+                "silverstripe/memberprofiles": "self.version"
+            },
+            "suggest": {
+                "ajshort/silverstripe-gridfieldextensions": "Allows drag-and-drop reordering of fields"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "memberprofiles",
+                "screenshots": [
+                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/edit-profile.png",
+                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/cms-profile-fields.png",
+                    "http://ajshort.github.com/silverstripe-memberprofiles/screenshots/member-list.png"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                }
+            ],
+            "description": "Member registration and profile management",
+            "keywords": [
+                "member",
+                "profile",
+                "registration",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/adrexia/silverstripe-memberprofiles/tree/master"
+            },
+            "time": "2016-02-27 02:59:20"
         },
         {
             "name": "silverstripe/cms",
