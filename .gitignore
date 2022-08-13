@@ -52,3 +52,7 @@ spamprotection/
 reports/
 
 siteconfig/
+.vscode
+gridfield-utils/
+mwm-env/
+switchfield/

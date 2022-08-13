@@ -5,5 +5,9 @@
 # Most users should simply visit the site root in your web browser.
 #
 
+devbuild:
+	./framework/sake dev/build ?flush=all
+
+
 test:
 	$(MAKE) QUERYSTRING="$(QUERYSTRING)" -C framework test
